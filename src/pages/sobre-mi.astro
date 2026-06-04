@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import { CallingCard } from "../components/p5/CallingCard";
 import NavBar from "../components/p5/NavBar.astro";
 import { P5Button } from "../components/p5/P5Button";
+import { ContactForm } from "../components/p5/ContactForm";
 
 type LocalizedText = {
   es: string;
@@ -747,6 +748,8 @@ const academicEvents = [
           </p>
         </div>
       </div>
+
+      <ContactForm client:load />
 
       <div class="flex flex-col items-center gap-6 mt-8">
         <p class="font-body text-p5-white/60 text-sm italic text-center max-w-md">

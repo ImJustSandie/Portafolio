@@ -51,12 +51,14 @@ export const ConfidantBar: React.FC<ConfidantBarProps> = ({ title, rank, percent
           {tags.map((tag) => (
             <span
               key={tag.icon}
-              className="inline-flex items-center gap-1.5 bg-p5-black text-p5-white font-mono text-[10px] tracking-wider px-2 py-1 border border-p5-white/30 -skew-x-[6deg] hover:bg-p5-red hover:border-p5-red transition-colors group/tag"
+              className="inline-flex items-center gap-1.5 bg-p5-black text-p5-white font-mono text-xs tracking-wider px-2 py-1 border border-p5-white/30 -skew-x-[6deg] hover:bg-p5-red hover:border-p5-red transition-colors group/tag"
             >
               <span className="inline-flex skew-x-[6deg] items-center gap-1.5">
-                <span className="w-3.5 h-3.5 flex items-center justify-center text-p5-white/80 group-hover/tag:text-p5-white transition-colors">
-                  <TechIcon name={tag.icon} className="w-full h-full" />
-                </span>
+                {tag.icon && (
+                  <span className="w-3.5 h-3.5 flex items-center justify-center text-p5-white/80 group-hover/tag:text-p5-white transition-colors">
+                    <TechIcon name={tag.icon} className="w-full h-full" />
+                  </span>
+                )}
                 {tag.name}
               </span>
             </span>

@@ -1,41 +1,91 @@
 [
   {
-    "name": "Camilo Sandoval",
+    "name": "Carlos Bahamón",
     "role": {
-      "es": "Compañero de carrera · Ingeniería Multimedia",
-      "en": "Classmate · Multimedia Engineering"
+      "es": "Diseñador Industrial · Líder en Semillero JOBS",
+      "en": "Industrial Designer · Leader at JOBS Research Lab"
     },
     "text": {
-      "es": "Alejandro es un profesional apasionado por la tecnologia y el desarrollo de software. Con experiencia en diversas areas de la programacion, ha logrado crear proyectos innovadores y de calidad. Su capacidad para liderar equipos y resolver problemas complejos lo convierte en un activo valioso para cualquier proyecto.",
-      "en": "Alejandro is a passionate professional dedicated to technology and software development. With experience across multiple programming areas, he has created innovative, high-quality projects. His ability to lead teams and solve complex problems makes him a valuable asset to any project."
+      "es": "Alejandro ha trabajado de manera significativa en distintos proyectos del semillero JOBS, la mayoría de ellos relacionados con la generación de experiencias interactivas mediante sistemas analógicos y digitales, orientadas al diseño y desarrollo de soluciones innovadoras en el ámbito de los videojuegos. Su constancia, compromiso y aporte académico han generado resultados relevantes que contribuyen al fortalecimiento de la proyección de los ingenieros en multimedia de la Universidad Militar Nueva Granada.\nAsimismo, ha participado activamente en la formulación, desarrollo y divulgación de proyectos de investigación, demostrando competencias técnicas y académicas acordes con los objetivos del semillero. Evidencia de este compromiso es su participación en diversos eventos científicos y académicos, entre los que se destacan el Congreso TransDigital y RedCOLSI, espacios en los que ha contribuido a la socialización de resultados de investigación y al fortalecimiento de la cultura investigativa de la comunidad académica.",
+      "en": "Alejandro has worked significantly on various projects at the JOBS research lab, most of them related to creating interactive experiences through analog and digital systems, aimed at designing and developing innovative solutions in the field of video games. His perseverance, commitment, and academic contributions have produced relevant results that help strengthen the profile of multimedia engineers at Universidad Militar Nueva Granada.\nHe has also actively participated in the formulation, development, and dissemination of research projects, demonstrating technical and academic competencies aligned with the lab's objectives. Evidence of this commitment is his participation in various scientific and academic events, notably the TransDigital Congress and RedCOLSI, where he has contributed to the socialization of research results and the strengthening of the academic community's research culture."
     },
     "image": "",
-    "linkedin": "https://www.linkedin.com/in/alejandro-sandoval-8a9209285/"
+    "linkedin": "",
+    "button": {
+      "text": {
+        "es": "COPIAR CORREO",
+        "en": "COPY EMAIL"
+      },
+      "action": "copiar",
+      "content": "carlos.bahamon@unimilitar.edu.co"
+    }
   },
   {
-    "name": "Valentina Martínez",
+    "name": "Diego Beltrán",
     "role": {
-      "es": "Compañera de Semillero · JOBS Research Lab",
-      "en": "Research Partner · JOBS Research Lab"
+      "es": "Ingeniero Multimedia · Tutor en Semillero JOBS",
+      "en": "Multimedia Engineer · Tutor at JOBS Research Lab"
     },
     "text": {
-      "es": "Trabajar con Alejandro en el semillero de investigación fue una experiencia enriquecedora. Su enfoque metódico y su creatividad para resolver problemas técnicos son admirables. Siempre está dispuesto a compartir sus conocimientos y a colaborar con los demás.",
-      "en": "Working with Alejandro at the research lab was an enriching experience. His methodical approach and creativity in solving technical problems are admirable. He is always willing to share his knowledge and collaborate with others."
+      "es": "Durante el tiempo en el que he trabajado con Alejandro Sandoval, tanto en espacios académicos relacionados con Modelado 3D como en procesos de investigación dentro del semillero JOBS, ha demostrado compromiso, creatividad y una excelente disposición para el trabajo colaborativo. Se destaca por su interés constante en fortalecer sus habilidades técnicas y conceptuales, así como por asumir retos de manera responsable y propositiva. Además de sus capacidades técnicas, Alejandro es una persona agradable, respetuosa y receptiva frente a las observaciones y recomendaciones que se le realizan, demostrando la capacidad de tomar consejo, aplicar correcciones y fortalecer continuamente sus procesos de trabajo y aprendizaje.",
+      "en": "During my time working with Alejandro Sandoval, both in academic settings related to 3D Modeling and in research processes within the JOBS lab, he has demonstrated commitment, creativity, and an excellent attitude for collaborative work. He stands out for his constant interest in strengthening his technical and conceptual skills, as well as for taking on challenges responsibly and proactively. In addition to his technical abilities, Alejandro is a pleasant, respectful person who is receptive to feedback and recommendations, showing the ability to take advice, apply corrections, and continuously strengthen his work and learning processes."
     },
     "image": "",
-    "linkedin": "https://www.linkedin.com/"
+    "linkedin": "",
+    "button": {
+      "text": {
+        "es": "VER INSTAGRAM",
+        "en": "VIEW INSTAGRAM"
+      },
+      "action": "redirigir",
+      "url": "https://www.instagram.com/beautiful_robots/"
+    }
   },
   {
-    "name": "Andrés Felipe Rojas",
+    "name": "Roy Vega",
     "role": {
-      "es": "Líder de proyecto · Unity Developer",
-      "en": "Project Lead · Unity Developer"
+      "es": "Ingeniero Multimedia · Director de Programa Ingeniería Multimedia en Universidad San Buenaventura",
+      "en": "Multimedia Engineer · Program Director of Multimedia Engineering at Universidad San Buenaventura"
     },
     "text": {
-      "es": "Conocí a Alejandro durante el desarrollo de Sveliaty y desde el inicio demostró un nivel de compromiso y calidad técnica impresionantes. Su capacidad para diseñar arquitecturas modulares y su atención al detalle hacen que sea un placer trabajar con él. Sin duda, un desarrollador con un futuro brillante.",
-      "en": "I met Alejandro during the development of Sveliaty and from the start he showed an impressive level of commitment and technical quality. His ability to design modular architectures and his attention to detail make him a pleasure to work with. Without a doubt, a developer with a bright future."
+      "es": "Por definir.",
+      "en": "To be defined."
     },
     "image": "",
-    "linkedin": "https://www.linkedin.com/"
+    "linkedin": ""
+  },
+  {
+    "name": "William Cubillos",
+    "role": {
+      "es": "Ingeniero Multimedia · Compañero de Proyectos",
+      "en": "Multimedia Engineer · Project Partner"
+    },
+    "text": {
+      "es": "A lo largo de nuestra trayectoria académica e investigativa, he colaborado estrechamente con Alejandro Sandoval en el desarrollo de proyectos como Sveliaty, Whispers in Letters y Treegimon. Como programador, Alejandro destaca por su agilidad para resolver problemas técnicos complejos y su gran adaptabilidad frente a los requerimientos de cada producción.\nEs un profesional proactivo enfocado en la optimización constante, asegurando siempre que el producto final supere los estándares de calidad exigidos. Su eficiencia técnica, visión colaborativa y compromiso con el flujo de desarrollo lo convierten en un desarrollador altamente recomendable para cualquier equipo.",
+      "en": "Throughout our academic and research journey, I have worked closely with Alejandro Sandoval on the development of projects such as Sveliaty, Whispers in Letters, and Treegimon. As a programmer, Alejandro stands out for his agility in solving complex technical problems and his great adaptability to the requirements of each production.\nHe is a proactive professional focused on constant optimization, always ensuring that the final product exceeds the required quality standards. His technical efficiency, collaborative vision, and commitment to the development flow make him a highly recommendable developer for any team."
+    },
+    "image": "",
+    "linkedin": "",
+    "button": {
+      "text": {
+        "es": "Ver Página Web",
+        "en": "View Webpage"
+      },
+      "action": "redirigir",
+      "url": "https://will-sant3-d-portafolio-hpsl.vercel.app/"
+    }
+  },
+  {
+    "name": "Andrés Moya",
+    "role": {
+      "es": "",
+      "en": ""
+    },
+    "text": {
+      "es": "Por definir.",
+      "en": "To be defined."
+    },
+    "image": "",
+    "linkedin": ""
   }
 ]

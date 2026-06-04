@@ -4,13 +4,50 @@
     "rank": 8,
     "percentage": 80,
     "description": {
-      "es": "Experiencia avanzada desarrollando sistemas complejos, shaders en URP/HDRP y arquitecturas modulares para juegos 2D y 3D.",
-      "en": "Advanced experience building complex systems, URP/HDRP shaders, and modular architectures for 2D and 3D games."
+      "es": "Cuento con experiencia colaborando en equipos multidisciplinarios para desarrollar proyectos modulares en Unity, trabajando con sistemas complejos, interfaces 2D y 3D, experiencias de realidad virtual y la definición de arquitecturas, flujos de trabajo y planificación técnica.",
+      "en": "I have experience collaborating in multidisciplinary teams to develop modular projects in Unity, working with complex systems, 2D and 3D interfaces, virtual reality experiences, and defining architectures, workflows, and technical planning."
     },
     "tags": [
-      { "name": "Unity", "icon": "Unity" },
-      { "name": "C#", "icon": "C#" },
-      { "name": "Blender", "icon": "Blender" }
+      {
+        "name": "Unity",
+        "icon": "Unity"
+      },
+      {
+        "name": "C#",
+        "icon": "C#"
+      },
+      {
+        "name": "Game Design",
+        "icon": "Game Design"
+      },
+      {
+        "name": "Level Design",
+        "icon": "Level Design"
+      },
+      {
+        "name": "UI/UX 2D/3D",
+        "icon": "UI/UX 2D/3D"
+      },
+      {
+        "name": "VR",
+        "icon": "VR"
+      },
+      {
+        "name": "AR",
+        "icon": "AR"
+      },
+      {
+        "name": "WebGL",
+        "icon": "WebGL"
+      },
+      {
+        "name": "Gameplay Systems",
+        "icon": "Gameplay Systems"
+      },
+      {
+        "name": "Scriptable Objects",
+        "icon": "Scriptable Objects"
+      }
     ]
   },
   {
@@ -21,17 +58,58 @@
     "rank": 6,
     "percentage": 60,
     "description": {
-      "es": "Construcción de interfaces modernas con HTML, CSS, JavaScript, Astro, React, Preact y Tailwind CSS para experiencias web rápidas y modulares.",
-      "en": "Building modern interfaces with HTML, CSS, JavaScript, Astro, React, Preact and Tailwind CSS for fast, modular web experiences."
+      "es": "Desarrollo de interfaces web modernas y responsivas con HTML, CSS, JavaScript, Astro, React, Preact y Tailwind CSS, complementadas con servicios backend en Python (FastAPI) y C# mediante arquitecturas y APIs REST, priorizando rendimiento, accesibilidad y escalabilidad.",
+      "en": "Development of modern and responsive web interfaces using HTML, CSS, JavaScript, Astro, React, Preact, and Tailwind CSS, complemented by backend services in Python (FastAPI) and C# through REST architectures and APIs, prioritizing performance, accessibility, and scalability."
     },
     "tags": [
-      { "name": "HTML5", "icon": "HTML5" },
-      { "name": "CSS3", "icon": "CSS3" },
-      { "name": "JavaScript", "icon": "JavaScript" },
-      { "name": "Astro", "icon": "Astro" },
-      { "name": "React", "icon": "React" },
-      { "name": "Tailwind CSS", "icon": "Tailwind CSS" },
-      { "name": "Vite", "icon": "Vite" }
+      {
+        "name": "HTML5",
+        "icon": "HTML5"
+      },
+      {
+        "name": "CSS3",
+        "icon": "CSS3"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "JavaScript"
+      },
+      {
+        "name": "Astro",
+        "icon": "Astro"
+      },
+      {
+        "name": "React",
+        "icon": "React"
+      },
+      {
+        "name": "Tailwind",
+        "icon": "Tailwind CSS"
+      },
+      {
+        "name": "Node.js",
+        "icon": "Node.js"
+      },
+      {
+        "name": "FastAPI",
+        "icon": "FastAPI"
+      },
+      {
+        "name": "C#",
+        "icon": "C#"
+      },
+      {
+        "name": "Python",
+        "icon": "Python"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "TypeScript"
+      },
+      {
+        "name": "Vercel",
+        "icon": "Vercel"
+      }
     ]
   },
   {
@@ -42,45 +120,106 @@
     "rank": 7,
     "percentage": 70,
     "description": {
-      "es": "Sólidos fundamentos en C#, Python y Java para scripting, automatización, desarrollo backend y herramientas en múltiples entornos.",
-      "en": "Strong foundations in C#, Python and Java for scripting, automation, backend development and tooling across multiple environments."
+      "es": "Experiencia utilizando C#, Python y Java para el desarrollo de aplicaciones multiplataforma, automatización de flujos de trabajo, herramientas de apoyo al desarrollo y soluciones backend escalables.",
+      "en": "Experience using C#, Python, and Java for cross-platform application development, workflow automation, development support tools, and scalable backend solutions."
     },
     "tags": [
-      { "name": "C#", "icon": "C#" },
-      { "name": "Python", "icon": "Python" },
-      { "name": "Java", "icon": "Java" },
-      { "name": "TypeScript", "icon": "TypeScript" },
-      { "name": "Node.js", "icon": "Node.js" }
+      {
+        "name": "C#",
+        "icon": "C#"
+      },
+      {
+        "name": "Python",
+        "icon": "Python"
+      },
+      {
+        "name": "Java",
+        "icon": "Java"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "TypeScript"
+      },
+      {
+        "name": "Node.js",
+        "icon": "Node.js"
+      }
     ]
   },
   {
     "title": {
-      "es": "MODELADO / ESCULPIDO 3D",
-      "en": "3D MODELING / SCULPTING"
+      "es": "DISEÑO 3D Y ANIMACIÓN",
+      "en": "3D DESIGN AND ANIMATION"
     },
     "rank": 6,
     "percentage": 60,
     "description": {
-      "es": "Modelado, esculpido y texturizado de assets 3D en Blender, Maya y Mudbox para integración en motores de videojuegos.",
-      "en": "Modeling, sculpting and texturing of 3D assets in Blender, Maya and Mudbox for integration into game engines."
+      "es": "Experiencia en modelado, escultura digital, texturizado, rigging y animación utilizando Blender, ZBrush, Substance Painter, Maya y Mudbox para la creación de assets 3D y personajes optimizados para videojuegos y producción en tiempo real.",
+      "en": "Experience in modeling, digital sculpting, texturing, rigging, and animation using Blender, ZBrush, Substance Painter, Maya, and Mudbox for creating 3D assets and characters optimized for video games and real-time production."
     },
     "tags": [
-      { "name": "Blender", "icon": "Blender" }
+      {
+        "name": "Blender",
+        "icon": "Blender"
+      },
+      {
+        "name": "ZBrush",
+        "icon": "ZBrush"
+      },
+      {
+        "name": "Substance Painter",
+        "icon": "Substance Painter"
+      },
+      {
+        "name": "Maya",
+        "icon": "Maya"
+      },
+      {
+        "name": "Mudbox",
+        "icon": "Mudbox"
+      }
     ]
   },
   {
     "title": {
-      "es": "DISEÑO DE EXPERIENCIAS",
-      "en": "EXPERIENCE DESIGN"
+      "es": "DISEÑO UX/UI Y RECURSOS DIGITALES",
+      "en": "UX/UI DESIGN AND DIGITAL RESOURCES"
     },
     "rank": 6,
     "percentage": 60,
     "description": {
-      "es": "Diseño de wireframes, prototipos interactivos y sistemas de diseño enfocados en la experiencia de usuario final y la narrativa visual.",
-      "en": "Design of wireframes, interactive prototypes, and design systems focused on end-user experience and visual storytelling."
+      "es": "Experiencia en el diseño de experiencias interactivas, interfaces de usuario y recursos visuales para videojuegos y aplicaciones, apoyándome en herramientas de diseño UI/UX, ilustración, edición gráfica y pixel art como Adobe Creative Cloud, Figma, Krita, MediBang Paint, Aseprite, LibreSprite y Piskel para desarrollar soluciones visuales coherentes y funcionales.",
+      "en": "Experience in the design of interactive experiences, user interfaces, and visual resources for video games and applications, supported by UI/UX design, illustration, graphic editing, and pixel art tools such as Adobe Creative Cloud, Figma, Krita, MediBang Paint, Aseprite, LibreSprite, and Piskel to develop coherent and functional visual solutions."
     },
     "tags": [
-      { "name": "Figma", "icon": "Figma" }
+      {
+        "name": "Figma",
+        "icon": "Figma"
+      },
+      {
+        "name": "Adobe Creative Cloud",
+        "icon": "Adobe Creative Cloud"
+      },
+      {
+        "name": "Krita",
+        "icon": "Krita"
+      },
+      {
+        "name": "MediBang Paint",
+        "icon": "MediBang Paint"
+      },
+      {
+        "name": "Aseprite",
+        "icon": "Aseprite"
+      },
+      {
+        "name": "LibreSprite",
+        "icon": "LibreSprite"
+      },
+      {
+        "name": "Piskel",
+        "icon": "Piskel"
+      }
     ]
   },
   {
@@ -88,12 +227,18 @@
     "rank": 7,
     "percentage": 70,
     "description": {
-      "es": "Control de versiones, flujos de trabajo colaborativos, gestión de ramas y repositorios para desarrollo en equipo y proyectos personales.",
-      "en": "Version control, collaborative workflows, branch management and repositories for team development and personal projects."
+      "es": "Uso de Git y GitHub para coordinar proyectos individuales y colaborativos, gestionando control de versiones, estrategias de ramificación, integración de cambios mediante Pull Requests y procesos de merge, así como la organización de equipos y flujos de trabajo dentro de un mismo repositorio.",
+      "en": "Using Git and GitHub to coordinate individual and collaborative projects, managing version control, branching strategies, change integration through Pull Requests and merge processes, as well as team organization and workflows within the same repository."
     },
     "tags": [
-      { "name": "Git", "icon": "Git" },
-      { "name": "GitHub", "icon": "GitHub" }
+      {
+        "name": "Git",
+        "icon": "Git"
+      },
+      {
+        "name": "GitHub",
+        "icon": "GitHub"
+      }
     ]
   }
 ]

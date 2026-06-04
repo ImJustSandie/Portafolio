@@ -1,24 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 interface LocalizedText {
   es: string;
   en: string;
 }
 
+type ButtonAction = 'redirigir' | 'copiar';
+
+interface TestimonialButton {
+  text: LocalizedText;
+  action: ButtonAction;
+  url?: string;
+  content?: string;
+}
+
 export interface TestimonialData {
   name: string;
   text: LocalizedText;
-  linkedin: string;
+  linkedin?: string;
   role?: LocalizedText;
   image?: string;
+  button?: TestimonialButton;
 }
 
 interface TestimonialCardProps {
   name: string;
   text: LocalizedText;
-  linkedin: string;
+  linkedin?: string;
   role?: LocalizedText;
   image?: string;
+  button?: TestimonialButton;
 }
 
 export const TestimonialCard: React.FC<TestimonialCardProps> = ({
@@ -27,7 +38,60 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({
   linkedin,
   role,
   image,
+  button,
 }) => {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = (e: React.MouseEvent, content: string) => {
+    e.preventDefault();
+    navigator.clipboard.writeText(content);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  const renderButton = () => {
+    if (!button) return null;
+
+    const baseClasses =
+      'inline-flex items-center gap-2 font-display text-sm md:text-base px-4 py-2 border-2 border-p5-black shadow-[3px_3px_0_0_#E50012] hover:shadow-none hover:translate-x-0.5 hover:translate-y-0.5 transition-all';
+
+    if (button.action === 'redirigir' && button.url) {
+      return (
+        <a
+          href={button.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`${baseClasses} bg-p5-white text-p5-black`}
+        >
+          <span className="lang-es">{button.text.es}</span>
+          <span className="lang-en">{button.text.en}</span>
+        </a>
+      );
+    }
+
+    if (button.action === 'copiar' && button.content) {
+      return (
+        <button
+          onClick={(e) => handleCopy(e, button.content!)}
+          className={`${baseClasses} ${copied ? 'bg-p5-black text-p5-white' : 'bg-p5-white text-p5-black'}`}
+        >
+          {copied ? (
+            <>
+              <span className="lang-es">COPIADO</span>
+              <span className="lang-en">COPIED</span>
+            </>
+          ) : (
+            <>
+              <span className="lang-es">{button.text.es}</span>
+              <span className="lang-en">{button.text.en}</span>
+            </>
+          )}
+        </button>
+      );
+    }
+
+    return null;
+  };
   const initials = name
     .split(' ')
     .map(n => n[0])
@@ -72,24 +136,39 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({
               <span className="lang-en">{role.en}</span>
             </span>
           )}
-          <p className="font-body text-p5-white text-base md:text-lg leading-relaxed">
-            <span className="lang-es">{text.es}</span>
-            <span className="lang-en">{text.en}</span>
-          </p>
+          <div className="space-y-4">
+            <p className="font-body text-p5-white text-base md:text-lg leading-relaxed">
+              {text.es.split('\n').map((p, i) => (
+                <React.Fragment key={i}>
+                  {i > 0 && <br />}
+                  <span className="lang-es">{p}</span>
+                </React.Fragment>
+              ))}
+              {text.en.split('\n').map((p, i) => (
+                <React.Fragment key={i}>
+                  {i > 0 && <br />}
+                  <span className="lang-en">{p}</span>
+                </React.Fragment>
+              ))}
+            </p>
+          </div>
 
-          {/* LinkedIn Button */}
-          <div className="flex justify-end pt-2">
-            <a
-              href={linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 font-display text-sm md:text-base px-4 py-2 bg-p5-white text-p5-black border-2 border-p5-black shadow-[3px_3px_0_0_#E50012] hover:shadow-none hover:translate-x-0.5 hover:translate-y-0.5 transition-all group"
-            >
-              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-              </svg>
-              <span>LINKEDIN</span>
-            </a>
+          {/* Buttons */}
+          <div className="flex justify-end gap-3 pt-2">
+            {renderButton()}
+            {linkedin && (
+              <a
+                href={linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 font-display text-sm md:text-base px-4 py-2 bg-p5-white text-p5-black border-2 border-p5-black shadow-[3px_3px_0_0_#E50012] hover:shadow-none hover:translate-x-0.5 hover:translate-y-0.5 transition-all group"
+              >
+                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+                <span>LINKEDIN</span>
+              </a>
+            )}
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ import { FeaturedProject } from "../components/p5/FeaturedProject";
 import type { ProjectData } from "../types";
 import { ConfidantBar } from "../components/p5/ConfidantBar";
 import type { ConfidantBarProps } from "../components/p5/ConfidantBar";
-import { TechTag } from "../components/p5/TechTag";
+import { TechStackTabs } from "../components/p5/TechStackTabs";
 import { Image } from "astro:assets";
 import profileImage from "../Assets/Images/Foto de perfil.png";
 import proyectos from "../data/proyectos.json";
@@ -82,20 +82,7 @@ const featuredProjects = (proyectos as ProjectData[]).filter((p) => p.featured);
                 <span class="lang-es">Stack Tecnológico</span>
                 <span class="lang-en">Tech Stack</span>
               </h4>
-              <div class="flex flex-wrap gap-3 items-center">
-                <TechTag name="Unity" />
-                <TechTag name="C#" />
-                <TechTag name="Python" />
-                <TechTag name="Java" />
-                <TechTag name="React" />
-                <TechTag name="Astro" />
-                <TechTag name="Blender" />
-                <TechTag name="Figma" />
-                <TechTag name="TypeScript" />
-                <TechTag name="Node.js" />
-                <TechTag name="Git" />
-                <TechTag name="GitHub" />
-              </div>
+              <TechStackTabs client:load />
             </div>
           </div>
         </div>
