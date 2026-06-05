@@ -40,7 +40,18 @@
     font-family: var(--font-body);
     background-image: radial-gradient(var(--grid-color) 2px, transparent 2px);
     background-size: 20px 20px;
+    background-attachment: scroll;
     transition: background-color 0.3s, color 0.3s;
+  }
+
+  /* Safe area containers for skewed elements */
+  .safe-area {
+    max-width: calc(100vw - 2rem);
+    overflow-x: clip;
+  }
+  .safe-area-tight {
+    max-width: calc(100vw - 1rem);
+    overflow-x: clip;
   }
 }
 
@@ -153,4 +164,33 @@
     opacity: 0.7;
   }
   html[lang="en"] .btn-esp:hover { opacity: 1; }
+
+  /* Touch device: disable hover effects that cause layout shifts */
+  @media (hover: none) {
+    .hover\:-translate-y-1, .hover\:-translate-x-1,
+    .group-hover\:-translate-y-1, .group-hover\:-translate-x-1,
+    .hover\:translate-x-0\.5, .hover\:translate-y-0\.5 {
+      transform: none !important;
+    }
+    .hover\:shadow-\[12px_12px_0_0_\#0F0F0F\],
+    .hover\:shadow-\[14px_14px_0_0_\#E50012\],
+    .hover\:shadow-\[16px_16px_0_0_\#E50012\],
+    .hover\:shadow-\[6px_6px_0_0_\#0F0F0F\] {
+      box-shadow: none !important;
+    }
+    /* Ensure active states still provide feedback */
+    .active\:scale-95:active {
+      transform: scale(0.95) !important;
+    }
+    .active\:bg-p5-red:active {
+      background-color: var(--color-p5-red) !important;
+    }
+  }
+
+  /* Prevent section overflow from skewed elements */
+  .section-safe {
+    overflow-x: clip;
+    padding-left: max(0.5rem, env(safe-area-inset-left));
+    padding-right: max(0.5rem, env(safe-area-inset-right));
+  }
 }

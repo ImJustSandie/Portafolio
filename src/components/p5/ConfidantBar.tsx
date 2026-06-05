@@ -24,18 +24,18 @@ export const ConfidantBar: React.FC<ConfidantBarProps> = ({ title, rank, percent
   const localizedTitle = typeof title === 'string' ? { es: title, en: title } : title;
 
   return (
-    <div className="group cursor-pointer flex flex-col" onClick={() => setIsExpanded(!isExpanded)}>
-      <div className="flex justify-between items-end mb-1">
-        <span className="font-display text-2xl italic group-hover:text-p5-red transition-colors">
+    <div className="group cursor-pointer flex flex-col overflow-x-clip" onClick={() => setIsExpanded(!isExpanded)}>
+      <div className="flex justify-between items-end mb-1 gap-2">
+        <span className="font-display text-sm sm:text-lg md:text-2xl italic group-hover:text-p5-red transition-colors truncate min-w-0">
           <span className="lang-es">{localizedTitle.es}</span>
           <span className="lang-en">{localizedTitle.en}</span>
         </span>
-        <span className="text-p5-red font-display text-xl transition-transform duration-300 group-hover:scale-110 origin-right">
+        <span className="text-p5-red font-display text-xs sm:text-base md:text-xl transition-transform duration-300 group-hover:scale-110 origin-right shrink-0 whitespace-nowrap">
           <span className="lang-es">RANGO {rank}</span>
           <span className="lang-en">RANK {rank}</span>
         </span>
       </div>
-      <div className="h-8 border-4 border-p5-black bg-p5-white relative overflow-hidden -skew-x-[12deg] transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-[4px_4px_0_0_#E50012]">
+      <div className="h-6 md:h-8 border-2 md:border-4 border-p5-black bg-p5-white relative overflow-hidden -skew-x-[12deg] transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-[4px_4px_0_0_#E50012]">
         <div
           className="h-full bg-p5-red-dark transition-colors duration-300 group-hover:bg-p5-red"
           style={{ width: `${percentage}%` }}
@@ -47,19 +47,19 @@ export const ConfidantBar: React.FC<ConfidantBarProps> = ({ title, rank, percent
       </div>
 
       {tags && tags.length > 0 && (
-        <div className="flex flex-wrap gap-2 mt-2">
+        <div className="flex flex-wrap gap-1 md:gap-2 mt-1 md:mt-2 overflow-x-clip">
           {tags.map((tag) => (
             <span
               key={tag.icon}
-              className="inline-flex items-center gap-1.5 bg-p5-black text-p5-white font-mono text-xs tracking-wider px-2 py-1 border border-p5-white/30 -skew-x-[6deg] hover:bg-p5-red hover:border-p5-red transition-colors group/tag"
+              className="inline-flex items-center gap-1 bg-p5-black text-p5-white font-mono text-[10px] md:text-xs tracking-wider px-1.5 md:px-2 py-0.5 md:py-1 border border-p5-white/30 -skew-x-[6deg] hover:bg-p5-red hover:border-p5-red transition-colors group/tag shrink-0 max-w-full overflow-x-clip"
             >
-              <span className="inline-flex skew-x-[6deg] items-center gap-1.5">
+              <span className="inline-flex skew-x-[6deg] items-center gap-1 truncate max-w-full">
                 {tag.icon && (
-                  <span className="w-3.5 h-3.5 flex items-center justify-center text-p5-white/80 group-hover/tag:text-p5-white transition-colors">
+                  <span className="w-2.5 h-2.5 md:w-3.5 md:h-3.5 flex items-center justify-center text-p5-white/80 group-hover/tag:text-p5-white transition-colors shrink-0">
                     <TechIcon name={tag.icon} className="w-full h-full" />
                   </span>
                 )}
-                {tag.name}
+                <span className="truncate">{tag.name}</span>
               </span>
             </span>
           ))}
@@ -68,21 +68,21 @@ export const ConfidantBar: React.FC<ConfidantBarProps> = ({ title, rank, percent
 
       <div
         className={`overflow-hidden transition-all duration-500 ease-in-out px-1 pb-2 ${
-          isExpanded ? 'max-h-96 opacity-100 mt-2 pt-4' : 'max-h-0 opacity-0 mt-0 pt-0'
+          isExpanded ? 'max-h-96 opacity-100 mt-1 md:mt-2 pt-2 md:pt-4' : 'max-h-0 opacity-0 mt-0 pt-0'
         }`}
       >
-        <div className="bg-p5-black text-p5-white p-4 border-4 border-p5-white relative shadow-hard flex flex-col transition-transform hover:-translate-y-1">
+        <div className="bg-p5-black text-p5-white p-2 md:p-4 border-2 md:border-4 border-p5-white relative shadow-hard flex flex-col transition-transform hover:-translate-y-1">
           <div
             className="absolute inset-0 opacity-10 pointer-events-none"
             style={{ backgroundImage: 'radial-gradient(#F4F4F4 1px, transparent 1px)', backgroundSize: '8px 8px' }}
           ></div>
-          <div className="absolute -top-3 -left-2 bg-p5-red text-p5-white font-mono text-xs px-2 py-0.5 border-2 border-p5-white -skew-x-[6deg] shadow-sm z-10">
+          <div className="absolute -top-2 md:-top-3 -left-1 md:-left-2 bg-p5-red text-p5-white font-mono text-[10px] md:text-xs px-1.5 md:px-2 py-0.5 border-2 border-p5-white -skew-x-[6deg] shadow-sm z-10">
             <span className="inline-block skew-x-[6deg] font-bold tracking-widest">
               <span className="lang-es">NOTA</span>
               <span className="lang-en">NOTE</span>
             </span>
           </div>
-          <p className="font-body text-sm opacity-90 leading-relaxed relative z-10 mt-1 pl-2 border-l-2 border-p5-red">
+          <p className="font-body text-xs md:text-sm opacity-90 leading-relaxed relative z-10 mt-0.5 md:mt-1 pl-1.5 md:pl-2 border-l-2 border-p5-red">
             <span className="lang-es">{description.es}</span>
             <span className="lang-en">{description.en}</span>
           </p>

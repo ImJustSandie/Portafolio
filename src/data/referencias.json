@@ -42,19 +42,6 @@
     }
   },
   {
-    "name": "Roy Vega",
-    "role": {
-      "es": "Ingeniero Multimedia · Director de Programa Ingeniería Multimedia en Universidad San Buenaventura",
-      "en": "Multimedia Engineer · Program Director of Multimedia Engineering at Universidad San Buenaventura"
-    },
-    "text": {
-      "es": "Por definir.",
-      "en": "To be defined."
-    },
-    "image": "",
-    "linkedin": ""
-  },
-  {
     "name": "William Cubillos",
     "role": {
       "es": "Ingeniero Multimedia · Compañero de Proyectos",
@@ -78,12 +65,12 @@
   {
     "name": "Andrés Moya",
     "role": {
-      "es": "",
-      "en": ""
+      "es": "Compañero de Semillero JOBS · Proyectos Académicos",
+      "en": "JOBS Research Lab Partner · Academic Projects"
     },
     "text": {
-      "es": "Por definir.",
-      "en": "To be defined."
+      "es": "Durante el tiempo que he tenido la oportunidad de trabajar con Alejandro Sandoval en el semillero de investigación JOBS y en diversos proyectos académicos, ha demostrado un alto nivel de compromiso, responsabilidad y dedicación. Su participación ha contribuido en gran medida al desarrollo de las actividades y objetivos planteados.\nDestaco especialmente su capacidad para aportar ideas valiosas para mejorar la experiencia de usuario, así como su habilidad para identificar y resolver problemas técnicos que surgen durante el proceso de desarrollo de los proyectos. Además, demuestra disposición para el trabajo en equipo y una actitud orientada a la búsqueda de soluciones óptimas.",
+      "en": "During the time I have had the opportunity to work with Alejandro Sandoval at the JOBS research lab and on various academic projects, he has demonstrated a high level of commitment, responsibility, and dedication. His participation has greatly contributed to the development of the activities and objectives set forth.\nI especially highlight his ability to contribute valuable ideas to improve the user experience, as well as his skill in identifying and solving technical problems that arise during the project development process. Furthermore, he shows a willingness for teamwork and an attitude oriented towards finding optimal solutions."
     },
     "image": "",
     "linkedin": ""

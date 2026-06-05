@@ -9,34 +9,79 @@
       "en": "Game Development"
     },
     "description": {
-      "es": "Sveliaty es un roguelike táctico por turnos con mecánicas de dados, cartas de afinidad y un sistema de maldiciones que añaden aleatoriedad. Incluye un modo Boss Rush de hasta 20 batallas progresivas con enemigos que escalan en dificultad.",
-      "en": "Sveliaty is a tactical turn-based roguelike with dice mechanics, affinity cards, and a curse system that adds rogue-like randomness. Features a Boss Rush mode with up to 20 progressive battles with scaling difficulty."
+      "es": "Sveliaty es un roguelike con combate RPG por turnos inspirado en el juego de mesa original del mismo nombre. Actualmente se encuentra en desarrollo el módulo principal de combate, presentado mediante una experiencia tipo boss rush que incluye 21 enemigos únicos, habilidades especiales, sistemas de bendiciones y maldiciones, y una tienda estratégica que permite al jugador adaptar su progreso durante cada partida. Todas las decisiones tomadas impactan directamente en la generación y evolución de un personaje construido mediante vóxeles, creando una experiencia altamente personalizada.",
+      "en": "Sveliaty is a roguelike with turn-based RPG combat inspired by the original board game of the same name. The main combat module is currently in development, presented as a boss rush experience featuring 21 unique enemies, special abilities, blessing and curse systems, and a strategic shop that allows players to adapt their progress during each run. All decisions made directly impact the generation and evolution of a voxel-built character, creating a highly personalized experience."
     },
-    "tags": ["Unity", "C#", "Blender", "Substance"],
+    "tags": [
+      "Unity",
+      "C#",
+      "Game Design",
+      "LibreSprite",
+      "Gameplay System",
+      "UI/UX 2D",
+      "Scriptable Objects",
+      "Technical Art"
+    ],
     "media": [
       {
-        "type": "video",
-        "url": "/Assets/Proyectos/Referencia/2026-04-24 09-56-40.mkv",
-        "filename": "DEMO_VIDEO.MKV"
+        "type": "image",
+        "url": "/Assets/Proyectos/Sveliaty/01.png",
+        "filename": "SCREENSHOT_01.PNG"
       },
       {
         "type": "image",
-        "url": "/Assets/Proyectos/Referencia/Captura de pantalla 2026-05-08 194130.png",
-        "filename": "SCREENSHOT_01.PNG"
+        "url": "/Assets/Proyectos/Sveliaty/02.png",
+        "filename": "SCREENSHOT_02.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Sveliaty/03.png",
+        "filename": "SCREENSHOT_03.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Sveliaty/04.png",
+        "filename": "SCREENSHOT_04.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Sveliaty/05.png",
+        "filename": "SCREENSHOT_05.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Sveliaty/06.png",
+        "filename": "SCREENSHOT_06.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Sveliaty/07.png",
+        "filename": "SCREENSHOT_07.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Sveliaty/08.png",
+        "filename": "SCREENSHOT_08.PNG"
       }
     ],
     "orientation": "left",
     "primaryButton": {
-      "text": { "es": "VER DEMO", "en": "WATCH DEMO" },
+      "text": {
+        "es": "CÓDIGO FUENTE",
+        "en": "SOURCE CODE"
+      },
       "href": "https://github.com/ImJustSandie/Sveliaty-Combat-System"
     },
     "secondaryButton": {
-      "text": { "es": "CÓDIGO FUENTE", "en": "SOURCE CODE" },
-      "href": "https://github.com/ImJustSandie/Sveliaty-Combat-System"
+      "text": {
+        "es": "DEMO",
+        "en": "DEMO"
+      },
+      "href": "https://github.com/ImJustSandie/Sveliaty-Combat-System/releases/tag/Beta"
     },
     "role": {
-      "es": "Diseñador de juego y programador principal. Diseñé e implementé la arquitectura del sistema de combate por turnos con arquitectura orientada a eventos (Publisher/Subscriber), sistema de dados y cartas de afinidad (Fuerza, Agilidad, Destreza), sistema de maldiciones con randomización, y guardado automático mediante JSON. Usé ScriptableObjects para datos balanceables y DOTween para animaciones procedurales.",
-      "en": "Game designer and lead programmer. Designed and implemented the turn-based combat system with event-driven architecture (Publisher/Subscriber), dice and affinity card system (Strength, Agility, Dexterity), curse system with randomization, and JSON auto-save. Used ScriptableObjects for balance data and DOTween for procedural animations."
+      "es": "Participé como programador principal, arquitecto de software y diseñador de mecánicas. Mis responsabilidades incluyeron el diseño e implementación de sistemas de juego, la adaptación de las mecánicas del juego de mesa original a un entorno digital, el diseño de enemigos y encuentros, la planificación de la arquitectura técnica del proyecto, así como las labores de pruebas y control de calidad para garantizar la estabilidad y coherencia de la experiencia de juego.",
+      "en": "I participated as lead programmer, software architect, and mechanics designer. My responsibilities included the design and implementation of game systems, adapting the original board game mechanics to a digital environment, designing enemies and encounters, planning the project's technical architecture, as well as testing and quality assurance to ensure the stability and coherence of the gameplay experience."
     }
   },
   {
@@ -49,29 +94,68 @@
       "en": "Academic Project"
     },
     "description": {
-      "es": "Módulo web del proyecto Treegemon. Planta virtual con 4 etapas de evolución (Semilla → Brote → Planta → Ent), 3 minijuegos (Agua, Compost, Sol), sistema de inventario con filtros, cooldowns y deterioro por inactividad. Backend simulado con localStorage.",
-      "en": "Web module of the Treegemon project. Virtual plant with 4 evolution stages (Seed → Sprout → Plant → Ent), 3 minigames (Water, Compost, Sun), inventory system with filters, cooldowns and decay over time. Simulated backend with localStorage."
+      "es": "Treegimon: Plantagochi Web es una experiencia de gamificación desarrollada para fomentar el cuidado y conocimiento de las especies vegetales presentes en la Universidad Militar Nueva Granada. A través de mecánicas inspiradas en los clásicos tamagotchi, los usuarios deben mantener saludables sus plantas administrando recursos como agua y luz solar, obtenidos mediante distintos minijuegos. Además, las plantas requieren abono para crecer y evolucionar a través de cuatro etapas de desarrollo: semilla, arbusto pequeño, arbusto grande y, finalmente, Ent Inmortal. El proyecto combina progresión, gestión de recursos y aprendizaje en una experiencia interactiva accesible desde la web.",
+      "en": "Treegimon: Plantagochi Web is a gamification experience developed to promote the care and knowledge of plant species present at the Universidad Militar Nueva Granada. Through mechanics inspired by classic tamagotchis, users must keep their plants healthy by managing resources such as water and sunlight, obtained through various minigames. Additionally, plants require fertilizer to grow and evolve through four development stages: seed, small shrub, large shrub, and finally, Immortal Ent. The project combines progression, resource management, and learning in an interactive experience accessible from the web."
     },
-    "tags": ["Astro", "Tailwind", "TypeScript", "Preact"],
+    "tags": [
+      "HTML5",
+      "CSS",
+      "Preact",
+      "Astro",
+      "Tailwind",
+      "WebGL",
+      "Figma"
+    ],
     "media": [
       {
+        "type": "video",
+        "url": "/Assets/Proyectos/Plantagochi/01.mp4",
+        "filename": "DEMO_VIDEO.MP4"
+      },
+      {
         "type": "image",
-        "url": "/Assets/Proyectos/Referencia/Captura de pantalla 2026-05-08 194455.png",
-        "filename": "MODEL_RENDER_01.PNG"
+        "url": "/Assets/Proyectos/Plantagochi/02.png",
+        "filename": "SCREENSHOT_02.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Plantagochi/03.png",
+        "filename": "SCREENSHOT_03.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Plantagochi/04.png",
+        "filename": "SCREENSHOT_04.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Plantagochi/05.png",
+        "filename": "SCREENSHOT_05.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Plantagochi/06.png",
+        "filename": "SCREENSHOT_06.PNG"
       }
     ],
     "orientation": "right",
+    "role": {
+      "es": "Participé como programador principal, diseñador de mecánicas y arquitecto de software. Fui responsable del diseño e implementación de los sistemas principales de la aplicación, la definición de la arquitectura técnica y la integración de las funcionalidades necesarias para la experiencia de juego. Adicionalmente, realicé el despliegue de la plataforma web, su mantenimiento operativo y la implementación de mejoras y ajustes solicitados durante el evento Imaginatio XVIII, garantizando la estabilidad y disponibilidad del sistema para sus usuarios.",
+      "en": "I participated as lead programmer, mechanics designer, and software architect. I was responsible for the design and implementation of the application's main systems, defining the technical architecture, and integrating the functionalities necessary for the gameplay experience. Additionally, I carried out the deployment of the web platform, its operational maintenance, and the implementation of improvements and adjustments requested during the Imaginatio XVIII event, ensuring the system's stability and availability for its users."
+    },
     "primaryButton": {
-      "text": { "es": "CÓDIGO FUENTE", "en": "SOURCE CODE" },
+      "text": {
+        "es": "CODIGO FUENTE",
+        "en": "SOURCE CODE"
+      },
       "href": "https://github.com/ImJustSandie/Treegimon-Plantagochi-Web"
     },
     "secondaryButton": {
-      "text": { "es": "PÁGINA EN VIVO", "en": "LIVE PAGE" },
+      "text": {
+        "es": "PAGINA WEB",
+        "en": "WEB PAGE"
+      },
       "href": "https://plantagochiweb.vercel.app/"
-    },
-    "role": {
-      "es": "Desarrollador full-stack. Implementé la arquitectura completa con Astro + Preact + Tailwind, usando Preact Signals para el manejo de estado. Diseñé e implementé los 3 minijuegos (Agua, Compost, Sol), el sistema de evolución por etapas con animaciones de spritesheet, el inventario con filtros por estado/urgencia/categoría, y el sistema de cooldowns con deterioro progresivo. Backend simulado vía localStorage.",
-      "en": "Full-stack developer. Implemented the complete architecture with Astro + Preact + Tailwind, using Preact Signals for state management. Designed and implemented the 3 minigames (Water, Compost, Sun), the stage-based evolution system with spritesheet animations, inventory with filters by status/urgency/category, and the cooldown system with progressive decay. Simulated backend via localStorage."
     }
   },
   {
@@ -84,29 +168,74 @@
       "en": "Game Development"
     },
     "description": {
-      "es": "Experiencia narrativa interactiva basada en 'El Mundo de Sofía'. Plantea dilemas filosóficos de Schopenhauer, Nietzsche, Hegel y los Estoicos; las decisiones del jugador afectan el diálogo y el desenlace de la historia.",
-      "en": "Interactive narrative experience based on 'Sophie's World'. Presents philosophical dilemmas from Schopenhauer, Nietzsche, Hegel, and the Stoics; player choices affect dialogue and story ending."
+      "es": "Whispers in Letters es una experiencia narrativa en 3D donde el jugador asume el papel de Sophia, una joven que ayuda a distintas personas a afrontar decisiones complejas mediante la exploración de dilemas filosóficos. A través de conversaciones e interacciones con personajes como Joseph, el juego invita a reflexionar sobre diferentes corrientes de pensamiento y su aplicación en situaciones cotidianas, integrando narrativa, toma de decisiones y filosofía en una experiencia interactiva.",
+      "en": "Whispers in Letters is a 3D narrative experience where the player takes on the role of Sophia, a young woman who helps different people face complex decisions through the exploration of philosophical dilemmas. Through conversations and interactions with characters like Joseph, the game invites reflection on different schools of thought and their application in everyday situations, integrating narrative, decision-making, and philosophy into an interactive experience."
     },
-    "tags": ["Unity", "C#", "Ink", "Narrative Design"],
+    "tags": [
+      "Unity",
+      "C#",
+      "Ink",
+      "Level Design",
+      "Game Design",
+      "Gameplay Systems",
+      "UI/UX 2D/3D",
+      "Scriptable Objects"
+    ],
     "media": [
       {
+        "type": "video",
+        "url": "/Assets/Proyectos/Whispers%20In%20Letters/01.mp4",
+        "filename": "DEMO_VIDEO.MP4"
+      },
+      {
         "type": "image",
-        "url": "/Assets/Proyectos/Referencia/Captura de pantalla 2026-05-08 194455.png",
-        "filename": "MODEL_RENDER_01.PNG"
+        "url": "/Assets/Proyectos/Whispers%20In%20Letters/02.png",
+        "filename": "SCREENSHOT_02.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Whispers%20In%20Letters/03.png",
+        "filename": "SCREENSHOT_03.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Whispers%20In%20Letters/04.png",
+        "filename": "SCREENSHOT_04.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Whispers%20In%20Letters/05.png",
+        "filename": "SCREENSHOT_05.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Whispers%20In%20Letters/06.png",
+        "filename": "SCREENSHOT_06.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Whispers%20In%20Letters/07.png",
+        "filename": "SCREENSHOT_07.PNG"
       }
     ],
     "orientation": "left",
     "primaryButton": {
-      "text": { "es": "CÓDIGO FUENTE", "en": "SOURCE CODE" },
+      "text": {
+        "es": "CÓDIGO FUENTE",
+        "en": "SOURCE CODE"
+      },
       "href": "https://github.com/ImJustSandie/Whispers-In-Letters"
     },
     "secondaryButton": {
-      "text": { "es": "VER DEMO", "en": "WATCH DEMO" },
-      "href": "https://github.com/ImJustSandie/Whispers-In-Letters"
+      "text": {
+        "es": "PÁGINA WEB",
+        "en": "WEB PAGE"
+      },
+      "href": "https://whispers-in-letters.vercel.app/"
     },
     "role": {
-      "es": "Diseñador narrativo y programador. Implementé la arquitectura del juego en Unity con sistema de diálogos ramificados usando Ink, managers modulares (LevelManager, GameManager) con ScriptableObjects para datos, y sistema de guardado JSON para persistencia de progreso.",
-      "en": "Narrative designer and programmer. Implemented the game architecture in Unity with branching dialogue system using Ink, modular managers (LevelManager, GameManager) with ScriptableObjects for data, and JSON save system for progress persistence."
+      "es": "Participé como programador principal y arquitecto de software del proyecto. Fui responsable del diseño e implementación de sistemas centrales, la gestión del repositorio y flujo de trabajo en GitHub, así como de la integración continua de las funcionalidades desarrolladas por el equipo. Además, brindé soporte técnico en Unity a otros desarrolladores, colaboré en la resolución de problemas durante el desarrollo y diseñé e implementé la página web oficial del proyecto.",
+      "en": "I participated as lead programmer and software architect of the project. I was responsible for the design and implementation of core systems, repository management and GitHub workflow, as well as the continuous integration of functionalities developed by the team. Additionally, I provided technical support in Unity to other developers, collaborated in problem-solving during development, and designed and implemented the project's official website."
     }
   },
   {
@@ -119,25 +248,38 @@
       "en": "3D Modeling & Character"
     },
     "description": {
-      "es": "Pequeño robot steampunk construido de cobre, engranajes y curiosidad. Un autómata antiguo que de alguna manera mantuvo su chispa con vida.",
-      "en": "A small steampunk robot built from copper, gears, and curiosity. An old automaton that somehow kept its spark alive."
+      "es": "Clanksworth es un personaje original inspirado en la estética steampunk y la maquinaria industrial de finales del siglo XIX. El objetivo del proyecto fue explorar la creación de personajes estilizados con una fuerte identidad visual, combinando elementos como cobre, engranajes y componentes mecánicos para transmitir la sensación de un antiguo autómata que continúa funcionando gracias a su propia curiosidad e ingenio. El modelo fue desarrollado en Autodesk Maya y texturizado en Substance Painter, prestando especial atención al desgaste de los materiales, las propiedades reflectivas del metal y los pequeños detalles artesanales que aportan personalidad y credibilidad al diseño final.",
+      "en": "Clanksworth is an original character inspired by steampunk aesthetics and late 19th-century industrial machinery. The project aimed to explore the creation of stylized characters with a strong visual identity, combining elements such as copper, gears, and mechanical components to convey the feel of an ancient automaton that keeps running thanks to its own curiosity and ingenuity. The model was developed in Autodesk Maya and textured in Substance Painter, with special attention to material wear, reflective metal properties, and the small handcrafted details that add personality and credibility to the final design."
     },
-    "tags": ["Blender", "Maya", "Substance Painter", "PBR Texturing"],
+    "tags": [
+      "Maya",
+      "Mudbox",
+      "Substance Painter",
+      "PBR Texturing"
+    ],
     "media": [
       {
         "type": "image",
         "url": "/Assets/Proyectos/Referencia/clanksworth.jpeg",
         "filename": "CLANKSWORTH.JPEG"
+      },
+      {
+        "type": "sketchfab",
+        "url": "https://sketchfab.com/3d-models/clanksworth-steampunk-robot-65bf1b56bd8346249ed986324c7aa3ef/embed",
+        "filename": "SKETCHFAB_VIEW"
       }
     ],
     "orientation": "right",
     "primaryButton": {
-      "text": { "es": "VER EN SKETCHFAB", "en": "VIEW ON SKETCHFAB" },
+      "text": {
+        "es": "VER EN SKETCHFAB",
+        "en": "VIEW ON SKETCHFAB"
+      },
       "href": "https://sketchfab.com/3d-models/clanksworth-steampunk-robot-65bf1b56bd8346249ed986324c7aa3ef"
     },
     "role": {
-      "es": "Artista 3D. Modelé y esculpí el robot en Blender con detalle de engranajes y cobre, realicé el texturizado PBR en Substance Painter, y optimicé la malla para renderizado en tiempo real.",
-      "en": "3D Artist. Modeled and sculpted the robot in Blender with detailed gears and copper, did PBR texturing in Substance Painter, and optimized the mesh for real-time rendering."
+      "es": "Participé como artista 3D responsable de todo el proceso de producción del personaje. Mis tareas incluyeron el modelado, optimización de la geometría, creación de materiales y texturizado, así como la definición de la dirección visual del proyecto. El trabajo se centró en la construcción de superficies metálicas creíbles y en la utilización de técnicas de texturizado que reforzaran la narrativa visual y la identidad steampunk del personaje.",
+      "en": "I participated as a 3D artist responsible for the entire character production process. My tasks included modeling, geometry optimization, material creation and texturing, as well as defining the visual direction of the project. The work focused on building credible metallic surfaces and using texturing techniques that reinforced the visual narrative and steampunk identity of the character."
     }
   },
   {
@@ -150,25 +292,37 @@
       "en": "3D Modeling & Character"
     },
     "description": {
-      "es": "Heather es una joven demonio con personalidad juguetona y expresiva. Parte de la serie 'Cacería Nocturna'. A diferencia de otros de su especie, no es particularmente intimidante, a menudo parece torpe y despreocupada.",
-      "en": "Heather is a young demon with a playful and expressive personality. Part of the 'Cacería Nocturna' series. Unlike others of her kind, she is not particularly intimidating, often coming across as clumsy and carefree."
+      "es": "Heather es un personaje original diseñado para explorar la creación de personajes estilizados con una fuerte carga expresiva y narrativa. Aunque pertenece al arquetipo clásico de los demonios, su personalidad se aleja de lo intimidante para adoptar un enfoque más desenfadado, impulsivo y carismático. Su diseño busca transmitir cercanía y energía a través de sus proporciones, expresiones y lenguaje visual, reflejando a un personaje que actúa guiado por sus emociones y vive cada momento con espontaneidad. El proyecto se centró en el desarrollo de un personaje capaz de comunicar su personalidad mediante la silueta, las proporciones y los detalles visuales. El modelado fue realizado en Autodesk Maya, complementado con ajustes de proporciones y trabajo de escultura en Mudbox. La exploración inicial del color también se llevó a cabo en Mudbox, mientras que el texturizado final fue desarrollado en Substance 3D Painter para reforzar la identidad visual y el atractivo estético del personaje.",
+      "en": "Heather is an original character designed to explore the creation of stylized characters with strong expressive and narrative weight. Although she belongs to the classic demon archetype, her personality moves away from the intimidating to adopt a more carefree, impulsive, and charismatic approach. Her design seeks to convey warmth and energy through her proportions, expressions, and visual language, reflecting a character who acts guided by her emotions and lives each moment spontaneously. The project focused on developing a character capable of communicating personality through silhouette, proportions, and visual details. Modeling was done in Autodesk Maya, complemented by proportion adjustments and sculpting work in Mudbox. Initial color exploration was also carried out in Mudbox, while final texturing was developed in Substance 3D Painter to reinforce the character's visual identity and aesthetic appeal."
     },
-    "tags": ["Blender", "ZBrush", "Substance Painter", "PBR Texturing"],
+    "tags": [
+      "Maya",
+      "Mudbox",
+      "Substance 3D Painter"
+    ],
     "media": [
       {
         "type": "image",
         "url": "/Assets/Proyectos/Referencia/heather.jpeg",
         "filename": "HEATHER.JPEG"
+      },
+      {
+        "type": "sketchfab",
+        "url": "https://sketchfab.com/3d-models/heather-the-clumsy-demon-caceria-nocturna-wip-09c29df6634c4f21807416809395bdcc/embed",
+        "filename": "SKETCHFAB_VIEW"
       }
     ],
     "orientation": "left",
     "primaryButton": {
-      "text": { "es": "VER EN SKETCHFAB", "en": "VIEW ON SKETCHFAB" },
+      "text": {
+        "es": "VER EN SKETCHFAB",
+        "en": "VIEW ON SKETCHFAB"
+      },
       "href": "https://sketchfab.com/3d-models/heather-the-clumsy-demon-caceria-nocturna-wip-09c29df6634c4f21807416809395bdcc"
     },
     "role": {
-      "es": "Artista 3D. Diseñé y esculpí el personaje en Blender y ZBrush, realicé el texturizado PBR en Substance Painter, y configuré la iluminación y presentación en Sketchfab para capturar la personalidad del personaje.",
-      "en": "3D Artist. Designed and sculpted the character in Blender and ZBrush, did PBR texturing in Substance Painter, and set up lighting and presentation in Sketchfab to capture the character's personality."
+      "es": "Participé como artista 3D responsable de todo el proceso de creación del personaje. Mis tareas incluyeron el diseño conceptual, modelado, ajuste de proporciones, escultura digital, desarrollo de materiales y texturizado. A través de este proyecto profundicé en técnicas de creación de personajes estilizados, buscando transmitir personalidad y narrativa visual mediante decisiones de diseño, formas y tratamiento de superficies.",
+      "en": "I participated as a 3D artist responsible for the entire character creation process. My tasks included concept design, modeling, proportion adjustments, digital sculpting, material development, and texturing. Through this project I deepened my skills in stylized character creation techniques, seeking to convey personality and visual narrative through design decisions, shapes, and surface treatment."
     }
   },
   {
@@ -181,25 +335,36 @@
       "en": "3D Modeling & Character"
     },
     "description": {
-      "es": "Adam es un joven tranquilo y equilibrado que valora la estabilidad y la rutina. Se expresa mediante acciones más que con palabras. Parte de la serie 'Cacería Nocturna' — pieza complementaria de Heather.",
-      "en": "Adam is a calm and grounded young man who values stability and routine. He expresses himself through actions rather than words. Part of the 'Cacería Nocturna' series — companion piece to Heather."
+      "es": "Adam es un personaje original concebido para explorar la creación de personajes estilizados centrados en la personalidad y la narrativa visual. Su diseño representa a una persona tranquila, reservada y constante, cuya forma de relacionarse con los demás se manifiesta principalmente a través de sus acciones. El objetivo del proyecto fue transmitir una sensación de estabilidad, cercanía y autenticidad mediante decisiones de diseño enfocadas en las proporciones, la postura y los detalles visuales del personaje. El desarrollo se centró en construir una identidad visual coherente capaz de reflejar rasgos de personalidad sin depender exclusivamente de la expresión facial o el contexto narrativo. El modelado fue realizado íntegramente en Autodesk Maya, donde se trabajaron tanto las formas generales como los detalles necesarios para definir la identidad del personaje. El texturizado final fue desarrollado en Substance 3D Painter, permitiendo reforzar su apariencia visual y aportar mayor riqueza a los materiales y acabados de la pieza.",
+      "en": "Adam is an original character conceived to explore the creation of stylized characters focused on personality and visual narrative. His design represents a calm, reserved, and steady person, whose way of relating to others is manifested primarily through his actions. The project aimed to convey a sense of stability, warmth, and authenticity through design decisions focused on proportions, posture, and visual details. Development centered on building a coherent visual identity capable of reflecting personality traits without relying exclusively on facial expression or narrative context. Modeling was done entirely in Autodesk Maya, where both general forms and the details needed to define the character's identity were worked on. Final texturing was developed in Substance 3D Painter, reinforcing the visual appearance and adding greater richness to the materials and finishes of the piece."
     },
-    "tags": ["Blender", "ZBrush", "Substance Painter", "PBR Texturing"],
+    "tags": [
+      "Maya",
+      "Substance 3D Painter"
+    ],
     "media": [
       {
         "type": "image",
         "url": "/Assets/Proyectos/Referencia/adam.jpeg",
         "filename": "ADAM.JPEG"
+      },
+      {
+        "type": "sketchfab",
+        "url": "https://sketchfab.com/3d-models/adam-the-calm-human-caceria-nocturnawip-091b41eaed8844e28ce8417556f20d77/embed",
+        "filename": "SKETCHFAB_VIEW"
       }
     ],
     "orientation": "right",
     "primaryButton": {
-      "text": { "es": "VER EN SKETCHFAB", "en": "VIEW ON SKETCHFAB" },
+      "text": {
+        "es": "VER EN SKETCHFAB",
+        "en": "VIEW ON SKETCHFAB"
+      },
       "href": "https://sketchfab.com/3d-models/adam-the-calm-human-caceria-nocturnawip-091b41eaed8844e28ce8417556f20d77"
     },
     "role": {
-      "es": "Artista 3D. Modelé y esculpí el personaje en Blender y ZBrush, realicé el texturizado PBR en Substance Painter, y configuré la escena en Sketchfab para mantener la coherencia visual con la serie Cacería Nocturna.",
-      "en": "3D Artist. Modeled and sculpted the character in Blender and ZBrush, did PBR texturing in Substance Painter, and set up the scene in Sketchfab to maintain visual consistency with the Cacería Nocturna series."
+      "es": "Participé como artista 3D responsable de todo el proceso de producción del personaje. Mis responsabilidades incluyeron el diseño conceptual, modelado 3D, refinamiento de proporciones, creación de materiales y texturizado final. A través de este proyecto profundicé en la creación de personajes estilizados, explorando cómo las formas, proporciones y acabados visuales pueden utilizarse para comunicar personalidad y reforzar la narrativa de un personaje mediante recursos puramente visuales.",
+      "en": "I participated as a 3D artist responsible for the entire character production process. My responsibilities included concept design, 3D modeling, proportion refinement, material creation, and final texturing. Through this project I deepened my skills in stylized character creation, exploring how shapes, proportions, and visual finishes can be used to communicate personality and reinforce character narrative through purely visual means."
     }
   },
   {
@@ -212,34 +377,42 @@
       "en": "Virtual Reality"
     },
     "description": {
-      "es": "Simulador en realidad virtual para dispositivos móviles (VR BOX) que permite explorar una sala de resonancia magnética. Experiencia inmersiva diseñada para conocer el funcionamiento del equipo y la normativa de seguridad.",
-      "en": "Virtual reality simulator for mobile devices (VR BOX) that lets you explore an MRI room. Immersive experience designed to teach how the equipment works and safety regulations."
+      "es": "Proyecto de realidad virtual desarrollado como una experiencia inmersiva de exploración y aprendizaje enfocada en el funcionamiento de los equipos de resonancia magnética. A través de un entorno interactivo, los usuarios pueden conocer los principios básicos de operación del resonador, los procedimientos generales de mantenimiento, los requisitos de seguridad para pacientes y operadores, los aspectos legales asociados a su uso y las características de diferentes modelos del equipo. La experiencia fue diseñada como una herramienta educativa que facilita la comprensión de conceptos técnicos mediante la interacción en un entorno virtual.",
+      "en": "Virtual reality project developed as an immersive exploration and learning experience focused on the operation of magnetic resonance imaging equipment. Through an interactive environment, users can learn the basic principles of MRI operation, general maintenance procedures, safety requirements for patients and operators, legal aspects associated with its use, and the characteristics of different equipment models. The experience was designed as an educational tool that facilitates understanding of technical concepts through interaction in a virtual environment."
     },
-    "tags": ["Unity", "VR", "C#", "Oculus"],
+    "tags": [
+      "Unity",
+      "C#",
+      "VR"
+    ],
     "media": [
       {
-        "type": "video",
-        "url": "/Assets/Proyectos/Referencia/2026-04-24 09-56-40.mkv",
-        "filename": "DEMO_VIDEO.MKV"
+        "type": "image",
+        "url": "/Assets/Proyectos/Resonador/01.png",
+        "filename": "SCREENSHOT_01.PNG"
       },
       {
         "type": "image",
-        "url": "/Assets/Proyectos/Referencia/Captura de pantalla 2026-05-08 194130.png",
-        "filename": "SCREENSHOT_01.PNG"
+        "url": "/Assets/Proyectos/Resonador/02.png",
+        "filename": "SCREENSHOT_02.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Resonador/03.png",
+        "filename": "SCREENSHOT_03.PNG"
       }
     ],
     "orientation": "left",
     "primaryButton": {
-      "text": { "es": "DESCARGAR APP", "en": "DOWNLOAD APP" },
-      "href": "https://github.com/ImJustSandie/Simulador-de-ResonadorMagnetico"
-    },
-    "secondaryButton": {
-      "text": { "es": "CÓDIGO FUENTE", "en": "SOURCE CODE" },
+      "text": {
+        "es": "CÓDIGO FUENTE",
+        "en": "SOURCE CODE"
+      },
       "href": "https://github.com/ImJustSandie/Simulador-de-ResonadorMagnetico"
     },
     "role": {
-      "es": "Desarrollador XR y de simulación física. Encargado del diseño e implementación de las mecánicas de interacción con mandos VR en Unity, el sistema de colisiones por fuerzas electromagnéticas, y guías de usuario estructuradas basadas en normativas médicas reales.",
-      "en": "XR & physical simulation developer. Responsible for designing and implementing VR controller interaction mechanics in Unity, electromagnetic force-based collision systems, and structured user guides modeled after real medical regulations."
+      "es": "Participé como desarrollador principal en la implementación de la experiencia. Trabajé en estrecha colaboración con estudiantes de Ingeniería Biomédica para traducir los requerimientos académicos y técnicos en funcionalidades interactivas dentro del entorno virtual. Mis responsabilidades incluyeron el diseño e implementación de los sistemas principales de la aplicación, la programación de las mecánicas de interacción en realidad virtual y la integración de los contenidos necesarios para garantizar una experiencia educativa clara y accesible para los usuarios.",
+      "en": "I participated as lead developer in the implementation of the experience. I worked closely with Biomedical Engineering students to translate academic and technical requirements into interactive functionalities within the virtual environment. My responsibilities included the design and implementation of the application's main systems, programming virtual reality interaction mechanics, and integrating the necessary content to ensure a clear and accessible educational experience for users."
     }
   },
   {
@@ -252,18 +425,59 @@
       "en": "Web Application"
     },
     "description": {
-      "es": "Página de noticias orientada al mundo geek, abarcando Anime, Manga, Videojuegos, Cómics y más, usando una estética vibrante. Proyecto académico de la asignatura Diseño de Interfaces.",
-      "en": "News website oriented towards geek culture, covering Anime, Manga, Video Games, Comics and more, using a vibrant aesthetic. Academic project for the Interface Design course."
+      "es": "Dinogeek es una plataforma web enfocada en la difusión de contenido relacionado con cine, videojuegos, anime, cómics y otras áreas de la cultura geek. El proyecto integra diferentes módulos de gestión y consulta de contenido, incluyendo un portal de noticias, un sistema de reseñas para películas y series, y una sección de guías para videojuegos. Aunque fue desarrollado como proyecto académico y no llegó a ser desplegado en producción, su código fuente se encuentra disponible como muestra de las capacidades técnicas implementadas durante el desarrollo.",
+      "en": "Dinogeek is a web platform focused on disseminating content related to movies, video games, anime, comics, and other areas of geek culture. The project integrates different content management and consultation modules, including a news portal, a review system for movies and series, and a video game guides section. Although it was developed as an academic project and was not deployed to production, its source code is available as a sample of the technical capabilities implemented during development."
     },
-    "tags": ["HTML", "CSS", "TypeScript", "React"],
+    "tags": [
+      "HTML5",
+      "CSS",
+      "JS",
+      "C#"
+    ],
     "media": [
       {
         "type": "image",
-        "url": "/Assets/Proyectos/Referencia/Captura de pantalla 2026-05-08 194455.png",
-        "filename": "MODEL_RENDER_01.PNG"
+        "url": "/Assets/Proyectos/Dinogeek/01.png",
+        "filename": "SCREENSHOT_01.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Dinogeek/02.png",
+        "filename": "SCREENSHOT_02.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Dinogeek/03.png",
+        "filename": "SCREENSHOT_03.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Dinogeek/04.png",
+        "filename": "SCREENSHOT_04.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Dinogeek/05.png",
+        "filename": "SCREENSHOT_05.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Dinogeek/06.png",
+        "filename": "SCREENSHOT_06.PNG"
       }
     ],
-    "orientation": "left"
+    "orientation": "left",
+    "primaryButton": {
+      "text": {
+        "es": "CÓDIGO FUENTE",
+        "en": "SOURCE CODE"
+      },
+      "href": "https://github.com/Alejandrosandoval2003/MVC_dinogeek"
+    },
+    "role": {
+      "es": "Participé principalmente como desarrollador backend, siendo responsable del diseño e implementación de la API REST que soporta las funcionalidades principales de la plataforma, así como de su integración con la interfaz de usuario. Adicionalmente, colaboré en tareas de desarrollo frontend, participando en la construcción de vistas, la implementación de funcionalidades de la aplicación y la definición de aspectos relacionados con la experiencia de usuario y el diseño general del sitio.",
+      "en": "I participated mainly as a backend developer, being responsible for the design and implementation of the REST API that supports the platform's main functionalities, as well as its integration with the user interface. Additionally, I collaborated on frontend development tasks, participating in the construction of views, the implementation of application functionalities, and the definition of aspects related to user experience and the overall design of the site."
+    }
   },
   {
     "id": "ado-skateboard",
@@ -275,25 +489,37 @@
       "en": "3D Texturing"
     },
     "description": {
-      "es": "Skateboard con artwork de las canciones 'RuLe' y 'Odo' de ADO. Participante del Sketchfab Texturing Challenge. Modelo base de Johnson-Martin con texturizado original.",
-      "en": "Skateboard featuring artwork from ADO's songs 'RuLe' and 'Odo'. Entry for the Sketchfab Texturing Challenge. Base model by Johnson-Martin with original texturing."
+      "es": "Este proyecto consiste en la personalización y texturizado de un modelo de skateboard desarrollado originalmente para un desafío de texturizado. El objetivo fue crear una pieza con una identidad visual propia inspirada en la obra musical de ADO, incorporando elementos gráficos basados en las canciones RuLe y Odo. El diseño destaca a los personajes principales asociados a estas obras, combinando ilustración, composición gráfica y materiales estilizados para transformar el modelo base en una pieza única. El proyecto se enfocó principalmente en el desarrollo de materiales y la construcción de una narrativa visual a través de las texturas. Para ello, se realizaron ajustes menores de UVs en Autodesk Maya y se emplearon Substance 3D Painter y Adobe Photoshop durante el proceso de creación y refinamiento de los elementos gráficos. El resultado final busca reflejar la energía, personalidad y estética característica de las producciones musicales que sirvieron de inspiración.",
+      "en": "This project consists of the customization and texturing of a skateboard model originally developed for a texturing challenge. The goal was to create a piece with its own visual identity inspired by ADO's musical work, incorporating graphic elements based on the songs RuLe and Odo. The design highlights the main characters associated with these works, combining illustration, graphic composition, and stylized materials to transform the base model into a unique piece. The project focused primarily on material development and building a visual narrative through textures. Minor UV adjustments were made in Autodesk Maya, and Substance 3D Painter and Adobe Photoshop were used during the creation and refinement of the graphic elements. The final result seeks to reflect the energy, personality, and characteristic aesthetic of the musical productions that served as inspiration."
     },
-    "tags": ["Maya", "Substance Painter", "Photoshop", "PBR Texturing"],
+    "tags": [
+      "Maya",
+      "Substance 3D Painter",
+      "Photoshop"
+    ],
     "media": [
       {
         "type": "image",
         "url": "/Assets/Proyectos/Referencia/ado-skateboard.jpeg",
         "filename": "ADO_SKATEBOARD.JPEG"
+      },
+      {
+        "type": "sketchfab",
+        "url": "https://sketchfab.com/3d-models/ado-skateboard-sketchfab-texturing-challenge-6e61719e8d36483caa2ad5af65e11287/embed",
+        "filename": "SKETCHFAB_VIEW"
       }
     ],
     "orientation": "right",
     "primaryButton": {
-      "text": { "es": "VER EN SKETCHFAB", "en": "VIEW ON SKETCHFAB" },
+      "text": {
+        "es": "VER EN SKETCHFAB",
+        "en": "VIEW ON SKETCHFAB"
+      },
       "href": "https://sketchfab.com/3d-models/ado-skateboard-sketchfab-texturing-challenge-6e61719e8d36483caa2ad5af65e11287"
     },
     "role": {
-      "es": "Artista de texturas. Ajusté los UVs en Maya, realicé el texturizado completo en Substance Painter, y creé los artworks personalizados en Photoshop inspirados en las canciones de ADO.",
-      "en": "Texture artist. Adjusted UVs in Maya, did the complete texturing in Substance Painter, and created custom artworks in Photoshop inspired by ADO's songs."
+      "es": "Participé como artista 3D y artista de texturas, siendo responsable de la adaptación visual del modelo, la edición de UVs y el desarrollo completo de los materiales y gráficos aplicados a la pieza. Mis tareas incluyeron la planificación de la dirección artística, la creación e integración de ilustraciones, la composición visual de las superficies y la implementación de texturas finales utilizando Substance 3D Painter y Photoshop. El proyecto sirvió como ejercicio de texturizado estilizado y diseño gráfico aplicado a modelos tridimensionales.",
+      "en": "I participated as a 3D artist and texture artist, responsible for the visual adaptation of the model, UV editing, and the complete development of materials and graphics applied to the piece. My tasks included planning the artistic direction, creating and integrating illustrations, visual composition of surfaces, and implementing final textures using Substance 3D Painter and Photoshop. The project served as an exercise in stylized texturing and graphic design applied to three-dimensional models."
     }
   },
   {
@@ -306,11 +532,24 @@
       "en": "Scripts & Utilities"
     },
     "description": {
-      "es": "Colección de scripts Python de uso personal: AstroCreator (scaffolding de proyectos Astro con múltiples frameworks UI), ApagarPC (temporizador gráfico de apagado), y yt_downloader (descargador de YouTube local sin anuncios).",
-      "en": "Personal Python utility scripts collection: AstroCreator (Astro project scaffolding with multiple UI frameworks), ApagarPC (graphical shutdown timer), and yt_downloader (ad-free local YouTube downloader)."
+      "es": "Las Sagradas Herramientas es una colección de utilidades, aplicaciones y experimentos de software desarrollados para resolver necesidades reales, explorar nuevas tecnologías o reemplazar servicios externos que dejaron de ajustarse a mis requerimientos. Cada herramienta surge de un objetivo distinto, ya sea aprender una tecnología específica, validar una idea, automatizar una tarea o crear una solución más adaptada a un problema concreto. Aunque inicialmente fueron concebidas para uso personal, posteriormente fueron publicadas como proyectos de código abierto con el propósito de que otras personas puedan utilizarlas, estudiarlas o contribuir a su desarrollo.",
+      "en": "Las Sagradas Herramientas is a collection of utilities, applications, and software experiments developed to solve real needs, explore new technologies, or replace external services that no longer met my requirements. Each tool arises from a different goal, whether it's learning a specific technology, validating an idea, automating a task, or creating a more tailored solution to a particular problem. Although initially conceived for personal use, they were later published as open-source projects so that others can use them, study them, or contribute to their development."
     },
-    "tags": ["Python", "CLI", "Astro"],
-    "orientation": "right"
+    "tags": [
+      "Python"
+    ],
+    "orientation": "right",
+    "primaryButton": {
+      "text": {
+        "es": "CÓDIGO FUENTE",
+        "en": "SOURCE CODE"
+      },
+      "href": "https://github.com/ImJustSandie/Herramientas"
+    },
+    "role": {
+      "es": "Actúo como responsable integral del proyecto, encargándome del diseño, desarrollo, documentación, mantenimiento y evolución de cada herramienta incluida en el repositorio. Este espacio funciona además como un laboratorio de experimentación tecnológica, donde evalúo nuevas tecnologías, arquitecturas y metodologías de desarrollo. Cuando una herramienta alcanza un alcance o complejidad significativa, se independiza en un repositorio propio para facilitar su mantenimiento y crecimiento.",
+      "en": "I act as the overall project manager, responsible for the design, development, documentation, maintenance, and evolution of each tool included in the repository. This space also functions as a technological experimentation laboratory, where I evaluate new technologies, architectures, and development methodologies. When a tool reaches significant scope or complexity, it is spun off into its own repository to facilitate its maintenance and growth."
+    }
   },
   {
     "id": "my-personal-cave",
@@ -322,21 +561,36 @@
       "en": "3D Environment"
     },
     "description": {
-      "es": "Modelo 3D estilizado de una habitación personal con estética gamer y anime. Incluye setup de gaming, iluminación RGB y pósters de anime en un ambiente oscuro y acogedor.",
-      "en": "A stylized 3D model of a personal bedroom with a gamer and anime fan aesthetic. Features a gaming setup, RGB lighting, and anime posters within a dark, cozy environment."
+      "es": "Este proyecto consiste en la recreación estilizada de mi habitación personal en 3D, diseñada para capturar la estética y atmósfera de un espacio dedicado al entretenimiento digital. El entorno combina una estación de juego, iluminación RGB y elementos decorativos inspirados en la cultura del anime, buscando transmitir una sensación de comodidad, personalidad e inmersión. El proyecto se centró en la construcción de un entorno coherente y visualmente atractivo, prestando especial atención a la composición del espacio, la iluminación ambiental y la integración de objetos cotidianos que refuerzan la identidad del escenario. El modelado y texturizado fueron realizados en Autodesk Maya, mientras que los ajustes finales de materiales, iluminación y presentación se llevaron a cabo en Sketchfab.",
+      "en": "This project consists of a stylized 3D recreation of my personal bedroom, designed to capture the aesthetic and atmosphere of a space dedicated to digital entertainment. The environment combines a gaming setup, RGB lighting, and decorative elements inspired by anime culture, seeking to convey a sense of comfort, personality, and immersion. The project focused on building a coherent and visually appealing environment, with special attention to spatial composition, ambient lighting, and the integration of everyday objects that reinforce the scene's identity. Modeling and texturing were done in Autodesk Maya, while final material adjustments, lighting, and presentation were carried out in Sketchfab."
     },
-    "tags": ["Maya", "Blender", "PBR Texturing"],
+    "tags": [
+      "Maya",
+      "PBR Texturing"
+    ],
     "media": [
       {
         "type": "image",
         "url": "/Assets/Proyectos/Referencia/my-personal-cave.jpeg",
         "filename": "MY_PERSONAL_CAVE.JPEG"
+      },
+      {
+        "type": "sketchfab",
+        "url": "https://sketchfab.com/3d-models/my-personal-cave-e52850fcfaa94d84a2434c63f7e05a16/embed",
+        "filename": "SKETCHFAB_VIEW"
       }
     ],
     "orientation": "left",
     "primaryButton": {
-      "text": { "es": "VER EN SKETCHFAB", "en": "VIEW ON SKETCHFAB" },
+      "text": {
+        "es": "VER EN SKETCHFAB",
+        "en": "VIEW ON SKETCHFAB"
+      },
       "href": "https://sketchfab.com/3d-models/my-personal-cave-e52850fcfaa94d84a2434c63f7e05a16"
+    },
+    "role": {
+      "es": "Participé como artista 3D responsable de todas las etapas de producción del entorno. Mis tareas incluyeron la planificación de la escena, el modelado de los elementos principales, la creación y asignación de materiales, la composición visual del espacio y la optimización del modelo para su visualización en tiempo real. El proyecto sirvió además como ejercicio de diseño ambiental, permitiéndome explorar técnicas de iluminación estilizada y construcción de espacios con una fuerte identidad visual.",
+      "en": "I participated as a 3D artist responsible for all stages of the environment's production. My tasks included scene planning, modeling of the main elements, material creation and assignment, visual composition of the space, and optimization of the model for real-time visualization. The project also served as an environmental design exercise, allowing me to explore stylized lighting techniques and the construction of spaces with a strong visual identity."
     }
   },
   {
@@ -349,21 +603,37 @@
       "en": "3D Fan Art"
     },
     "description": {
-      "es": "Interpretación 3D estilizada del Caballero de Hollow Knight, con un enfoque más oscuro y abstracto. Un homenaje a uno de los indie protagonists favoritos del artista.",
-      "en": "A stylized 3D interpretation of the Knight from Hollow Knight, designed with a slightly darker and more abstract twist. A tribute to one of the artist's favorite indie protagonists."
+      "es": "Este proyecto consiste en una reinterpretación tridimensional del icónico protagonista de Hollow Knight, desarrollada como un ejercicio de character art enfocado en la exploración de formas estilizadas y narrativa visual. La pieza toma como referencia el diseño original del personaje, incorporando una dirección artística más oscura y abstracta que busca resaltar el carácter misterioso y melancólico asociado al universo del juego. El objetivo fue trasladar una figura originalmente representada en un estilo bidimensional a un entorno tridimensional, manteniendo su identidad visual mientras se experimentaba con nuevas proporciones, materiales y detalles. El modelo base fue desarrollado en Autodesk Maya, complementado con procesos de escultura digital y pintura manual en Mudbox. El acabado final se realizó en Substance 3D Painter mediante la creación y ajuste de materiales personalizados para reforzar la atmósfera y el lenguaje visual de la pieza.",
+      "en": "This project is a three-dimensional reinterpretation of the iconic protagonist of Hollow Knight, developed as a character art exercise focused on exploring stylized forms and visual narrative. The piece takes the original character design as reference, incorporating a darker and more abstract artistic direction that seeks to highlight the mysterious and melancholic nature associated with the game's universe. The goal was to translate a figure originally represented in a two-dimensional style into a three-dimensional environment, maintaining its visual identity while experimenting with new proportions, materials, and details. The base model was developed in Autodesk Maya, complemented by digital sculpting and hand-painting processes in Mudbox. The final finish was done in Substance 3D Painter through the creation and adjustment of custom materials to reinforce the piece's atmosphere and visual language."
     },
-    "tags": ["Blender", "Substance Painter", "PBR Texturing"],
+    "tags": [
+      "Maya",
+      "Mudbox",
+      "Substance 3D Painter"
+    ],
     "media": [
       {
         "type": "image",
         "url": "/Assets/Proyectos/Referencia/the-knight.jpeg",
         "filename": "THE_KNIGHT.JPEG"
+      },
+      {
+        "type": "sketchfab",
+        "url": "https://sketchfab.com/3d-models/the-knight-hollow-knight-2ae191917cd24fca8e0e0e65b1b47c5d/embed",
+        "filename": "SKETCHFAB_VIEW"
       }
     ],
     "orientation": "right",
     "primaryButton": {
-      "text": { "es": "VER EN SKETCHFAB", "en": "VIEW ON SKETCHFAB" },
+      "text": {
+        "es": "VER EN SKETCHFAB",
+        "en": "VIEW ON SKETCHFAB"
+      },
       "href": "https://sketchfab.com/3d-models/the-knight-hollow-knight-2ae191917cd24fca8e0e0e65b1b47c5d"
+    },
+    "role": {
+      "es": "Participé como artista 3D responsable de todo el proceso de producción del personaje. Mis tareas incluyeron el modelado base, la escultura digital, la pintura manual de texturas, el desarrollo de materiales y la presentación final de la pieza. A través de este proyecto profundicé en técnicas de adaptación de personajes bidimensionales a entornos tridimensionales, explorando cómo preservar la identidad visual de una obra mientras se reinterpretan sus formas y acabados desde una perspectiva artística propia.",
+      "en": "I participated as a 3D artist responsible for the entire character production process. My tasks included base modeling, digital sculpting, hand-painting of textures, material development, and final presentation of the piece. Through this project I deepened my skills in adapting two-dimensional characters to three-dimensional environments, exploring how to preserve the visual identity of a work while reinterpreting its forms and finishes from a personal artistic perspective."
     }
   },
   {
@@ -376,21 +646,37 @@
       "en": "3D Props"
     },
     "description": {
-      "es": "Televisión de estilo retro inspirada en la estética de Persona 4 Golden. Un homenaje al juego con diseño estilizado y texturas nostálgicas.",
-      "en": "A retro-style television inspired by the aesthetics of Persona 4 Golden. A tribute to the game with stylized design and nostalgic textures."
+      "es": "Este proyecto consiste en la creación de un televisor de estilo retro inspirado en la estética y la identidad visual de Persona 4 Golden. La pieza surge como un homenaje a uno de los elementos más representativos del juego: el acceso al 'TV World', un concepto central dentro de su narrativa. El objetivo fue capturar la esencia visual de esta obra mediante un modelo estilizado que combina diseño nostálgico, formas reconocibles y detalles que evocan la atmósfera característica del título. El proyecto se desarrolló prestando especial atención a los materiales, las superficies y los detalles visuales que aportan personalidad al objeto, buscando equilibrar fidelidad conceptual y atractivo estético. El modelado fue realizado en Autodesk Maya y el proceso de texturizado se llevó a cabo en Substance Painter.",
+      "en": "This project consists of creating a retro-style television inspired by the aesthetic and visual identity of Persona 4 Golden. The piece is a tribute to one of the most representative elements of the game: access to the 'TV World', a central concept within its narrative. The goal was to capture the visual essence of this work through a stylized model that combines nostalgic design, recognizable shapes, and details that evoke the game's characteristic atmosphere. The project was developed with special attention to materials, surfaces, and visual details that give personality to the object, seeking to balance conceptual fidelity and aesthetic appeal. Modeling was done in Autodesk Maya and the texturing process was carried out in Substance Painter."
     },
-    "tags": ["Blender", "Substance Painter", "Photoshop"],
+    "tags": [
+      "Maya",
+      "Substance Painter",
+      "PBR Texturing"
+    ],
     "media": [
       {
         "type": "image",
         "url": "/Assets/Proyectos/Referencia/persona-4-tv.jpeg",
         "filename": "PERSONA_4_TV.JPEG"
+      },
+      {
+        "type": "sketchfab",
+        "url": "https://sketchfab.com/3d-models/persona-4-golden-tv-0b32b73253244badb8ca3690acb0b2ce/embed",
+        "filename": "SKETCHFAB_VIEW"
       }
     ],
     "orientation": "left",
     "primaryButton": {
-      "text": { "es": "VER EN SKETCHFAB", "en": "VIEW ON SKETCHFAB" },
+      "text": {
+        "es": "VER EN SKETCHFAB",
+        "en": "VIEW ON SKETCHFAB"
+      },
       "href": "https://sketchfab.com/3d-models/persona-4-golden-tv-0b32b73253244badb8ca3690acb0b2ce"
+    },
+    "role": {
+      "es": "Participé como artista 3D responsable de todo el proceso de producción del modelo. Mis tareas incluyeron la conceptualización de la pieza, el modelado de alta y baja complejidad, la preparación de materiales y el texturizado final. El proyecto me permitió profundizar en la creación de props estilizados y en el uso de técnicas de texturizado orientadas a transmitir identidad visual y narrativa a través de objetos del entorno.",
+      "en": "I participated as a 3D artist responsible for the entire model production process. My tasks included conceptualization of the piece, high and low complexity modeling, material preparation, and final texturing. The project allowed me to deepen my skills in creating stylized props and using texturing techniques aimed at conveying visual identity and narrative through environmental objects."
     }
   },
   {
@@ -403,21 +689,36 @@
       "en": "3D Props"
     },
     "description": {
-      "es": "WIP basado en los concept arts de la réplica de Movic del Progressive Knife de Neon Genesis Evangelion. Modelado y texturizado en progreso.",
-      "en": "WIP based on Movic's replica concept arts of the Progressive Knife from Neon Genesis Evangelion. Modeling and texturing in progress."
+      "es": "Este proyecto consiste en una recreación tridimensional del icónico Cuchillo Progresivo utilizado por las unidades Evangelion. La pieza fue desarrollada tomando como referencia los diseños conceptuales y réplicas promocionales de Movic, con el objetivo de trasladar sus características visuales a un modelo optimizado para visualización en tiempo real. El proyecto se centró en la reproducción precisa de las formas mecánicas, detalles estructurales y acabados característicos del arma, prestando especial atención a la lectura visual de los materiales y superficies. Tanto el modelado como el texturizado fueron realizados íntegramente en Autodesk Maya, mientras que los ajustes finales de materiales PBR, iluminación y presentación fueron configurados en Sketchfab para mejorar la fidelidad visual de la pieza.",
+      "en": "This project is a three-dimensional recreation of the iconic Progressive Knife used by the Evangelion units. The piece was developed using Movic's concept designs and promotional replicas as reference, with the goal of translating its visual characteristics into a model optimized for real-time visualization. The project focused on the accurate reproduction of mechanical forms, structural details, and characteristic finishes of the weapon, paying special attention to the visual reading of materials and surfaces. Both modeling and texturing were done entirely in Autodesk Maya, while final PBR material adjustments, lighting, and presentation were configured in Sketchfab to enhance the piece's visual fidelity."
     },
-    "tags": ["Maya", "Blender", "Substance Painter"],
+    "tags": [
+      "Maya",
+      "PBR Texturing"
+    ],
     "media": [
       {
         "type": "image",
         "url": "/Assets/Proyectos/Referencia/progressive-knife.jpeg",
         "filename": "PROGRESSIVE_KNIFE.JPEG"
+      },
+      {
+        "type": "sketchfab",
+        "url": "https://sketchfab.com/3d-models/progressive-knife-evangelion-wip-4a96e81089ce4d4793414dc6845eae64/embed",
+        "filename": "SKETCHFAB_VIEW"
       }
     ],
     "orientation": "right",
     "primaryButton": {
-      "text": { "es": "VER EN SKETCHFAB", "en": "VIEW ON SKETCHFAB" },
+      "text": {
+        "es": "VER EN SKETCHFAB",
+        "en": "VIEW ON SKETCHFAB"
+      },
       "href": "https://sketchfab.com/3d-models/progressive-knife-evangelion-wip-4a96e81089ce4d4793414dc6845eae64"
+    },
+    "role": {
+      "es": "Participé como artista 3D responsable de todo el proceso de producción del modelo. Mis tareas incluyeron el análisis de referencias, modelado de alta precisión, creación de materiales, texturizado y configuración de la presentación final. A través de este proyecto profundicé en la creación de props inspirados en franquicias reconocidas, explorando técnicas de hard surface modeling y la construcción de materiales orientados a representar superficies metálicas y componentes mecánicos de manera convincente.",
+      "en": "I participated as a 3D artist responsible for the entire model production process. My tasks included reference analysis, high-precision modeling, material creation, texturing, and final presentation setup. Through this project I deepened my skills in creating props inspired by well-known franchises, exploring hard surface modeling techniques and building materials aimed at representing metallic surfaces and mechanical components in a convincing way."
     }
   }
 ]

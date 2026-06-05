@@ -232,11 +232,11 @@ const academicEvents = [
   <NavBar currentPath="/sobre-mi" />
 
   <div
-    class="space-y-32 pb-40 px-4 md:px-8 w-full max-w-6xl mx-auto flex flex-col overflow-visible"
+    class="space-y-12 md:space-y-32 pb-32 md:pb-40 px-2 md:px-8 w-full max-w-[90rem] mx-auto flex flex-col overflow-visible"
   >
-    <div class="flex justify-center mt-8">
+    <div class="flex justify-center mt-6 md:mt-8">
       <h1
-        class="font-display text-5xl md:text-7xl bg-p5-red text-p5-white inline-block px-12 py-6 -skew-x-[6deg] shadow-[12px_12px_0_0_#0F0F0F] mb-8 border-4 border-p5-black"
+        class="font-display text-3xl md:text-5xl lg:text-7xl bg-p5-red text-p5-white inline-block px-6 md:px-12 py-3 md:py-6 -skew-x-[6deg] shadow-[12px_12px_0_0_#0F0F0F] mb-4 md:mb-8 border-4 border-p5-black"
       >
         <span class="inline-block skew-x-[6deg]">
           <span class="lang-es">ARCHIVO DE PERFIL</span>
@@ -245,141 +245,156 @@ const academicEvents = [
       </h1>
     </div>
 
-    <section class="relative">
-      <div
-        class="absolute -top-6 -left-4 bg-p5-red text-p5-white px-6 py-2 font-display text-3xl -skew-x-[6deg] z-10 border-2 border-p5-black shadow-[4px_4px_0_0_#0F0F0F]"
-      >
-        <span class="inline-block skew-x-[6deg]">
-          <span class="lang-es">QUIÉN SOY</span>
-          <span class="lang-en">WHO AM I</span>
-        </span>
-      </div>
-      <div
-        class="bg-p5-black border-4 border-p5-red p-8 md:p-12 shadow-[12px_12px_0_0_#F4F4F4] pt-16 relative overflow-hidden"
-      >
+    <div class="grid grid-cols-1 md:grid-cols-10 gap-6 md:gap-10">
+      <section class="relative md:col-span-6">
         <div
-          class="absolute inset-0 bg-halftone opacity-10 pointer-events-none"
+          class="absolute -top-4 md:-top-6 -left-2 md:-left-4 bg-p5-red text-p5-white px-4 md:px-6 py-1 md:py-2 font-display text-xl md:text-3xl -skew-x-[6deg] z-10 border-2 border-p5-black shadow-[4px_4px_0_0_#0F0F0F]"
         >
+          <span class="inline-block skew-x-[6deg]">
+            <span class="lang-es">QUIÉN SOY</span>
+            <span class="lang-en">WHO AM I</span>
+          </span>
         </div>
-
         <div
-          class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 relative z-10"
+          class="bg-p5-black border-4 border-p5-red p-5 md:p-8 lg:p-10 shadow-[12px_12px_0_0_#F4F4F4] pt-12 md:pt-16 relative overflow-hidden h-full"
         >
-          <div class="flex flex-col gap-4">
-            <div
-              class="bg-p5-white text-p5-black px-4 py-3 border-4 border-p5-black -skew-x-[6deg] shadow-hard"
-            >
-              <span
-                class="inline-block skew-x-[6deg] font-mono text-xs text-p5-red uppercase tracking-widest block mb-1"
-              >
-                <span class="lang-es">UBICACIÓN</span>
-                <span class="lang-en">LOCATION</span>
-              </span>
-              <span
-                class="inline-block skew-x-[6deg] font-display text-2xl uppercase leading-none"
-              >
-                Colombia
-              </span>
-            </div>
-            <div
-              class="bg-p5-white text-p5-black px-4 py-3 border-4 border-p5-black -skew-x-[6deg] shadow-hard"
-            >
-              <span
-                class="inline-block skew-x-[6deg] font-mono text-xs text-p5-red uppercase tracking-widest block mb-1"
-              >
-                <span class="lang-es">PERFIL</span>
-                <span class="lang-en">PROFILE</span>
-              </span>
-              <span
-                class="inline-block skew-x-[6deg] font-display text-2xl uppercase leading-none"
-              >
-                Game Dev &amp; UI
-              </span>
-            </div>
-            <div
-              class="bg-p5-white text-p5-black px-4 py-3 border-4 border-p5-black -skew-x-[6deg] shadow-hard"
-            >
-              <span
-                class="inline-block skew-x-[6deg] font-mono text-xs text-p5-red uppercase tracking-widest block mb-1"
-              >
-                <span class="lang-es">EXPERIENCIA</span>
-                <span class="lang-en">EXPERIENCE</span>
-              </span>
-              <span
-                class="inline-block skew-x-[6deg] font-display text-2xl uppercase leading-none"
-              >
-                <span class="lang-es">1+ AÑO</span>
-                <span class="lang-en">1+ YEAR</span>
-              </span>
-            </div>
+          <div
+            class="absolute inset-0 bg-halftone opacity-10 pointer-events-none"
+          >
           </div>
 
-          <div class="md:col-span-2 flex flex-col gap-6 justify-center">
-            <p
-              class="font-body text-lg md:text-xl text-p5-white leading-relaxed border-l-8 border-p5-red pl-6"
-            >
-              <span class="lang-es"
-                >Soy Alejandro Sandoval, ingeniero multimedia enfocado en crear
-                experiencias interactivas. Combino programación, diseño visual,
-                narrativa y experiencia de usuario para construir mundos que se
-                sientan vivos y memorables para quienes los recorren.</span
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 lg:gap-12 relative z-10"
+          >
+            <div class="flex flex-col gap-3 md:gap-4">
+              <div
+                class="bg-p5-white text-p5-black px-3 md:px-4 py-2 md:py-3 border-2 md:border-4 border-p5-black -skew-x-[6deg] shadow-hard"
               >
-              <span class="lang-en"
-                >I am Alejandro Sandoval, a multimedia engineer focused on
-                building interactive experiences. I combine programming, visual
-                design, narrative, and user experience to create worlds that
-                feel alive and memorable for the people who explore them.</span
-              >
-            </p>
-            <p
-              class="font-body text-base text-p5-white opacity-70 leading-relaxed border-l-4 border-p5-white/30 pl-6"
-            >
-              <span class="lang-es"
-                >Me especializo en Unity y C#, con experiencia adicional en
-                modelado 3D, diseño de interfaces y desarrollo web. Actualmente
-                estoy cerrando mi etapa universitaria mientras busco mi primera
-                oportunidad profesional en la industria.</span
-              >
-              <span class="lang-en"
-                >I specialize in Unity and C#, with additional experience in 3D
-                modeling, interface design, and web development. I am currently
-                finishing university while looking for my first professional
-                opportunity in the industry.</span
-              >
-            </p>
-            <div class="pt-4 self-start">
-              <P5Button
-                href="/Assets/CV_Alejandro_Sandoval.pdf"
-                variant="primary"
-                download="CV_Alejandro_Sandoval.pdf"
-                className="group"
-              >
-                <svg
-                  slot="icon"
-                  class="w-6 h-6 mr-1 group-hover/btn:animate-bounce"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2.5"
-                  viewBox="0 0 24 24"
+                <span
+                  class="inline-block skew-x-[6deg] font-mono text-[10px] md:text-xs text-p5-red uppercase tracking-widest block mb-0.5 md:mb-1"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
-                  ></path>
-                </svg>
-                <span class="lang-es">DESCARGAR CV / HOJA DE VIDA</span>
-                <span class="lang-en">DOWNLOAD RESUME / CV</span>
-              </P5Button>
+                  <span class="lang-es">UBICACIÓN</span>
+                  <span class="lang-en">LOCATION</span>
+                </span>
+                <span
+                  class="inline-block skew-x-[6deg] font-display text-lg md:text-2xl uppercase leading-none"
+                >
+                  Colombia
+                </span>
+              </div>
+              <div
+                class="bg-p5-white text-p5-black px-3 md:px-4 py-2 md:py-3 border-2 md:border-4 border-p5-black -skew-x-[6deg] shadow-hard"
+              >
+                <span
+                  class="inline-block skew-x-[6deg] font-mono text-[10px] md:text-xs text-p5-red uppercase tracking-widest block mb-0.5 md:mb-1"
+                >
+                  <span class="lang-es">PERFIL</span>
+                  <span class="lang-en">PROFILE</span>
+                </span>
+                <span
+                  class="inline-block skew-x-[6deg] font-display text-lg md:text-2xl uppercase leading-none"
+                >
+                  Game Dev &amp; UI
+                </span>
+              </div>
+              <div
+                class="bg-p5-white text-p5-black px-3 md:px-4 py-2 md:py-3 border-2 md:border-4 border-p5-black -skew-x-[6deg] shadow-hard"
+              >
+                <span
+                  class="inline-block skew-x-[6deg] font-mono text-[10px] md:text-xs text-p5-red uppercase tracking-widest block mb-0.5 md:mb-1"
+                >
+                  <span class="lang-es">EXPERIENCIA</span>
+                  <span class="lang-en">EXPERIENCE</span>
+                </span>
+                <span
+                  class="inline-block skew-x-[6deg] font-display text-lg md:text-2xl uppercase leading-none"
+                >
+                  <span class="lang-es">1+ AÑO</span>
+                  <span class="lang-en">1+ YEAR</span>
+                </span>
+              </div>
+            </div>
+
+            <div class="md:col-span-2 flex flex-col gap-5 md:gap-8 justify-center">
+              <p
+                class="font-body text-sm md:text-lg lg:text-xl text-p5-white leading-relaxed border-l-4 md:border-l-8 border-p5-red pl-4 md:pl-8"
+              >
+                <span class="lang-es"
+                  >Soy Alejandro Sandoval, ingeniero multimedia enfocado en crear
+                  experiencias interactivas. Combino programación, diseño visual,
+                  narrativa y experiencia de usuario para construir mundos que se
+                  sientan vivos y memorables para quienes los recorren.</span
+                >
+                <span class="lang-en"
+                  >I am Alejandro Sandoval, a multimedia engineer focused on
+                  building interactive experiences. I combine programming, visual
+                  design, narrative, and user experience to create worlds that
+                  feel alive and memorable for the people who explore them.</span
+                >
+              </p>
+              <p
+                class="font-body text-xs md:text-base lg:text-lg text-p5-white opacity-70 leading-relaxed border-l-4 border-p5-white/30 pl-4 md:pl-8"
+              >
+                <span class="lang-es"
+                  >Me especializo en Unity y C#, con experiencia adicional en
+                  modelado 3D, diseño de interfaces y desarrollo web. Actualmente
+                  estoy cerrando mi etapa universitaria mientras busco mi primera
+                  oportunidad profesional en la industria.</span
+                >
+                <span class="lang-en"
+                  >I specialize in Unity and C#, with additional experience in 3D
+                  modeling, interface design, and web development. I am currently
+                  finishing university while looking for my first professional
+                  opportunity in the industry.</span
+                >
+              </p>
+              <div class="pt-4 self-start">
+                <P5Button
+                  href="/Assets/CV_Alejandro_Sandoval.pdf"
+                  variant="primary"
+                  download="CV_Alejandro_Sandoval.pdf"
+                  className="group"
+                >
+                  <svg
+                    slot="icon"
+                    class="w-6 h-6 mr-1 group-hover/btn:animate-bounce"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2.5"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
+                    ></path>
+                  </svg>
+                  <span class="lang-es">DESCARGAR CV / HOJA DE VIDA</span>
+                  <span class="lang-en">DOWNLOAD RESUME / CV</span>
+                </P5Button>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+
+      <div class="flex items-stretch pt-0 md:pt-16 md:col-span-4">
+        <CallingCard
+          client:load
+          name="ALEJANDRO SANDOVAL"
+          email="asandoval123871@gmail.com"
+          linkedin="https://www.linkedin.com/in/alejandro-sandoval-8a9209285/"
+          github="https://github.com/ImJustSandie"
+          orcid="0009-0004-1351-8391"
+          sketchfab="https://sketchfab.com/ImJustSandie"
+          className="w-full h-full"
+        />
       </div>
-    </section>
+    </div>
 
     <section class="relative">
       <div
-        class="absolute -top-6 -left-4 bg-p5-black text-p5-white px-6 py-2 font-display text-3xl -skew-x-[6deg] z-10 border-2 border-p5-white shadow-[4px_4px_0_0_#E50012]"
+        class="absolute -top-4 md:-top-6 -left-2 md:-left-4 bg-p5-black text-p5-white px-3 md:px-6 py-1 md:py-2 font-display text-lg md:text-3xl -skew-x-[6deg] z-10 border-2 border-p5-white shadow-[4px_4px_0_0_#E50012]"
       >
         <span class="inline-block skew-x-[6deg]">
           <span class="lang-es">01. FILOSOFÍA DE TRABAJO</span>
@@ -387,7 +402,7 @@ const academicEvents = [
         </span>
       </div>
       <div
-        class="bg-p5-white border-4 border-p5-black p-8 md:p-12 shadow-hard pt-12 relative overflow-hidden group"
+        class="bg-p5-white border-4 border-p5-black p-4 md:p-8 lg:p-12 shadow-hard pt-10 md:pt-12 relative overflow-hidden group"
       >
         <div
           class="absolute right-0 bottom-0 opacity-5 pointer-events-none transform translate-x-4 translate-y-12"
@@ -395,7 +410,7 @@ const academicEvents = [
           <span class="font-display text-[200px] leading-none">"</span>
         </div>
         <p
-          class="font-body text-xl md:text-2xl text-p5-black font-bold leading-relaxed border-l-8 border-p5-red pl-6 relative z-10"
+          class="font-body text-base md:text-xl lg:text-2xl text-p5-black font-bold leading-relaxed border-l-4 md:border-l-8 border-p5-red pl-3 md:pl-6 relative z-10"
         >
           <span class="lang-es"
             >Trabajo desde la iteración y la escucha. Me gusta diseñar sistemas
@@ -420,7 +435,7 @@ const academicEvents = [
     <section class="relative flex justify-end">
       <div class="w-full md:w-[90%] relative">
         <div
-          class="absolute -top-6 -right-4 bg-p5-red text-p5-white px-6 py-2 font-display text-3xl -skew-x-[6deg] z-10 border-2 border-p5-black shadow-[4px_4px_0_0_#0F0F0F]"
+          class="absolute -top-4 md:-top-6 -right-2 md:-right-4 bg-p5-red text-p5-white px-3 md:px-6 py-1 md:py-2 font-display text-lg md:text-3xl -skew-x-[6deg] z-10 border-2 border-p5-black shadow-[4px_4px_0_0_#0F0F0F]"
         >
           <span class="inline-block skew-x-[6deg]">
             <span class="lang-es">02. POR QUÉ GAMEDEV</span>
@@ -428,7 +443,7 @@ const academicEvents = [
           </span>
         </div>
         <div
-          class="bg-p5-black border-4 border-p5-red p-8 md:p-12 shadow-[12px_12px_0_0_#F4F4F4] pt-12 relative overflow-hidden group hover:border-p5-white transition-colors duration-500"
+          class="bg-p5-black border-4 border-p5-red p-4 md:p-8 lg:p-12 shadow-[12px_12px_0_0_#F4F4F4] pt-10 md:pt-12 relative overflow-hidden group hover:border-p5-white transition-colors duration-500"
         >
           <div class="absolute inset-0 bg-halftone opacity-20"></div>
           <div
@@ -439,7 +454,7 @@ const academicEvents = [
             >
           </div>
           <p
-            class="font-body text-lg md:text-xl text-p5-white leading-relaxed relative z-10 border-r-4 border-p5-red pr-6 text-right"
+            class="font-body text-sm md:text-lg lg:text-xl text-p5-white leading-relaxed relative z-10 border-r-4 border-p5-red pr-3 md:pr-6 text-right"
           >
             <span class="lang-es"
               >Siempre me han atraído los mundos capaces de atraparte por su
@@ -469,7 +484,7 @@ const academicEvents = [
 
     <section class="relative">
       <div
-        class="absolute -top-6 -left-4 bg-p5-black text-p5-white px-6 py-2 font-display text-3xl -skew-x-[6deg] z-10 border-2 border-p5-white shadow-[4px_4px_0_0_#E50012]"
+        class="absolute -top-4 md:-top-6 -left-2 md:-left-4 bg-p5-black text-p5-white px-3 md:px-6 py-1 md:py-2 font-display text-lg md:text-3xl -skew-x-[6deg] z-10 border-2 border-p5-white shadow-[4px_4px_0_0_#E50012]"
       >
         <span class="inline-block skew-x-[6deg]">
           <span class="lang-es">03. TIMELINE ACADÉMICA</span>
@@ -477,15 +492,15 @@ const academicEvents = [
         </span>
       </div>
       <div
-        class="bg-p5-white border-4 border-p5-black p-8 md:p-12 shadow-hard pt-16"
+        class="bg-p5-white border-4 border-p5-black p-4 md:p-8 lg:p-12 shadow-hard pt-12 md:pt-16"
       >
         <details class="group">
           <summary class="list-none cursor-pointer">
             <div
-              class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 bg-p5-black text-p5-white border-4 border-p5-red px-6 py-5 -skew-x-[3deg] shadow-[8px_8px_0_0_#E50012] hover:-translate-y-1 transition-transform"
+              class="flex flex-col md:flex-row md:items-center md:justify-between gap-3 md:gap-4 bg-p5-black text-p5-white border-2 md:border-4 border-p5-red px-3 md:px-6 py-3 md:py-5 -skew-x-[3deg] shadow-[8px_8px_0_0_#E50012] hover:-translate-y-1 transition-transform"
             >
               <div class="skew-x-[3deg]">
-                <div class="font-display text-3xl uppercase leading-none">
+                <div class="font-display text-xl md:text-3xl uppercase leading-none">
                   <span class="lang-es">DESPLEGAR RECORRIDO</span>
                   <span class="lang-en">EXPAND JOURNEY</span>
                 </div>
@@ -499,7 +514,7 @@ const academicEvents = [
                 </p>
               </div>
               <div
-                class="font-mono text-xs uppercase tracking-widest border-2 border-p5-white px-3 py-2 self-start md:self-auto"
+                class="font-mono text-[10px] md:text-xs uppercase tracking-widest border-2 border-p5-white px-2 md:px-3 py-1 md:py-2 self-start md:self-auto"
               >
                 <span class="lang-es">&gt; CLICK PARA ABRIR</span>
                 <span class="lang-en">&gt; CLICK TO OPEN</span>
@@ -508,7 +523,7 @@ const academicEvents = [
           </summary>
 
           <div
-            class="mt-10 space-y-16 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-1 before:bg-p5-red"
+            class="mt-6 md:mt-10 space-y-8 md:space-y-16 relative before:absolute before:inset-0 before:left-5 before:translate-x-0 md:before:left-1/2 md:before:-translate-x-0.5 before:h-full before:w-1 before:bg-p5-red"
           >
             {
               timelineItems.map((item, index) => {
@@ -528,15 +543,15 @@ const academicEvents = [
                       }`}
                     />
                     <div
-                      class={`w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] p-6 border-4 group-hover:-translate-y-2 transition-transform duration-300 -skew-x-[2deg] ${
+                      class={`w-[calc(100%-3.5rem)] md:w-[calc(50%-2.5rem)] p-3 md:p-6 border-2 md:border-4 group-hover:-translate-y-2 transition-transform duration-300 -skew-x-[2deg] ${
                         isDark
                           ? "border-p5-white bg-p5-black shadow-[6px_6px_0_0_#E50012]"
                           : "border-p5-black bg-p5-white shadow-[6px_6px_0_0_#0F0F0F]"
                       }`}
                     >
-                      <div class="flex flex-wrap gap-4 items-center justify-between mb-4 skew-x-[2deg]">
+                      <div class="flex flex-wrap gap-2 md:gap-4 items-center justify-between mb-2 md:mb-4 skew-x-[2deg]">
                         <h3
-                          class={`font-display text-3xl uppercase leading-none ${
+                          class={`font-display text-xl md:text-3xl uppercase leading-none ${
                             isDark ? "text-p5-white" : "text-p5-black"
                           }`}
                         >
@@ -544,7 +559,7 @@ const academicEvents = [
                           <span class="lang-en">{item.title.en}</span>
                         </h3>
                         <span
-                          class={`font-mono text-sm px-3 py-1 font-bold ${
+                          class={`font-mono text-xs md:text-sm px-2 md:px-3 py-0.5 md:py-1 font-bold ${
                             isDark
                               ? "bg-p5-red text-p5-white"
                               : "bg-p5-black text-p5-white"
@@ -554,7 +569,7 @@ const academicEvents = [
                         </span>
                       </div>
                       <p
-                        class={`font-body text-base opacity-80 skew-x-[2deg] ${
+                        class={`font-body text-xs md:text-base opacity-80 skew-x-[2deg] ${
                           isDark ? "text-p5-white" : "text-p5-black"
                         }`}
                       >
@@ -571,80 +586,19 @@ const academicEvents = [
       </div>
     </section>
 
-    <section class="relative">
+    <section class="relative mt-8 md:mt-12">
       <div
-        class="absolute -top-6 -right-4 bg-p5-red text-p5-white px-6 py-2 font-display text-3xl -skew-x-[6deg] z-10 border-2 border-p5-black shadow-[4px_4px_0_0_#0F0F0F]"
+        class="absolute -top-4 md:-top-6 -left-2 md:-left-4 bg-p5-black text-p5-white px-3 md:px-6 py-1 md:py-2 font-display text-lg md:text-3xl -skew-x-[6deg] z-10 border-2 border-p5-white shadow-[4px_4px_0_0_#E50012]"
       >
         <span class="inline-block skew-x-[6deg]">
-          <span class="lang-es">04. INTERESES Y HOBBIES</span>
-          <span class="lang-en">04. INTERESTS & HOBBIES</span>
+          <span class="lang-es">04. LOGROS Y EVENTOS</span>
+          <span class="lang-en">04. ACHIEVEMENTS & EVENTS</span>
         </span>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 pt-10">
-        {
-          hobbyCards.map((card) => (
-            <div
-              class={`aspect-square flex flex-col items-center justify-center p-6 text-center transform hover:scale-105 transition-all cursor-crosshair group ${
-                card.variant === "light"
-                  ? "bg-p5-white border-4 border-p5-black hover:rotate-3 shadow-hard"
-                  : card.variant === "red"
-                  ? "bg-p5-red border-4 border-p5-black hover:rotate-3 shadow-[8px_8px_0_0_#0F0F0F]"
-                  : card.variant === "dark-red"
-                  ? "bg-p5-black border-4 border-p5-red hover:-rotate-3 shadow-hard"
-                  : "bg-p5-black border-4 border-p5-white hover:-rotate-3 shadow-hard"
-              }`}
-            >
-              <span
-                class={`font-display text-5xl transition-colors block mb-2 ${
-                  card.variant === "light"
-                    ? "text-p5-black group-hover:text-p5-red"
-                    : card.variant === "red"
-                    ? "text-p5-white group-hover:text-p5-black"
-                    : "text-p5-white group-hover:text-p5-red"
-                }`}
-              >
-                {card.emoji}
-              </span>
-              <span
-                class={`font-display text-3xl transition-colors uppercase leading-none ${
-                  card.variant === "light"
-                    ? "text-p5-black group-hover:text-p5-red"
-                    : card.variant === "red"
-                    ? "text-p5-white group-hover:text-p5-black"
-                    : "text-p5-white group-hover:text-p5-red"
-                }`}
-              >
-                <span class="lang-es">{card.title.es}</span>
-                <span class="lang-en">{card.title.en}</span>
-              </span>
-              <p
-                class={`font-body text-xs mt-4 opacity-0 group-hover:opacity-100 transition-opacity h-0 group-hover:h-auto ${
-                  card.variant === "light" ? "text-p5-black" : "text-p5-white"
-                }`}
-              >
-                <span class="lang-es">{card.description.es}</span>
-                <span class="lang-en">{card.description.en}</span>
-              </p>
-            </div>
-          ))
-        }
-      </div>
-    </section>
-
-    <section class="relative mt-32">
-      <div
-        class="absolute -top-6 -left-4 bg-p5-black text-p5-white px-6 py-2 font-display text-3xl -skew-x-[6deg] z-10 border-2 border-p5-white shadow-[4px_4px_0_0_#E50012]"
-      >
-        <span class="inline-block skew-x-[6deg]">
-          <span class="lang-es">05. LOGROS Y EVENTOS</span>
-          <span class="lang-en">05. ACHIEVEMENTS & EVENTS</span>
-        </span>
-      </div>
-
-      <div class="pt-12 space-y-8">
-        <div class="bg-p5-black border-4 border-p5-red p-6 md:p-8 shadow-hard -skew-x-[1deg] mb-8">
-          <p class="font-body text-base text-p5-white opacity-90 skew-x-[1deg] leading-relaxed border-l-4 border-p5-red pl-4">
+      <div class="pt-8 md:pt-12 space-y-6 md:space-y-8">
+        <div class="bg-p5-black border-4 border-p5-red p-4 md:p-6 lg:p-8 shadow-hard -skew-x-[1deg] mb-4 md:mb-8">
+          <p class="font-body text-xs md:text-base text-p5-white opacity-90 skew-x-[1deg] leading-relaxed border-l-4 border-p5-red pl-3 md:pl-4">
             <span class="lang-es">Además de mi desarrollo práctico, participo activamente en investigación académica en el <strong>Semillero JOBS</strong>, enfocado en crear experiencias interactivas análogas y digitales con énfasis en museología y diseño generativo. He tenido el honor de exponer mis investigaciones y desarrollos como ponente en diversos encuentros nacionales e internacionales:</span>
             <span class="lang-en">Alongside my practical development, I actively participate in academic research at the <strong>JOBS Research Lab</strong>, focused on creating analog and digital interactive experiences with an emphasis on museology and generative design. I've had the honor of presenting my research and projects as a speaker at several national and international events:</span>
           </p>
@@ -656,32 +610,32 @@ const academicEvents = [
               const isDark = index % 2 === 1;
               return (
                 <div
-                  class={`border-4 p-6 md:p-8 -skew-x-[2deg] hover:-translate-y-1 transition-transform duration-300 relative group overflow-hidden ${
+                  class={`border-2 md:border-4 p-3 md:p-6 lg:p-8 -skew-x-[2deg] hover:-translate-y-1 transition-transform duration-300 relative group overflow-hidden ${
                     isDark
                       ? "border-p5-white bg-p5-black text-p5-white shadow-[6px_6px_0_0_#E50012]"
                       : "border-p5-black bg-p5-white text-p5-black shadow-[6px_6px_0_0_#0F0F0F]"
                   }`}
                 >
-                  <div class="absolute -right-16 -top-4 w-40 h-10 bg-p5-red text-p5-white font-mono text-[10px] tracking-widest uppercase flex items-center justify-center rotate-45 border-b-2 border-p5-white opacity-80 group-hover:opacity-100 transition-opacity">
-                    <span class="mt-1">
+                  <div class="absolute -right-12 md:-right-16 -top-3 md:-top-4 w-28 md:w-40 h-8 md:h-10 bg-p5-red text-p5-white font-mono text-[8px] md:text-[10px] tracking-widest uppercase flex items-center justify-center rotate-45 border-b-2 border-p5-white opacity-80 group-hover:opacity-100 transition-opacity">
+                    <span class="mt-0.5 md:mt-1">
                       <span class="lang-es">PONENCIA</span>
                       <span class="lang-en">KEYNOTE</span>
                     </span>
                   </div>
 
-                  <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4 skew-x-[2deg]">
-                    <div class="space-y-1">
-                      <h3 class="font-display text-2xl md:text-3xl uppercase leading-none">
+                  <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 md:gap-4 mb-2 md:mb-4 skew-x-[2deg]">
+                    <div class="space-y-0.5 md:space-y-1">
+                      <h3 class="font-display text-lg md:text-2xl lg:text-3xl uppercase leading-none">
                         <span class="lang-es">{event.title.es}</span>
                         <span class="lang-en">{event.title.en}</span>
                       </h3>
-                      <span class={`font-mono text-xs md:text-sm block font-bold ${isDark ? "text-p5-red" : "text-p5-red"}`}>
+                      <span class={`font-mono text-[10px] md:text-xs lg:text-sm block font-bold ${isDark ? "text-p5-red" : "text-p5-red"}`}>
                         <span class="lang-es">{event.role.es}</span>
                         <span class="lang-en">{event.role.en}</span>
                       </span>
                     </div>
                     <span
-                      class={`font-mono text-sm px-4 py-1 font-bold self-start md:self-auto -skew-x-[6deg] ${
+                      class={`font-mono text-xs md:text-sm px-2 md:px-4 py-0.5 md:py-1 font-bold self-start md:self-auto -skew-x-[6deg] ${
                         isDark ? "bg-p5-red text-p5-white" : "bg-p5-black text-p5-white"
                       }`}
                     >
@@ -689,19 +643,19 @@ const academicEvents = [
                     </span>
                   </div>
 
-                  <p class={`font-body text-sm md:text-base opacity-80 skew-x-[2deg] leading-relaxed border-l-2 pl-4 mb-4 ${isDark ? "border-p5-white" : "border-p5-black"}`}>
+                  <p class={`font-body text-xs md:text-sm lg:text-base opacity-80 skew-x-[2deg] leading-relaxed border-l-2 pl-2 md:pl-4 mb-2 md:mb-4 ${isDark ? "border-p5-white" : "border-p5-black"}`}>
                     <span class="lang-es">{event.description.es}</span>
                     <span class="lang-en">{event.description.en}</span>
                   </p>
 
-                  <div class="skew-x-[2deg] flex justify-end mt-4">
+                  <div class="skew-x-[2deg] flex justify-end mt-2 md:mt-4">
                     {event.link ? (
-                      <a href={event.link} target="_blank" rel="noopener noreferrer" class={`font-display text-sm md:text-base px-6 py-2 border-2 transition-colors duration-300 ${isDark ? "border-p5-red text-p5-red hover:bg-p5-red hover:text-p5-white" : "border-p5-red text-p5-red hover:bg-p5-red hover:text-p5-white"}`}>
+                      <a href={event.link} target="_blank" rel="noopener noreferrer" class={`font-display text-xs md:text-sm lg:text-base px-3 md:px-6 py-1 md:py-2 border-2 transition-colors duration-300 ${isDark ? "border-p5-red text-p5-red hover:bg-p5-red hover:text-p5-white" : "border-p5-red text-p5-red hover:bg-p5-red hover:text-p5-white"}`}>
                         <span class="lang-es">{event.linkText.es}</span>
                         <span class="lang-en">{event.linkText.en}</span>
                       </a>
                     ) : (
-                      <span class={`font-mono text-xs md:text-sm px-4 py-2 opacity-60 border-2 border-dashed ${isDark ? "border-p5-white text-p5-white" : "border-p5-black text-p5-black"}`}>
+                      <span class={`font-mono text-[10px] md:text-xs lg:text-sm px-2 md:px-4 py-1 md:py-2 opacity-60 border-2 border-dashed ${isDark ? "border-p5-white text-p5-white" : "border-p5-black text-p5-black"}`}>
                         <span class="lang-es">{event.linkText.es}</span>
                         <span class="lang-en">{event.linkText.en}</span>
                       </span>
@@ -715,10 +669,10 @@ const academicEvents = [
       </div>
     </section>
 
-    <section class="mt-32 w-full flex flex-col items-center">
-      <div class="mb-12 flex flex-col items-center text-center gap-6">
+    <section class="mt-8 md:mt-12 w-full flex flex-col items-center">
+      <div class="mb-8 md:mb-12 flex flex-col items-center text-center gap-4 md:gap-6">
         <h2
-          class="font-display text-4xl text-p5-white bg-p5-red px-6 py-2 -skew-x-[6deg] inline-block shadow-[6px_6px_0_0_#0F0F0F] border-4 border-p5-black"
+          class="font-display text-2xl md:text-4xl text-p5-white bg-p5-red px-4 md:px-6 py-1 md:py-2 -skew-x-[6deg] inline-block shadow-[6px_6px_0_0_#0F0F0F] border-4 border-p5-black"
         >
           <span class="inline-block skew-x-[6deg]">
             <span class="lang-es">PONTE EN CONTACTO</span>
@@ -726,7 +680,7 @@ const academicEvents = [
           </span>
         </h2>
         <div
-          class="bg-p5-black border-4 border-p5-white -skew-x-[3deg] shadow-hard px-8 py-5 max-w-lg relative"
+          class="bg-p5-black border-4 border-p5-white -skew-x-[3deg] shadow-hard px-4 md:px-8 py-3 md:py-5 max-w-lg relative"
         >
           <span
             class="absolute -top-3 left-4 font-mono text-[10px] bg-p5-red text-p5-white px-2 py-0.5 border-2 border-p5-white uppercase tracking-widest skew-x-[3deg]"
@@ -735,7 +689,7 @@ const academicEvents = [
             <span class="lang-en">&gt; INCOMING_MSG:</span>
           </span>
           <p
-            class="font-body text-p5-white opacity-80 skew-x-[3deg] text-sm leading-relaxed border-l-4 border-p5-red pl-4"
+            class="font-body text-p5-white opacity-80 skew-x-[3deg] text-xs md:text-sm leading-relaxed border-l-4 border-p5-red pl-2 md:pl-4"
           >
             <span class="lang-es"
               >Si te interesa mi perfil, conversemos y construyamos juntos el
@@ -751,33 +705,23 @@ const academicEvents = [
 
       <ContactForm client:load />
 
-      <div class="flex flex-col items-center gap-6 mt-8">
-        <p class="font-body text-p5-white/60 text-sm italic text-center max-w-md">
+      <div class="flex flex-col items-center gap-4 md:gap-6 mt-6 md:mt-8">
+        <p class="font-body text-p5-white/60 text-xs md:text-sm italic text-center max-w-md">
           <span class="lang-es">¿Quieres saber qué dicen otros sobre mi trabajo?</span>
           <span class="lang-en">Want to know what others say about my work?</span>
         </p>
         <a
           href="/referencias"
-          class="font-display text-2xl bg-p5-black text-p5-white px-10 py-5 -skew-x-[6deg] shadow-[8px_8px_0_0_#E50012] hover:-translate-y-2 hover:shadow-[12px_12px_0_0_#E50012] transition-all border-4 border-p5-white inline-flex items-center gap-3 group"
+          class="font-display text-xl md:text-2xl bg-p5-black text-p5-white px-6 md:px-10 py-3 md:py-5 -skew-x-[6deg] shadow-[8px_8px_0_0_#E50012] hover:-translate-y-2 hover:shadow-[12px_12px_0_0_#E50012] transition-all border-4 border-p5-white inline-flex items-center gap-3 group"
         >
           <span class="inline-block skew-x-[6deg]">
             <span class="lang-es">VER REFERENCIAS</span>
             <span class="lang-en">VIEW REFERENCES</span>
           </span>
-          <svg class="w-6 h-6 skew-x-[6deg] group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20"><path d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"/></svg>
+          <svg class="w-5 h-5 md:w-6 md:h-6 skew-x-[6deg] group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 20 20"><path d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"/></svg>
         </a>
       </div>
 
-      <CallingCard
-        client:load
-        name="ALEJANDRO SANDOVAL"
-        email="asandoval123871@gmail.com"
-        linkedin="https://www.linkedin.com/in/alejandro-sandoval-8a9209285/"
-        github="https://github.com/ImJustSandie"
-        orcid="0009-0004-1351-8391"
-        sketchfab="https://sketchfab.com/ImJustSandie"
-        className="w-full max-w-2xl"
-      />
     </section>
   </div>
 </Layout>

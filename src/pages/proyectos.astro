@@ -7,18 +7,14 @@ import proyectos from "../data/proyectos.json";
 
 const toFlatProject = (p: ProjectData) => ({
   title: p.title,
-  description: p.description.es,
+  description: p.description,
   tags: p.tags,
   featured: p.featured,
-  mediaUrl: p.media?.[0]?.url,
+  mediaUrl: p.media?.[0]?.type === 'video' ? p.media?.[1]?.url : p.media?.[0]?.url,
   media: p.media ?? [],
-  role: p.role?.es,
-  primaryButton: p.primaryButton
-    ? { text: p.primaryButton.text.es, href: p.primaryButton.href }
-    : undefined,
-  secondaryButton: p.secondaryButton
-    ? { text: p.secondaryButton.text.es, href: p.secondaryButton.href }
-    : undefined,
+  role: p.role,
+  primaryButton: p.primaryButton,
+  secondaryButton: p.secondaryButton,
 });
 
 const proyectosTyped = proyectos as ProjectData[];
@@ -30,9 +26,9 @@ const artProjects = proyectosTyped.filter((p) => p.category === "art").map(toFla
   <!-- Navigation Bar -->
   <NavBar currentPath="/proyectos" />
 
-  <div class="space-y-32 pb-40 px-2 md:px-6 w-full max-w-none mx-auto">
-    <section class="flex flex-col gap-12 mt-16 relative">
-      <h1 class="font-display text-5xl md:text-7xl bg-p5-black text-p5-white inline-block px-8 py-4 -skew-x-[6deg] shadow-hard-white self-center mb-8 transition-colors" id="project-title-heading">
+  <div class="space-y-12 md:space-y-32 pb-32 md:pb-40 px-2 md:px-8 w-full max-w-none mx-auto">
+    <section class="flex flex-col gap-6 md:gap-12 mt-8 md:mt-16 relative">
+      <h1 class="font-display text-3xl md:text-5xl lg:text-7xl bg-p5-black text-p5-white inline-block px-4 md:px-8 py-2 md:py-4 -skew-x-[6deg] shadow-hard-white self-center mb-4 md:mb-8 transition-colors" id="project-title-heading">
         <span class="inline-block skew-x-[6deg]">ALL PROJECTS</span>
       </h1>
 

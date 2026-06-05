@@ -2,17 +2,17 @@
 import Layout from "../layouts/Layout.astro";
 import NavBar from "../components/p5/NavBar.astro";
 import { TestimonialCard } from "../components/p5/TestimonialCard";
-import type { TestimonialData } from "../components/p5/TestimonialCard";
+import type { TestimonialData, CardAngle } from "../components/p5/TestimonialCard";
 import testimonials from "../data/referencias.json";
 ---
 
 <Layout title="Referencias - Alejandro Sandoval">
   <NavBar currentPath="/referencias" />
 
-  <div class="space-y-32 pb-40 px-4 md:px-8 w-full max-w-7xl mx-auto flex flex-col overflow-visible">
-    <div class="flex justify-center mt-8">
+  <div class="space-y-12 md:space-y-32 pb-32 md:pb-40 px-2 md:px-8 w-full max-w-7xl mx-auto flex flex-col overflow-visible">
+    <div class="flex justify-center mt-6 md:mt-8">
       <h1
-        class="font-display text-5xl md:text-7xl bg-p5-red text-p5-white inline-block px-12 py-6 -skew-x-[6deg] shadow-[12px_12px_0_0_#0F0F0F] mb-8 border-4 border-p5-black"
+        class="font-display text-3xl md:text-5xl lg:text-7xl bg-p5-red text-p5-white inline-block px-6 md:px-12 py-3 md:py-6 -skew-x-[6deg] shadow-[12px_12px_0_0_#0F0F0F] mb-4 md:mb-8 border-4 border-p5-black"
       >
         <span class="inline-block skew-x-[6deg]">
           <span class="lang-es">ARCHIVO DE REFERENCIAS</span>
@@ -23,10 +23,10 @@ import testimonials from "../data/referencias.json";
 
     <section class="relative">
       <div
-        class="bg-p5-white border-4 border-p5-black p-8 md:p-12 shadow-hard pt-16 relative"
+        class="bg-p5-white border-4 border-p5-black p-4 md:p-8 lg:p-12 shadow-hard pt-12 md:pt-16 relative"
       >
         <div
-          class="absolute -top-6 -left-4 bg-p5-black text-p5-white px-6 py-2 font-display text-3xl -skew-x-[6deg] z-10 border-2 border-p5-white shadow-[4px_4px_0_0_#E50012]"
+          class="absolute -top-4 md:-top-6 -left-2 md:-left-4 bg-p5-black text-p5-white px-3 md:px-6 py-1 md:py-2 font-display text-lg md:text-3xl -skew-x-[6deg] z-10 border-2 border-p5-white shadow-[4px_4px_0_0_#E50012]"
         >
           <span class="inline-block skew-x-[6deg]">
             <span class="lang-es">COMENTARIOS Y RECOMENDACIONES</span>
@@ -35,7 +35,7 @@ import testimonials from "../data/referencias.json";
         </div>
 
         <p
-          class="font-body text-lg md:text-xl text-p5-black leading-relaxed border-l-8 border-p5-red pl-6 mb-10"
+          class="font-body text-sm md:text-lg lg:text-xl text-p5-black leading-relaxed border-l-4 md:border-l-8 border-p5-red pl-3 md:pl-6 mb-6 md:mb-10"
         >
           <span class="lang-es"
             >Las opiniones y comentarios de personas que han trabajado conmigo o me conocen profesionalmente. Cada referencia representa una experiencia real de colaboración.</span
@@ -45,19 +45,26 @@ import testimonials from "../data/referencias.json";
           >
         </p>
 
-        <div class="grid grid-cols-1 gap-12 relative z-10">
+        <div class="grid grid-cols-1 gap-6 md:gap-12 relative z-10">
           {
-            testimonials.map((t) => (
-              <TestimonialCard
-                client:load
-                name={t.name}
-                text={t.text}
-                linkedin={t.linkedin}
-                role={t.role}
-                image={t.image}
-                button={t.button}
-              />
-            ))
+            testimonials.map((t, i) => {
+              const angles: CardAngle[] = ['skew-y-neg1', 'skew-y-1', 'skew-y-neg2', 'skew-x-1', 'skew-x-neg1'];
+              const angle = angles[i % angles.length];
+              return (
+                <TestimonialCard
+                  client:load
+                  name={t.name}
+                  text={t.text}
+                  linkedin={t.linkedin}
+                  role={t.role}
+                  image={t.image}
+                  button={t.button}
+                  angle={angle}
+                  shadowIndex={i}
+                  badgeRight={i % 2 === 1}
+                />
+              )
+            })
           }
         </div>
       </div>

@@ -934,10 +934,10 @@ const featuredProjects = proyectosTyped.filter((p) => p.featured);
           <ProjectCard
             client:visible
             title={p.title}
-            description={p.description.es}
+            description={p.description}
             tags={p.tags}
-            primaryButton={p.primaryButton ? { text: p.primaryButton.text.es, href: p.primaryButton.href } : undefined}
-            secondaryButton={p.secondaryButton ? { text: p.secondaryButton.text.es, href: p.secondaryButton.href } : undefined}
+            primaryButton={p.primaryButton}
+            secondaryButton={p.secondaryButton}
           />
         ))}
       </div>

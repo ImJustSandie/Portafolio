@@ -3,7 +3,7 @@ import { TechTag } from './TechTag';
 
 interface TechGroup {
   id: string;
-  label: string;
+  label: { es: string; en: string };
   tags: string[];
 }
 
@@ -15,9 +15,9 @@ const techGroups: TechGroup[] = [
       en: 'DEVELOPMENT STACK',
     },
     tags: [
-      'Unity', 'C#', 'Python', 'Java', 'TypeScript', 'JavaScript',
-      'HTML5', 'CSS3', 'React', 'Preact', 'Astro', 'Node.js',
-      'FastAPI', 'Git', 'GitHub', 'Vite', 'Tailwind CSS',
+      'Unity', 'C#', 'Python', 'JavaScript',
+      'HTML5', 'CSS3', 'React', 'Astro',
+      'FastAPI', 'Git', 'Tailwind CSS',
       'WebGL', 'OpenXR', 'XR Interaction Toolkit',
     ],
   },
@@ -28,10 +28,9 @@ const techGroups: TechGroup[] = [
       en: 'DESIGN STACK',
     },
     tags: [
-      'Blender', 'Maya', 'ZBrush', 'Mudbox', 'Substance', 'Substance Painter',
-      'Figma', 'Adobe Creative Cloud', 'Photoshop',
-      'Illustrator', 'Premiere Pro', 'After Effects',
-      'Krita', 'MediBang Paint', 'Aseprite', 'LibreSprite', 'Piskel',
+      'Maya', 'Mudbox', 'Substance Painter',
+      'Figma', 'Photoshop', 'Krita', 'MediBang Paint',
+      'Aseprite', 'LibreSprite', 'Piskel',
     ],
   },
   {
@@ -47,7 +46,7 @@ const techGroups: TechGroup[] = [
       'Technical Art', 'Rigging',
       'System Architecture', 'Modular Design',
       'Tool Development', 'Optimization',
-      'Agile Methodologies', 'SCRUM',
+      'Agile Methodologies',
       'Version Control', 'Code Review',
       'Documentation', 'Project Planning',
     ],
@@ -62,7 +61,7 @@ export function TechStackTabs() {
 
   return (
     <div>
-      <div className="flex flex-wrap gap-3 mb-6">
+      <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 mb-6">
         {techGroups.map((group) => {
           const isActive = group.id === activeGroup;
           return (
@@ -70,12 +69,12 @@ export function TechStackTabs() {
               key={group.id}
               onClick={() => setActiveGroup(group.id)}
               className={`
-                font-mono text-sm tracking-wider px-4 py-2
-                -skew-x-[6deg] border-2 transition-all duration-200
-                ${
-                  isActive
-                    ? 'bg-p5-black text-p5-white border-p5-white shadow-[4px_4px_0_0_#E50012] hover:shadow-[6px_6px_0_0_#E50012]'
-                    : 'bg-panel text-[var(--text-color)] border-adaptive shadow-hard-adaptive hover:bg-p5-black hover:text-p5-white hover:border-p5-white'
+                font-mono text-xs sm:text-sm tracking-wider px-3 sm:px-4 py-2 sm:py-2
+                -skew-x-[6deg] border-2 transition-all duration-200 w-full sm:w-auto
+                active:scale-[0.97]
+                ${isActive
+                  ? 'bg-p5-black text-p5-white border-p5-white shadow-[4px_4px_0_0_#E50012] hover:shadow-[6px_6px_0_0_#E50012]'
+                  : 'bg-panel text-[var(--text-color)] border-adaptive shadow-hard-adaptive hover:bg-p5-black hover:text-p5-white hover:border-p5-white'
                 }
               `}
             >
@@ -89,8 +88,8 @@ export function TechStackTabs() {
       </div>
 
       <div className="flex flex-wrap gap-3 items-center">
-        {active.tags.map((tag) => (
-          <TechTag key={tag} name={tag} />
+        {active.tags.map((tag, i) => (
+          <TechTag key={tag} name={tag} index={i} />
         ))}
       </div>
     </div>

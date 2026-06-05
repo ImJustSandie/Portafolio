@@ -14,6 +14,27 @@ interface TestimonialButton {
   content?: string;
 }
 
+export type CardAngle = 'skew-y-1' | 'skew-y-2' | 'skew-y-neg1' | 'skew-y-neg2' | 'skew-x-1' | 'skew-x-neg1' | 'none';
+
+const ANGLE_CLASSES: Record<CardAngle, string> = {
+  'skew-y-1': 'skew-y-[1deg]',
+  'skew-y-2': 'skew-y-[2deg]',
+  'skew-y-neg1': '-skew-y-[1deg]',
+  'skew-y-neg2': '-skew-y-[2deg]',
+  'skew-x-1': 'skew-x-[1deg]',
+  'skew-x-neg1': '-skew-x-[1deg]',
+  'none': '',
+};
+
+const SHADOW_VARIANTS = [
+  'shadow-[12px_12px_0_0_#E50012] hover:shadow-[16px_16px_0_0_#E50012]',
+  'shadow-[-12px_12px_0_0_#E50012] hover:shadow-[-16px_16px_0_0_#E50012]',
+  'shadow-[12px_-6px_0_0_#E50012] hover:shadow-[16px_-8px_0_0_#E50012]',
+  'shadow-[-8px_12px_0_0_#E50012] hover:shadow-[-12px_16px_0_0_#E50012]',
+] as const;
+
+const BADGE_SIDES = ['left-4 md:left-8', 'right-4 md:right-8'] as const;
+
 export interface TestimonialData {
   name: string;
   text: LocalizedText;
@@ -30,6 +51,9 @@ interface TestimonialCardProps {
   role?: LocalizedText;
   image?: string;
   button?: TestimonialButton;
+  angle?: CardAngle;
+  shadowIndex?: number;
+  badgeRight?: boolean;
 }
 
 export const TestimonialCard: React.FC<TestimonialCardProps> = ({
@@ -39,6 +63,9 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({
   role,
   image,
   button,
+  angle = 'skew-y-neg1',
+  shadowIndex = 0,
+  badgeRight = false,
 }) => {
   const [copied, setCopied] = useState(false);
 
@@ -100,28 +127,28 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({
     .slice(0, 2);
 
   return (
-    <div className="relative bg-p5-black p-6 border-4 border-p5-white -skew-y-[1deg] shadow-[12px_12px_0_0_#E50012] hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[16px_16px_0_0_#E50012] transition-all duration-300">
+    <div className={`relative bg-p5-black p-3 md:p-6 border-2 md:border-4 border-p5-white ${ANGLE_CLASSES[angle]} ${SHADOW_VARIANTS[shadowIndex % SHADOW_VARIANTS.length]} hover:-translate-y-1 hover:-translate-x-1 transition-all duration-300`}>
       {/* Halftone overlay */}
       <div className="absolute inset-0 bg-halftone opacity-10 pointer-events-none"></div>
 
       {/* Name Badge */}
-      <div className="absolute -top-6 left-8 bg-p5-red text-p5-white font-display text-xl md:text-2xl px-6 py-1 -skew-x-[12deg] border-2 border-p5-white z-10">
+      <div className={`absolute -top-4 md:-top-6 ${badgeRight ? 'right-4 md:right-8' : 'left-4 md:left-8'} bg-p5-red text-p5-white font-display text-base md:text-2xl px-3 md:px-6 py-0.5 md:py-1 -skew-x-[12deg] border-2 border-p5-white z-10`}>
         <span className="inline-block skew-x-[12deg]">{name}</span>
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col sm:flex-row gap-6 pt-6">
+      <div className="relative z-10 flex flex-col sm:flex-row gap-3 md:gap-6 pt-4 md:pt-6">
         {/* Image / Avatar */}
         <div className="flex-shrink-0 flex justify-center sm:justify-start">
           {image ? (
             <img
               src={image}
               alt={name}
-              className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-4 border-p5-red shadow-[4px_4px_0_0_#F4F4F4]"
+              className="w-20 h-20 md:w-24 md:h-24 object-cover border-4 border-p5-red shadow-[4px_4px_0_0_#F4F4F4] -skew-x-[3deg]"
             />
           ) : (
-            <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-p5-red border-4 border-p5-white shadow-[4px_4px_0_0_#F4F4F4] flex items-center justify-center">
-              <span className="font-display text-2xl md:text-3xl text-p5-white">
+            <div className="w-20 h-20 md:w-24 md:h-24 bg-p5-red border-4 border-p5-white shadow-[4px_4px_0_0_#F4F4F4] flex items-center justify-center -skew-x-[3deg]">
+              <span className="font-display text-2xl md:text-3xl text-p5-white skew-x-[3deg]">
                 {initials}
               </span>
             </div>

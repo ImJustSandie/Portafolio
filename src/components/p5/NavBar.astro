@@ -1,14 +1,15 @@
 ---
 const { currentPath } = Astro.props;
 ---
-<nav class="sticky top-0 z-50 w-full bg-p5-black border-b-4 border-p5-red shadow-hard py-4 px-8 mb-16 flex justify-between items-center">
-  <div class="flex-1 flex justify-start items-center">
+
+<nav class="sticky top-0 z-50 w-full bg-p5-black border-b-4 border-p5-red shadow-hard py-3 md:py-4 px-4 md:px-8 mb-12 md:mb-16 flex justify-between items-center">
+  <div class="flex justify-start items-center">
     <a href="/" class="font-body font-black text-lg md:text-2xl text-p5-white hover:text-p5-red transition-colors -skew-x-[6deg] inline-block tracking-widest">
       <span class="skew-x-[6deg] block">ImJustSandie</span>
     </a>
   </div>
   
-  <ul class="flex-none flex gap-4 md:gap-16 items-center justify-center">
+  <ul class="hidden md:flex flex-none gap-8 lg:gap-16 items-center justify-center">
     <li>
       <a href="/" class={`font-display text-lg md:text-2xl tracking-widest transition-colors -skew-x-[6deg] inline-block ${currentPath === '/' ? 'text-p5-red border-b-2 border-p5-red' : 'text-p5-white hover:text-p5-red'}`}>
         <span class="skew-x-[6deg] block lang-es">INICIO</span>
@@ -35,17 +36,54 @@ const { currentPath } = Astro.props;
     </li>
   </ul>
 
-  <div class="flex-1 flex justify-end">
-    <button class="flex relative w-[4.5rem] md:w-[5.5rem] h-8 md:h-10 items-center justify-end cursor-pointer group border-none bg-transparent scale-75 md:scale-100 origin-right" id="lang-toggle-btn">
+  <div class="flex items-center gap-2">
+    <button class="flex relative w-[4.5rem] md:w-[5.5rem] h-8 md:h-10 items-center justify-end cursor-pointer group border-none bg-transparent origin-right" id="lang-toggle-btn">
       <div class="btn-esp absolute left-0 top-0 w-10 md:w-12 h-6 md:h-7 flex items-center justify-center border-2 border-p5-black -skew-x-[12deg] transition-all group-hover:scale-105">
-        <span class="skew-x-[12deg] font-display text-sm md:text-base tracking-wider pointer-events-none mt-1">ESP</span>
+        <span class="skew-x-[12deg] font-display text-xs md:text-base tracking-wider pointer-events-none mt-1">ESP</span>
       </div>
       <div class="btn-en absolute right-0 bottom-0 w-10 md:w-12 h-6 md:h-7 flex items-center justify-center border-2 border-p5-black -skew-x-[12deg] transition-all group-hover:scale-105">
-        <span class="skew-x-[12deg] font-display text-sm md:text-base tracking-wider pointer-events-none mt-1">EN</span>
+        <span class="skew-x-[12deg] font-display text-xs md:text-base tracking-wider pointer-events-none mt-1">EN</span>
       </div>
+    </button>
+
+    <button id="hamburger-btn" class="md:hidden flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-12 h-12 gap-1.5 cursor-pointer group border-2 border-p5-white bg-p5-black p-2 -skew-x-[6deg] hover:bg-p5-red hover:border-p5-black transition-all active:bg-p5-red active:scale-95" aria-label="Menu">
+      <span class="block w-5 h-0.5 bg-p5-white group-hover:bg-p5-white transition-all hamburger-line"></span>
+      <span class="block w-5 h-0.5 bg-p5-white group-hover:bg-p5-white transition-all hamburger-line"></span>
+      <span class="block w-5 h-0.5 bg-p5-white group-hover:bg-p5-white transition-all hamburger-line"></span>
     </button>
   </div>
 </nav>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="hidden fixed inset-0 z-40 bg-p5-black pt-24 flex flex-col items-center overflow-y-auto">
+  <div class="absolute inset-0 opacity-20 pointer-events-none" style="background-image: radial-gradient(#F4F4F4 1px, transparent 1px); background-size: 16px 16px;"></div>
+  <ul class="relative z-10 flex flex-col items-center gap-6 w-full px-8">
+    <li class="w-full">
+      <a href="/" class={`block w-full text-center font-display text-3xl sm:text-4xl tracking-widest py-4 -skew-x-[6deg] transition-colors ${currentPath === '/' ? 'text-p5-red bg-p5-white border-2 border-p5-red' : 'text-p5-white hover:text-p5-red hover:bg-p5-white/10 border-2 border-transparent'}`}>
+        <span class="inline-block skew-x-[6deg] lang-es">INICIO</span>
+        <span class="inline-block skew-x-[6deg] lang-en">HOME</span>
+      </a>
+    </li>
+    <li class="w-full">
+      <a href="/proyectos" class={`block w-full text-center font-display text-3xl sm:text-4xl tracking-widest py-4 -skew-x-[6deg] transition-colors ${currentPath === '/proyectos' ? 'text-p5-red bg-p5-white border-2 border-p5-red' : 'text-p5-white hover:text-p5-red hover:bg-p5-white/10 border-2 border-transparent'}`}>
+        <span class="inline-block skew-x-[6deg] lang-es">PROYECTOS</span>
+        <span class="inline-block skew-x-[6deg] lang-en">PROJECTS</span>
+      </a>
+    </li>
+    <li class="w-full">
+      <a href="/sobre-mi" class={`block w-full text-center font-display text-3xl sm:text-4xl tracking-widest py-4 -skew-x-[6deg] transition-colors ${currentPath === '/sobre-mi' ? 'text-p5-red bg-p5-white border-2 border-p5-red' : 'text-p5-white hover:text-p5-red hover:bg-p5-white/10 border-2 border-transparent'}`}>
+        <span class="inline-block skew-x-[6deg] lang-es">SOBRE MI</span>
+        <span class="inline-block skew-x-[6deg] lang-en">ABOUT ME</span>
+      </a>
+    </li>
+    <li class="w-full">
+      <a href="/referencias" class={`block w-full text-center font-display text-3xl sm:text-4xl tracking-widest py-4 -skew-x-[6deg] transition-colors ${currentPath === '/referencias' ? 'text-p5-red bg-p5-white border-2 border-p5-red' : 'text-p5-white hover:text-p5-red hover:bg-p5-white/10 border-2 border-transparent'}`}>
+        <span class="inline-block skew-x-[6deg] lang-es">REFERENCIAS</span>
+        <span class="inline-block skew-x-[6deg] lang-en">REFERENCES</span>
+      </a>
+    </li>
+  </ul>
+</div>
 
 <script>
   const langToggleBtn = document.getElementById('lang-toggle-btn');
@@ -57,6 +95,30 @@ const { currentPath } = Astro.props;
       
       document.documentElement.lang = newLang;
       localStorage.setItem('p5-portfolio-lang', newLang);
+    });
+  }
+
+  // Hamburger menu
+  const hamburgerBtn = document.getElementById('hamburger-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  if (hamburgerBtn && mobileMenu) {
+    hamburgerBtn.addEventListener('click', () => {
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      if (isOpen) {
+        mobileMenu.classList.add('hidden');
+        document.body.style.overflow = '';
+      } else {
+        mobileMenu.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        document.body.style.overflow = '';
+      });
     });
   }
 </script>
