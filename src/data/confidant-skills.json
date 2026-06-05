@@ -15,38 +15,6 @@
       {
         "name": "C#",
         "icon": "C#"
-      },
-      {
-        "name": "Game Design",
-        "icon": "Game Design"
-      },
-      {
-        "name": "Level Design",
-        "icon": "Level Design"
-      },
-      {
-        "name": "UI/UX 2D/3D",
-        "icon": "UI/UX 2D/3D"
-      },
-      {
-        "name": "VR",
-        "icon": "VR"
-      },
-      {
-        "name": "AR",
-        "icon": "AR"
-      },
-      {
-        "name": "WebGL",
-        "icon": "WebGL"
-      },
-      {
-        "name": "Gameplay Systems",
-        "icon": "Gameplay Systems"
-      },
-      {
-        "name": "Scriptable Objects",
-        "icon": "Scriptable Objects"
       }
     ]
   },
@@ -55,8 +23,8 @@
       "es": "DESARROLLO WEB",
       "en": "WEB DEVELOPMENT"
     },
-    "rank": 6,
-    "percentage": 60,
+    "rank": 7,
+    "percentage": 70,
     "description": {
       "es": "Desarrollo de interfaces web modernas y responsivas con HTML, CSS, JavaScript, Astro, React, Preact y Tailwind CSS, complementadas con servicios backend en Python (FastAPI) y C# mediante arquitecturas y APIs REST, priorizando rendimiento, accesibilidad y escalabilidad.",
       "en": "Development of modern and responsive web interfaces using HTML, CSS, JavaScript, Astro, React, Preact, and Tailwind CSS, complemented by backend services in Python (FastAPI) and C# through REST architectures and APIs, prioritizing performance, accessibility, and scalability."
@@ -105,10 +73,6 @@
       {
         "name": "TypeScript",
         "icon": "TypeScript"
-      },
-      {
-        "name": "Vercel",
-        "icon": "Vercel"
       }
     ]
   },
@@ -151,8 +115,8 @@
       "es": "DISEÑO 3D Y ANIMACIÓN",
       "en": "3D DESIGN AND ANIMATION"
     },
-    "rank": 6,
-    "percentage": 60,
+    "rank": 8,
+    "percentage": 80,
     "description": {
       "es": "Experiencia en modelado, escultura digital, texturizado, rigging y animación utilizando Blender, ZBrush, Substance Painter, Maya y Mudbox para la creación de assets 3D y personajes optimizados para videojuegos y producción en tiempo real.",
       "en": "Experience in modeling, digital sculpting, texturing, rigging, and animation using Blender, ZBrush, Substance Painter, Maya, and Mudbox for creating 3D assets and characters optimized for video games and real-time production."
@@ -185,8 +149,8 @@
       "es": "DISEÑO UX/UI Y RECURSOS DIGITALES",
       "en": "UX/UI DESIGN AND DIGITAL RESOURCES"
     },
-    "rank": 6,
-    "percentage": 60,
+    "rank": 8,
+    "percentage": 80,
     "description": {
       "es": "Experiencia en el diseño de experiencias interactivas, interfaces de usuario y recursos visuales para videojuegos y aplicaciones, apoyándome en herramientas de diseño UI/UX, ilustración, edición gráfica y pixel art como Adobe Creative Cloud, Figma, Krita, MediBang Paint, Aseprite, LibreSprite y Piskel para desarrollar soluciones visuales coherentes y funcionales.",
       "en": "Experience in the design of interactive experiences, user interfaces, and visual resources for video games and applications, supported by UI/UX design, illustration, graphic editing, and pixel art tools such as Adobe Creative Cloud, Figma, Krita, MediBang Paint, Aseprite, LibreSprite, and Piskel to develop coherent and functional visual solutions."
@@ -224,8 +188,8 @@
   },
   {
     "title": "GIT / GITHUB",
-    "rank": 7,
-    "percentage": 70,
+    "rank": 9,
+    "percentage": 90,
     "description": {
       "es": "Uso de Git y GitHub para coordinar proyectos individuales y colaborativos, gestionando control de versiones, estrategias de ramificación, integración de cambios mediante Pull Requests y procesos de merge, así como la organización de equipos y flujos de trabajo dentro de un mismo repositorio.",
       "en": "Using Git and GitHub to coordinate individual and collaborative projects, managing version control, branching strategies, change integration through Pull Requests and merge processes, as well as team organization and workflows within the same repository."

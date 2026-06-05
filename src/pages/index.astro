@@ -27,9 +27,8 @@ const featuredProjects = (proyectos as ProjectData[]).filter((p) => p.featured);
             <div class="relative group cursor-pointer w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80">
               <div class="absolute inset-0 bg-p5-red -skew-x-[6deg] translate-x-4 translate-y-4 group-hover:translate-x-6 group-hover:translate-y-6 transition-transform duration-300 border-4 border-p5-black"></div>
               <div class="absolute inset-0 border-4 border-p5-black -skew-x-[6deg] overflow-hidden bg-p5-white z-10">
-                <div class="skew-x-[6deg] w-[120%] h-full -ml-[10%] relative scale-110 group-hover:scale-100 transition-transform duration-500">
-                  <Image src={profileImage} alt="Alejandro Sandoval" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" />
-                  <div class="absolute inset-0 opacity-20 pointer-events-none mix-blend-multiply" style="background-image: radial-gradient(#0F0F0F 2px, transparent 2px); background-size: 8px 8px;"></div>
+                <div class="skew-x-[6deg] w-full h-full relative">
+                  <Image src={profileImage} alt="Alejandro Sandoval" class="w-full h-full object-cover" />
                 </div>
               </div>
               <div class="absolute -bottom-3 md:-bottom-6 -left-2 md:-left-6 bg-p5-yellow px-2 md:px-4 py-0.5 md:py-1 border-2 md:border-4 border-p5-black -rotate-6 shadow-hard z-20 group-hover:-rotate-3 group-hover:scale-110 transition-transform duration-300">
@@ -92,8 +91,8 @@ const featuredProjects = (proyectos as ProjectData[]).filter((p) => p.featured);
     <section class="space-y-6 md:space-y-8">
       <h3 class="font-display text-2xl md:text-4xl text-p5-red border-b-2 border-p5-red pb-1 md:pb-2 inline-block -skew-x-[6deg]">
         <span class="inline-block skew-x-[6deg]">
-          <span class="lang-es">Habilidades Confidant</span>
-          <span class="lang-en">Confidant Skills</span>
+          <span class="lang-es">Barras de Experiencia</span>
+          <span class="lang-en">Experience Bars</span>
         </span>
       </h3>
       <div class="bg-panel border-4 border-adaptive shadow-hard-adaptive skew-x-[3deg] overflow-x-clip">
