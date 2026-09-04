@@ -27,10 +27,10 @@ const ANGLE_CLASSES: Record<CardAngle, string> = {
 };
 
 const SHADOW_VARIANTS = [
-  'shadow-[12px_12px_0_0_#E50012] hover:shadow-[16px_16px_0_0_#E50012]',
-  'shadow-[-12px_12px_0_0_#E50012] hover:shadow-[-16px_16px_0_0_#E50012]',
-  'shadow-[12px_-6px_0_0_#E50012] hover:shadow-[16px_-8px_0_0_#E50012]',
-  'shadow-[-8px_12px_0_0_#E50012] hover:shadow-[-12px_16px_0_0_#E50012]',
+  'shadow-[4px_4px_0_0_#E50012] sm:shadow-[8px_8px_0_0_#E50012] md:shadow-[12px_12px_0_0_#E50012] md:hover:shadow-[16px_16px_0_0_#E50012]',
+  'shadow-[-4px_4px_0_0_#E50012] sm:shadow-[-8px_8px_0_0_#E50012] md:shadow-[-12px_12px_0_0_#E50012] md:hover:shadow-[-16px_16px_0_0_#E50012]',
+  'shadow-[4px_-3px_0_0_#E50012] sm:shadow-[8px_-4px_0_0_#E50012] md:shadow-[12px_-6px_0_0_#E50012] md:hover:shadow-[16px_-8px_0_0_#E50012]',
+  'shadow-[-4px_4px_0_0_#E50012] sm:shadow-[-6px_8px_0_0_#E50012] md:shadow-[-8px_12px_0_0_#E50012] md:hover:shadow-[-12px_16px_0_0_#E50012]',
 ] as const;
 
 const BADGE_SIDES = ['left-4 md:left-8', 'right-4 md:right-8'] as const;
@@ -127,12 +127,12 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({
     .slice(0, 2);
 
   return (
-    <div className={`relative bg-p5-black p-3 md:p-6 border-2 md:border-4 border-p5-white ${ANGLE_CLASSES[angle]} ${SHADOW_VARIANTS[shadowIndex % SHADOW_VARIANTS.length]} hover:-translate-y-1 hover:-translate-x-1 transition-all duration-300`}>
+    <div className={`relative bg-p5-black p-3 sm:p-4 md:p-6 border-2 md:border-4 border-p5-white ${ANGLE_CLASSES[angle]} ${SHADOW_VARIANTS[shadowIndex % SHADOW_VARIANTS.length]} md:hover:-translate-y-1 md:hover:-translate-x-1 transition-all duration-300`}>
       {/* Halftone overlay */}
       <div className="absolute inset-0 bg-halftone opacity-10 pointer-events-none"></div>
 
       {/* Name Badge */}
-      <div className={`absolute -top-4 md:-top-6 ${badgeRight ? 'right-4 md:right-8' : 'left-4 md:left-8'} bg-p5-red text-p5-white font-display text-base md:text-2xl px-3 md:px-6 py-0.5 md:py-1 -skew-x-[12deg] border-2 border-p5-white z-10`}>
+      <div className={`absolute -top-3 sm:-top-4 md:-top-6 ${badgeRight ? 'right-2 sm:right-4 md:right-8' : 'left-3 sm:left-4 md:left-8'} bg-p5-red text-p5-white font-display text-sm sm:text-base md:text-2xl px-2 sm:px-3 md:px-6 py-0.5 md:py-1 -skew-x-[12deg] border-2 border-p5-white z-10 max-w-[85%] truncate`}>
         <span className="inline-block skew-x-[12deg]">{name}</span>
       </div>
 

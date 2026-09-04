@@ -64,7 +64,7 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({
   return (
     <section className={`w-full relative pb-8 ${className}`}>
       <div
-        className={`relative w-full lg:w-[92%] xl:w-[90%] transition-all duration-300 ${
+        className={`relative w-full lg:w-[92%] xl:w-[90%] transition-all duration-300 overflow-x-clip ${
           isLeft
             ? 'lg:ml-[2%] xl:ml-[3%] mr-auto pr-1 md:pr-4 lg:pr-8'
             : 'lg:mr-[2%] xl:mr-[3%] ml-auto pl-1 md:pl-4 lg:pl-8'
@@ -79,13 +79,13 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({
             className={`
               ${
                 isLeft
-                  ? 'bg-p5-red rotate-2 border-p5-black shadow-hard'
-                  : 'bg-p5-black -rotate-2 border-p5-red shadow-hard-white-inverse'
+                  ? 'bg-p5-red rotate-2 border-p5-black shadow-[3px_3px_0_0_#E50012] sm:shadow-hard'
+                  : 'bg-p5-black -rotate-2 border-p5-red shadow-[-3px_3px_0_0_#F4F4F4] sm:shadow-hard-white-inverse'
               }
-              text-p5-white p-2 md:p-3 lg:p-4 border-2 md:border-4 inline-block min-w-[160px] md:min-w-[250px] lg:min-w-[350px] max-w-[calc(100vw-2rem)]
+              text-p5-white p-2 md:p-3 lg:p-4 border-2 md:border-4 inline-block min-w-[140px] sm:min-w-[160px] md:min-w-[250px] lg:min-w-[350px] max-w-[calc(100vw-2rem)]
             `}
           >
-            <span className="font-mono text-[10px] md:text-xs block mb-0.5 md:mb-1 opacity-80 tracking-[0.2em] md:tracking-[0.3em]">
+            <span className="font-mono text-xs md:text-xs block mb-0.5 md:mb-1 opacity-80 tracking-[0.2em] md:tracking-[0.3em]">
               <span className="lang-es">&gt; PROYECTO_ACTUAL:</span>
               <span className="lang-en">&gt; CURRENT_PROJECT:</span>
             </span>
@@ -99,8 +99,8 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({
         </div>
 
         <div
-          className={`bg-panel border-4 md:border-6 border-p5-black p-2 md:p-4 lg:p-6 pt-12 md:pt-16 lg:pt-20 ${
-            isLeft ? 'shadow-hard-adaptive' : 'shadow-hard-adaptive-inverse'
+          className={`bg-panel border-2 sm:border-4 md:border-6 border-p5-black p-2 sm:p-3 md:p-4 lg:p-6 pt-10 sm:pt-12 md:pt-16 lg:pt-20 ${
+            isLeft ? 'shadow-[3px_3px_0_0_var(--shadow-color)] sm:shadow-hard-adaptive' : 'shadow-[-3px_3px_0_0_var(--shadow-color)] sm:shadow-hard-adaptive-inverse'
           } relative overflow-hidden`}
         >
           <div className="absolute inset-0 bg-halftone opacity-5 pointer-events-none"></div>
@@ -154,7 +154,7 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({
 
               <div className={`flex items-center px-2 ${isLeft ? 'justify-between' : 'justify-end'}`}>
                 <div
-                  className={`font-mono text-[10px] px-3 py-1 border border-adaptive uppercase tracking-widest ${
+                  className={`font-mono text-xs px-2 sm:px-3 py-1 border border-adaptive uppercase tracking-widest ${
                     isLeft ? 'bg-p5-red text-p5-white -rotate-1' : 'bg-p5-white text-p5-black rotate-1'
                   }`}
                 >
@@ -168,8 +168,8 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({
             <div className={`lg:col-span-5 flex flex-col gap-4 md:gap-5 ${isLeft ? '' : 'lg:order-1'}`}>
               <div
                 className={`
-                  ${isLeft ? 'bg-p5-white text-p5-black border-l-[8px] md:border-l-[12px]' : 'bg-p5-black text-p5-white border-l-[8px] md:border-l-[12px]'}
-                  p-4 md:p-5 lg:p-6 border-p5-red ${isLeft ? 'shadow-hard' : 'shadow-hard-inverse'} relative
+                  ${isLeft ? 'bg-p5-white text-p5-black border-l-[6px] sm:border-l-[8px] md:border-l-[12px]' : 'bg-p5-black text-p5-white border-l-[6px] sm:border-l-[8px] md:border-l-[12px]'}
+                  p-3 sm:p-4 md:p-5 lg:p-6 border-p5-red ${isLeft ? 'shadow-[3px_3px_0_0_#E50012] sm:shadow-hard' : 'shadow-[-3px_3px_0_0_#E50012] sm:shadow-hard-inverse'} relative
                 `}
               >
                 <h3
@@ -190,9 +190,11 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({
                 <h4 className={`font-display text-base md:text-xl uppercase text-p5-red tracking-widest ${isLeft ? 'text-left' : 'text-right'}`}>
                   TECH_STACK
                 </h4>
-                <div className={`flex flex-wrap gap-2 md:gap-3 ${isLeft ? 'justify-start' : 'justify-end'}`}>
+                <div className={`flex flex-wrap gap-2 md:gap-3 pl-2 sm:pl-0 skew-x-[6deg] ${isLeft ? 'justify-start' : 'justify-end'}`}>
                   {tags.map((tag, i) => (
-                    <TechTag key={tag} name={tag} index={i} />
+                    <div key={tag} className="-skew-x-[6deg]">
+                      <TechTag name={tag} index={i} />
+                    </div>
                   ))}
                 </div>
               </div>
@@ -202,7 +204,7 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({
                   <P5Button
                     href={primaryButton.href}
                     variant="secondary"
-                    className="w-full sm:flex-1 !text-xs sm:!text-sm lg:!text-base !px-1 md:!px-3 whitespace-nowrap"
+                    className="w-full sm:flex-1 !text-xs sm:!text-sm lg:!text-base !px-1 md:!px-3 sm:whitespace-nowrap"
                   >
                     <span className="lang-es">{primaryButton.text.es}</span>
                     <span className="lang-en">{primaryButton.text.en}</span>
@@ -212,7 +214,7 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({
                   <P5Button
                     href={secondaryButton.href}
                     variant="primary"
-                    className="w-full sm:flex-1 !text-xs sm:!text-sm lg:!text-base !px-1 md:!px-3 whitespace-nowrap"
+                    className="w-full sm:flex-1 !text-xs sm:!text-sm lg:!text-base !px-1 md:!px-3 sm:whitespace-nowrap"
                   >
                     <span className="lang-es">{secondaryButton.text.es}</span>
                     <span className="lang-en">{secondaryButton.text.en}</span>
@@ -221,7 +223,7 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({
                 <P5Button
                   onClick={openExpanded}
                   variant="outline"
-                  className="w-full sm:flex-1 !text-xs sm:!text-sm lg:!text-base !px-1 md:!px-3 whitespace-nowrap"
+                  className="w-full sm:flex-1 !text-xs sm:!text-sm lg:!text-base !px-1 md:!px-3 sm:whitespace-nowrap"
                 >
                   <span className="lang-es">MAS INFO</span>
                   <span className="lang-en">MORE INFO</span>
@@ -247,7 +249,7 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({
           <div
             className={`relative w-full max-w-[160rem] bg-p5-black border-2 md:border-4 ${
               isLeft ? 'border-p5-red' : 'border-p5-white'
-            } p-4 md:p-10 flex flex-col md:flex-row gap-4 md:gap-8 shadow-[4px_4px_0_0_#E50012] md:shadow-[16px_16px_0_0_#E50012] animate-slide-in my-auto`}
+            } p-3 sm:p-4 md:p-10 flex flex-col md:flex-row gap-4 md:gap-8 shadow-[4px_4px_0_0_#E50012] md:shadow-[16px_16px_0_0_#E50012] animate-slide-in my-auto max-h-[90vh] overflow-y-auto`}
             onClick={(e) => e.stopPropagation()}
           >
             <button
@@ -376,7 +378,7 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({
 
       {isFullscreen && (
         <div
-          className="fixed inset-0 z-[100] bg-p5-black/95 flex justify-center p-2 md:p-12 overflow-y-auto animate-fade-in"
+          className="fixed inset-0 z-[100] bg-p5-black/95 flex justify-center p-2 sm:p-4 md:p-12 overflow-y-auto animate-fade-in"
           onClick={() => setIsFullscreen(false)}
         >
           <div
@@ -392,7 +394,7 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({
           </button>
 
           <div
-            className="relative w-full max-w-7xl aspect-video border-4 md:border-8 border-p5-white shadow-[4px_4px_0_0_#E50012] md:shadow-[16px_16px_0_0_#E50012] bg-p5-black my-auto"
+          className="relative w-full max-w-7xl aspect-video border-2 sm:border-4 md:border-8 border-p5-white shadow-[4px_4px_0_0_#E50012] md:shadow-[16px_16px_0_0_#E50012] bg-p5-black my-auto"
             onClick={(e) => e.stopPropagation()}
           >
             {media.map((item, index) => (
@@ -424,10 +426,10 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({
                     e.stopPropagation();
                     prevSlide();
                   }}
-                  className="absolute inset-y-0 left-0 w-16 md:w-24 flex items-center justify-center bg-transparent hover:bg-p5-red/20 text-p5-white transition-colors z-20 group"
+                  className="absolute inset-y-0 left-0 w-10 sm:w-16 md:w-24 flex items-center justify-center bg-transparent hover:bg-p5-red/20 text-p5-white transition-colors z-20 group"
                 >
-                  <svg className="w-12 h-12 md:w-16 md:h-16 group-hover:-translate-x-2 transition-transform drop-shadow-[2px_2px_0_#0F0F0F]" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" />
+                  <svg className="w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 group-hover:-translate-x-2 transition-transform drop-shadow-[2px_2px_0_#0F0F0F]" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M12.707 5.293a1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" />
                   </svg>
                 </button>
                 <button
@@ -435,16 +437,16 @@ export const FeaturedProject: React.FC<FeaturedProjectProps> = ({
                     e.stopPropagation();
                     nextSlide();
                   }}
-                  className="absolute inset-y-0 right-0 w-16 md:w-24 flex items-center justify-center bg-transparent hover:bg-p5-red/20 text-p5-white transition-colors z-20 group"
+                  className="absolute inset-y-0 right-0 w-10 sm:w-16 md:w-24 flex items-center justify-center bg-transparent hover:bg-p5-red/20 text-p5-white transition-colors z-20 group"
                 >
-                  <svg className="w-12 h-12 md:w-16 md:h-16 group-hover:translate-x-2 transition-transform drop-shadow-[2px_2px_0_#0F0F0F]" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 group-hover:translate-x-2 transition-transform drop-shadow-[2px_2px_0_#0F0F0F]" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" />
                   </svg>
                 </button>
               </>
             )}
 
-            <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-p5-black border-4 border-p5-red px-6 py-2 font-display text-xl text-p5-white z-20 -skew-x-[6deg]">
+            <div className="absolute -bottom-3 sm:-bottom-4 left-1/2 -translate-x-1/2 bg-p5-black border-2 sm:border-4 border-p5-red px-3 sm:px-6 py-1 sm:py-2 font-display text-sm sm:text-xl text-p5-white z-20 -skew-x-[6deg] max-w-[90vw]">
               <span className="inline-block skew-x-[6deg]">
                 <span className="lang-es">DIAPO {currentSlide + 1} // {media.length}</span>
                 <span className="lang-en">SLIDE {currentSlide + 1} // {media.length}</span>

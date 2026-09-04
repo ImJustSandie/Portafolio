@@ -8,7 +8,7 @@ export interface ProjectData {
   id: string;
   title: string;
   featured: boolean;
-  category: 'dev' | 'art';
+  category: 'dev' | 'art' | 'juegos';
   context: { es: string; en: string };
   description: { es: string; en: string };
   tags: string[];

@@ -47,13 +47,13 @@ export const CallingCard: React.FC<CallingCardProps> = ({
             <h3 className="font-display text-2xl md:text-5xl text-p5-white leading-none uppercase tracking-tighter">
               {name}
             </h3>
-            <span className="font-mono text-[10px] md:text-sm text-p5-red tracking-widest uppercase mt-1 md:mt-2 block">
+            <span className="font-mono text-xs md:text-sm text-p5-red tracking-widest uppercase mt-1 md:mt-2 block">
               <span className="lang-es">// DESARROLLADOR DE VIDEOJUEGOS</span>
               <span className="lang-en">// GAME DEVELOPER</span>
             </span>
           </div>
 
-          <div className="space-y-2 md:space-y-3 font-mono text-xs md:text-base">
+          <div className="space-y-2 md:space-y-3 font-mono text-xs sm:text-sm md:text-base">
             <div className="group/item flex flex-col sm:flex-row sm:items-center">
               <span className="text-p5-red min-w-[5rem] md:w-28 text-xs md:text-sm shrink-0">EMAIL:</span>
               <a 
@@ -103,11 +103,11 @@ export const CallingCard: React.FC<CallingCardProps> = ({
           </div>
 
           <div className="pt-3 md:pt-4 border-t-2 border-p5-gray flex justify-between items-end mt-4 md:mt-8">
-            <div className="font-display text-xl md:text-3xl text-p5-white opacity-40 italic tracking-widest">
+            <div className="font-display text-sm sm:text-xl md:text-3xl text-p5-white opacity-40 italic tracking-widest">
               <span className="lang-es">TARJETA_DE_CONTACTO</span>
               <span className="lang-en">CALLING_CARD</span>
             </div>
-            <div className="w-8 h-8 bg-p5-red rotate-45 transform translate-y-2"></div>
+            <div className="w-6 h-6 sm:w-8 sm:h-8 bg-p5-red rotate-45 transform translate-y-2 shrink-0"></div>
           </div>
         </div>
       </div>

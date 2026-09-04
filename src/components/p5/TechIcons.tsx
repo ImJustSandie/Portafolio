@@ -146,7 +146,7 @@ export function TechIconsGrid() {
             <span className="font-display text-lg uppercase tracking-wider text-center">
               {tech.name}
             </span>
-            <span className="font-mono text-[10px] uppercase tracking-widest opacity-60">
+            <span className="font-mono text-xs uppercase tracking-widest opacity-60">
               {tech.category}
             </span>
           </div>

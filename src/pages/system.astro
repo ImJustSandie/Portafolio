@@ -599,10 +599,12 @@ const featuredProjects = proyectosTyped.filter((p) => p.featured);
                 <TechTag name="Blender" index={5} />
               </div>
               <p class="font-body text-sm opacity-80 leading-relaxed">
-                <strong>Uso:</strong> Indicadores de herramientas. Alternan entre
-                <code class="text-p5-red">rotate-1</code> y <code
-                  class="text-p5-red">-rotate-2</code
-                > según su índice para dar un aspecto desordenado natural.
+                <strong>Uso:</strong> Indicadores de herramientas. El contenedor
+                padre aplica
+                <code class="text-p5-red">skew-x-[6deg]</code> para crear un
+                flujo diagonal fila a fila, y cada tag se contra-inclina con
+                <code class="text-p5-red">-skew-x-[6deg]</code> para mantener el
+                texto legible.
               </p>
             </div>
           </div>

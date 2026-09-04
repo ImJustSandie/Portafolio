@@ -3,7 +3,7 @@
     "id": "sveliaty-combat-system",
     "title": "Sveliaty Combat System",
     "featured": true,
-    "category": "dev",
+    "category": "juegos",
     "context": {
       "es": "Desarrollo de Videojuegos",
       "en": "Game Development"
@@ -88,7 +88,7 @@
     "id": "plantagochi-web",
     "title": "PLANTAGOCHI WEB",
     "featured": true,
-    "category": "dev",
+    "category": "juegos",
     "context": {
       "es": "Proyecto Académico",
       "en": "Academic Project"
@@ -162,7 +162,7 @@
     "id": "whispers-in-letters",
     "title": "WHISPERS IN LETTERS",
     "featured": true,
-    "category": "dev",
+    "category": "juegos",
     "context": {
       "es": "Desarrollo de Videojuegos",
       "en": "Game Development"
@@ -328,7 +328,7 @@
   {
     "id": "adam",
     "title": "ADAM, THE CALM HUMAN",
-    "featured": true,
+    "featured": false,
     "category": "art",
     "context": {
       "es": "Modelado 3D & Personaje",
@@ -719,6 +719,145 @@
     "role": {
       "es": "Participé como artista 3D responsable de todo el proceso de producción del modelo. Mis tareas incluyeron el análisis de referencias, modelado de alta precisión, creación de materiales, texturizado y configuración de la presentación final. A través de este proyecto profundicé en la creación de props inspirados en franquicias reconocidas, explorando técnicas de hard surface modeling y la construcción de materiales orientados a representar superficies metálicas y componentes mecánicos de manera convincente.",
       "en": "I participated as a 3D artist responsible for the entire model production process. My tasks included reference analysis, high-precision modeling, material creation, texturing, and final presentation setup. Through this project I deepened my skills in creating props inspired by well-known franchises, exploring hard surface modeling techniques and building materials aimed at representing metallic surfaces and mechanical components in a convincing way."
+    }
+  },
+  {
+    "id": "rikoman-adventures",
+    "title": "RIKOMAN ADVENTURES",
+    "featured": true,
+    "category": "juegos",
+    "context": {
+      "es": "Desarrollo de Videojuegos Móviles",
+      "en": "Mobile Game Development"
+    },
+    "description": {
+      "es": "Chocorico es un videojuego móvil desarrollado en Unity para la electiva de Diseño de Videojuegos Móviles, creado como parte de un equipo de desarrollo. El proyecto aborda el ciclo completo de diseño y producción de un juego para plataformas móviles, desde la concepción de la mecánica central y el diseño de niveles hasta la implementación de sistemas de gameplay y su postproducción. La experiencia se enfoca en ofrecer una jugabilidad accesible y dinámica adaptada a las características de los dispositivos móviles, integrando controles y mecánicas pensados para ese contexto.",
+      "en": "Chocorico is a mobile video game developed in Unity for the Mobile Game Design elective, created as part of a development team. The project covers the complete design and production cycle of a game for mobile platforms, from conceiving the core mechanic and level design to implementing gameplay systems and post-production. The experience focuses on delivering accessible and dynamic gameplay adapted to the characteristics of mobile devices, integrating controls and mechanics designed for that context."
+    },
+    "tags": [
+      "Unity",
+      "C#",
+      "Game Design",
+      "Level Design",
+      "Mobile"
+    ],
+    "media": [
+      {
+        "type": "video",
+        "url": "/Assets/Proyectos/Rikoman/trailerChocoriko.mp4",
+        "filename": "TRAILER_CHOCORIKO.MP4"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Rikoman/POSTER_03.png",
+        "filename": "POSTER_03.PNG"
+      }
+    ],
+    "orientation": "right",
+    "primaryButton": {
+      "text": {
+        "es": "CÓDIGO FUENTE",
+        "en": "SOURCE CODE"
+      },
+      "href": "https://github.com/ImJustSandie/Rikoman-Adventures"
+    },
+    "role": {
+      "es": "Participé como desarrollador de videojuegos dentro de un equipo multidisciplinario, colaborando en el diseño de mecánicas y niveles, la programación de sistemas de gameplay en Unity y la integración de los elementos que conforman la experiencia móvil completa. El proyecto me permitió trabajar en un entorno de equipo real, aplicar principios de diseño de videojuegos móviles y desarrollar un producto jugable de principio a fin.",
+      "en": "I participated as a game developer within a multidisciplinary team, collaborating on game mechanics and level design, programming gameplay systems in Unity, and integrating the elements that make up the complete mobile experience. The project allowed me to work in a real team environment, apply mobile game design principles, and develop a playable product from start to finish."
+    }
+  },
+  {
+    "id": "free-qr-generator",
+    "title": "QR GENERATOR",
+    "featured": false,
+    "category": "dev",
+    "context": {
+      "es": "Herramienta Web",
+      "en": "Web Tool"
+    },
+    "description": {
+      "es": "Generador de códigos QR gratuito y 100% client-side: los usuarios pueden crear QR con colores sólidos o degradados de hasta tres tonos con dirección ajustable, personalizar el redondeo de esquinas y píxeles, y exportar el resultado en PNG de alta resolución. La aplicación corre íntegramente en el navegador mediante GitHub Pages, sin backend ni almacenamiento de datos, garantizando privacidad y funcionamiento ilimitado.",
+      "en": "A free, 100% client-side QR code generator: users can create QR codes with solid colors or gradients of up to three tones with adjustable direction, customize corner and pixel roundness, and export the result as a high-resolution PNG. The app runs entirely in the browser via GitHub Pages, with no backend or data storage, ensuring privacy and unlimited use."
+    },
+    "tags": [
+      "JavaScript",
+      "HTML5",
+      "CSS",
+      "GitHub Pages",
+      "QR"
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/QRGenerator/SCREENSHOT_01.png",
+        "filename": "SCREENSHOT_01.PNG"
+      }
+    ],
+    "orientation": "right",
+    "primaryButton": {
+      "text": {
+        "es": "CÓDIGO FUENTE",
+        "en": "SOURCE CODE"
+      },
+      "href": "https://github.com/ImJustSandie/ImJustSandie-s-Free-QR-Generator"
+    },
+    "secondaryButton": {
+      "text": {
+        "es": "PÁGINA WEB",
+        "en": "WEB PAGE"
+      },
+      "href": "https://imjustsandie.github.io/ImJustSandie-s-Free-QR-Generator"
+    },
+    "role": {
+      "es": "Actúo como responsable integral del desarrollo de la herramienta: diseñé e implementé la generación de códigos QR en el cliente, la personalización de colores, degradados y diseño, y la exportación en alta resolución, todo sin backend. El proyecto me permitió explorar técnicas de renderizado en canvas, generación de códigos QR y arquitectura de aplicaciones web estáticas sin dependencias de servidor.",
+      "en": "I act as the overall developer of the tool: I designed and implemented client-side QR code generation, color/gradient/design customization, and high-resolution export, all without a backend. The project allowed me to explore canvas rendering techniques, QR code generation, and static web application architecture with no server dependencies."
+    }
+  },
+  {
+    "id": "sniper-color-picker",
+    "title": "SNIPER COLOR PICKER",
+    "featured": false,
+    "category": "dev",
+    "context": {
+      "es": "Herramienta Web",
+      "en": "Web Tool"
+    },
+    "description": {
+      "es": "Sniper Color Picker es una reinterpretación lúdica del clásico selector de color, con temática de francotirador y estética inspirada en herramientas profesionales de Adobe. El usuario apunta con una mira con zoom ajustable, dispara sobre la paleta para seleccionar un color y copia su valor en formato HEX, RGB o HSL. La interfaz incluye un innovador 'panel balístico' que muestra distancia, viento y gravedad, sumando una capa de humor y ambientación sin restar funcionalidad a la selección precisa del color.",
+      "en": "Sniper Color Picker is a playful reinterpretation of the classic color picker, with a sniper theme and an aesthetic inspired by professional Adobe tools. The user aims with an adjustable zoom scope, shoots at the palette to select a color, and copies its value in HEX, RGB, or HSL format. The interface includes an original 'ballistic panel' showing distance, wind, and gravity, adding a layer of humor and atmosphere without sacrificing precise color selection."
+    },
+    "tags": [
+      "JavaScript",
+      "HTML5",
+      "CSS",
+      "GitHub Pages",
+      "Color"
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/SniperColorPicker/SCREENSHOT_01.png",
+        "filename": "SCREENSHOT_01.PNG"
+      }
+    ],
+    "orientation": "right",
+    "primaryButton": {
+      "text": {
+        "es": "CÓDIGO FUENTE",
+        "en": "SOURCE CODE"
+      },
+      "href": "https://github.com/ImJustSandie/Cursed-Color-Picker-Entry"
+    },
+    "secondaryButton": {
+      "text": {
+        "es": "PÁGINA WEB",
+        "en": "WEB PAGE"
+      },
+      "href": "https://imjustsandie.github.io/Cursed-Color-Picker-Entry"
+    },
+    "role": {
+      "es": "Actúo como responsable integral del desarrollo: diseñé el concepto creativo, la interfaz temática de francotirador y la lógica de selección y conversión de color en el cliente. El proyecto sirvió como ejercicio de diseño de interfaz creativo y desarrollo frontend, explorando cómo una herramienta utilitaria puede presentarse con una identidad única y memorable manteniendo su funcionalidad.",
+      "en": "I act as the overall developer: I designed the creative concept, the sniper-themed interface, and the client-side color selection and conversion logic. The project served as an exercise in creative interface design and frontend development, exploring how a utilitarian tool can be presented with a unique and memorable identity while retaining its functionality."
     }
   }
 ]

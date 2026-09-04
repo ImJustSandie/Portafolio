@@ -21,7 +21,7 @@ export const P5Button: React.FC<P5ButtonProps> = ({
   icon,
   download
 }) => {
-  const baseStyles = "font-display text-xl py-3 px-6 transition-all cursor-pointer flex items-center justify-center gap-2 group/btn relative overflow-hidden";
+  const baseStyles = "font-display text-base sm:text-xl py-2 sm:py-3 px-4 sm:px-6 transition-all cursor-pointer flex items-center justify-center gap-2 group/btn relative overflow-hidden";
   
   const variants: Record<ButtonVariant, string> = {
     primary: "bg-p5-red text-p5-white border-4 border-p5-black shadow-[8px_8px_0_0_#0F0F0F] hover:-translate-y-1 hover:-translate-x-1 hover:shadow-[12px_12px_0_0_#0F0F0F] -skew-x-[6deg] active:translate-y-0 active:translate-x-0 active:shadow-[8px_8px_0_0_#0F0F0F]",

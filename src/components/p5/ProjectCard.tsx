@@ -46,12 +46,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   // isBlack -> Black shadow
   // isRedCard -> Black shadow
   const shadowColor = isRed 
-    ? 'shadow-[10px_10px_0_0_#E50012]' 
-    : (isWhite ? 'shadow-[10px_10px_0_0_#F4F4F4]' : 'shadow-[10px_10px_0_0_#0F0F0F]');
+    ? 'shadow-[4px_4px_0_0_#E50012] sm:shadow-[6px_6px_0_0_#E50012] md:shadow-[10px_10px_0_0_#E50012]' 
+    : (isWhite ? 'shadow-[4px_4px_0_0_#F4F4F4] sm:shadow-[6px_6px_0_0_#F4F4F4] md:shadow-[10px_10px_0_0_#F4F4F4]' : 'shadow-[4px_4px_0_0_#0F0F0F] sm:shadow-[6px_6px_0_0_#0F0F0F] md:shadow-[10px_10px_0_0_#0F0F0F]');
     
   const hoverShadow = isRed 
-    ? 'hover:shadow-[14px_14px_0_0_#E50012]' 
-    : (isWhite ? 'hover:shadow-[14px_14px_0_0_#F4F4F4]' : 'hover:shadow-[14px_14px_0_0_#0F0F0F]');
+    ? 'md:hover:shadow-[14px_14px_0_0_#E50012]' 
+    : (isWhite ? 'md:hover:shadow-[14px_14px_0_0_#F4F4F4]' : 'md:hover:shadow-[14px_14px_0_0_#0F0F0F]');
 
   const [isExpanded, setIsExpanded] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -74,9 +74,9 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       <article 
         onClick={() => { setIsExpanded(true); setCurrentMediaIndex(0); }}
         className={`
-          ${cardBg} border-4 ${borderColor} p-4 
-          flex flex-col gap-4 group 
-          hover:-translate-y-3 hover:-translate-x-3 hover:-rotate-1 
+          ${cardBg} border-4 ${borderColor} p-3 sm:p-4
+          flex flex-col gap-3 sm:gap-4 group 
+          md:hover:-translate-y-3 md:hover:-translate-x-3 md:hover:-rotate-1 
           transition-all duration-300 relative cursor-pointer active:scale-[0.97]
           ${shadowColor} ${hoverShadow}
           ${className}
@@ -101,9 +101,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             <span className="lang-es">{description.es}</span>
             <span className="lang-en">{description.en}</span>
           </p>
-          <div className="flex flex-wrap gap-2 mt-auto">
+          <div className="flex flex-wrap gap-2 mt-auto skew-x-[6deg]">
             {tags.map((tag, i) => (
-              <TechTag key={tag} name={tag} index={i} variant={isWhite ? 'white' : 'black'} />
+              <div key={tag} className="-skew-x-[6deg]">
+                <TechTag name={tag} index={i} variant={isWhite ? 'white' : 'black'} />
+              </div>
             ))}
           </div>
         </div>
@@ -117,7 +119,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           
           {/* Contenedor del Modal lineal */}
           <div 
-            className={`relative w-full max-w-[160rem] bg-p5-black border-2 md:border-4 ${isRed ? 'border-p5-red' : 'border-p5-white'} p-4 md:p-10 flex flex-col md:flex-row gap-4 md:gap-8 shadow-[4px_4px_0_0_#E50012] md:shadow-[16px_16px_0_0_#E50012] animate-slide-in my-auto`}
+            className={`relative w-full max-w-[160rem] bg-p5-black border-2 md:border-4 ${isRed ? 'border-p5-red' : 'border-p5-white'} p-3 sm:p-4 md:p-10 flex flex-col md:flex-row gap-4 md:gap-8 shadow-[4px_4px_0_0_#E50012] md:shadow-[16px_16px_0_0_#E50012] animate-slide-in my-auto max-h-[90vh] overflow-y-auto`}
             onClick={(e) => e.stopPropagation()}
           >
             {/* Botón de Cerrar estilo P5 */}
@@ -190,6 +192,17 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
               )}
             </div>
 
+            {/* Botón de ver imágenes (solo mobile) */}
+            <button
+              onClick={() => setIsFullscreen(true)}
+              className="md:hidden w-full min-h-[44px] flex items-center justify-center gap-2 font-display text-sm tracking-widest border-2 border-p5-white bg-p5-black text-p5-white hover:bg-p5-red shadow-[4px_4px_0_0_#E50012] active:scale-95 -skew-x-[6deg] transition-colors"
+            >
+              <span className="inline-block skew-x-[6deg]">
+                <span className="lang-es">VER IMÁGENES</span>
+                <span className="lang-en">VIEW IMAGES</span>
+              </span>
+            </button>
+
             {/* Info del Modal */}
             <div className="w-full md:w-1/2 flex flex-col justify-center">
               <h3 className="font-display text-3xl md:text-5xl lg:text-6xl mb-2 md:mb-4 text-p5-white uppercase leading-none border-b-2 md:border-b-4 border-adaptive pb-2 md:pb-4">
@@ -214,9 +227,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                 )}
               </div>
               
-              <div className="flex flex-wrap gap-1.5 md:gap-2 mb-4 md:mb-8">
+              <div className="flex flex-wrap gap-1.5 md:gap-2 mb-4 md:mb-8 skew-x-[6deg]">
                 {tags.map((tag, i) => (
-                  <TechTag key={tag} name={tag} index={i} variant={isRed ? 'black' : 'white'} />
+                  <div key={tag} className="-skew-x-[6deg]">
+                    <TechTag name={tag} index={i} variant={isRed ? 'black' : 'white'} />
+                  </div>
                 ))}
               </div>
 
@@ -242,7 +257,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 
       {isFullscreen && (
         <div
-          className="fixed inset-0 z-[100] bg-p5-black/95 flex justify-center p-2 md:p-12 overflow-y-auto animate-fade-in"
+          className="fixed inset-0 z-[100] bg-p5-black/95 flex justify-center p-2 sm:p-4 md:p-12 overflow-y-auto animate-fade-in"
           onClick={() => setIsFullscreen(false)}
         >
           <div
@@ -258,7 +273,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           </button>
 
           <div
-            className="relative w-full max-w-7xl aspect-video border-4 md:border-8 border-p5-white shadow-[4px_4px_0_0_#E50012] md:shadow-[16px_16px_0_0_#E50012] bg-p5-black my-auto"
+            className="relative w-full max-w-7xl aspect-video border-2 sm:border-4 md:border-8 border-p5-white shadow-[4px_4px_0_0_#E50012] md:shadow-[16px_16px_0_0_#E50012] bg-p5-black my-auto"
             onClick={(e) => e.stopPropagation()}
           >
             {allMedia.map((item, index) => (
@@ -290,10 +305,10 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                     e.stopPropagation();
                     setCurrentMediaIndex((prev) => (prev === 0 ? allMedia.length - 1 : prev - 1));
                   }}
-                  className="absolute inset-y-0 left-0 w-16 md:w-24 flex items-center justify-center bg-transparent hover:bg-p5-red/20 text-p5-white transition-colors z-20 group"
+                  className="absolute inset-y-0 left-0 w-10 sm:w-16 md:w-24 flex items-center justify-center bg-transparent hover:bg-p5-red/20 text-p5-white transition-colors z-20 group"
                 >
-                  <svg className="w-12 h-12 md:w-16 md:h-16 group-hover:-translate-x-2 transition-transform drop-shadow-[2px_2px_0_#0F0F0F]" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" />
+                  <svg className="w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 group-hover:-translate-x-2 transition-transform drop-shadow-[2px_2px_0_#0F0F0F]" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M12.707 5.293a1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" />
                   </svg>
                 </button>
                 <button
@@ -301,16 +316,16 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                     e.stopPropagation();
                     setCurrentMediaIndex((prev) => (prev === allMedia.length - 1 ? 0 : prev + 1));
                   }}
-                  className="absolute inset-y-0 right-0 w-16 md:w-24 flex items-center justify-center bg-transparent hover:bg-p5-red/20 text-p5-white transition-colors z-20 group"
+                  className="absolute inset-y-0 right-0 w-10 sm:w-16 md:w-24 flex items-center justify-center bg-transparent hover:bg-p5-red/20 text-p5-white transition-colors z-20 group"
                 >
-                  <svg className="w-12 h-12 md:w-16 md:h-16 group-hover:translate-x-2 transition-transform drop-shadow-[2px_2px_0_#0F0F0F]" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-8 h-8 sm:w-12 sm:h-12 md:w-16 md:h-16 group-hover:translate-x-2 transition-transform drop-shadow-[2px_2px_0_#0F0F0F]" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" />
                   </svg>
                 </button>
               </>
             )}
 
-            <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-p5-black border-4 border-p5-red px-6 py-2 font-display text-xl text-p5-white z-20 -skew-x-[6deg]">
+            <div className="absolute -bottom-3 sm:-bottom-4 left-1/2 -translate-x-1/2 bg-p5-black border-2 sm:border-4 border-p5-red px-3 sm:px-6 py-1 sm:py-2 font-display text-sm sm:text-xl text-p5-white z-20 -skew-x-[6deg] max-w-[90vw]">
               <span className="inline-block skew-x-[6deg]">
                 {currentMediaIndex + 1} // {allMedia.length}
               </span>

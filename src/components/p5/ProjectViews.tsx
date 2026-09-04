@@ -2,18 +2,23 @@ import React, { useState, useEffect } from 'react';
 import { ProjectCard } from './ProjectCard';
 
 interface ProjectViewsProps {
+  juegosProjects: any[];
   devProjects: any[]; // We will pass the mock data for dev projects
   artProjects: any[]; // We will pass the mock data for digital art projects
 }
 
-export const ProjectViews: React.FC<ProjectViewsProps> = ({ devProjects, artProjects }) => {
-  const [activeView, setActiveView] = useState<'dev' | 'art'>('dev');
+export const ProjectViews: React.FC<ProjectViewsProps> = ({ juegosProjects, devProjects, artProjects }) => {
+  const [activeView, setActiveView] = useState<'dev' | 'art' | 'juegos'>('juegos');
   const [showFeaturedOnly, setShowFeaturedOnly] = useState(false);
 
   useEffect(() => {
     // Modify body background and colors based on view
     if (activeView === 'art') {
       document.body.style.backgroundColor = '#660000'; // Dark Red background
+      document.body.style.color = '#F4F4F4';
+      document.body.style.backgroundImage = 'radial-gradient(rgba(15, 15, 15, 0.4) 2px, transparent 2px)';
+    } else if (activeView === 'juegos') {
+      document.body.style.backgroundColor = '#0A1A3C'; // Dark Blue background
       document.body.style.color = '#F4F4F4';
       document.body.style.backgroundImage = 'radial-gradient(rgba(15, 15, 15, 0.4) 2px, transparent 2px)';
     } else {
@@ -30,34 +35,43 @@ export const ProjectViews: React.FC<ProjectViewsProps> = ({ devProjects, artProj
     };
   }, [activeView]);
 
-  const baseProjects = activeView === 'dev' ? devProjects : artProjects;
+  const baseProjects =
+    activeView === 'dev' ? devProjects : activeView === 'juegos' ? juegosProjects : artProjects;
   const currentProjects = showFeaturedOnly
     ? baseProjects.filter((p) => p.featured)
     : baseProjects;
+
+  const tabClass = (isActive: boolean) =>
+    `px-3 md:px-8 py-2 md:py-3 font-display text-base md:text-2xl uppercase tracking-widest transition-all ${
+      isActive
+        ? 'bg-p5-white text-p5-black shadow-[2px_2px_0_0_#E50012] md:shadow-[4px_4px_0_0_#E50012]'
+        : 'text-p5-white hover:bg-p5-red/20'
+    }`;
 
   return (
     <div className="w-full">
       {/* View Switcher Tabs */}
       <div className="flex justify-center mb-8 relative z-10">
-        <div className="bg-p5-black border-2 md:border-4 border-p5-white flex p-1 md:p-2 shadow-hard-white -skew-x-[6deg]">
+        <div className="bg-p5-black border-2 md:border-4 border-p5-white flex p-1 md:p-2 shadow-hard-white -skew-x-[6deg] ml-2 sm:ml-0">
+          <button
+            onClick={() => setActiveView('juegos')}
+            className={tabClass(activeView === 'juegos')}
+          >
+            <span className="inline-block skew-x-[6deg]">
+              <span className="lang-es">Juegos</span>
+              <span className="lang-en">Games</span>
+            </span>
+          </button>
           <button
             onClick={() => setActiveView('dev')}
-            className={`px-3 md:px-8 py-2 md:py-3 font-display text-base md:text-2xl uppercase tracking-widest transition-all ${
-              activeView === 'dev' 
-                ? 'bg-p5-white text-p5-black shadow-[2px_2px_0_0_#E50012] md:shadow-[4px_4px_0_0_#E50012]' 
-                : 'text-p5-white hover:bg-p5-red/20'
-            }`}
+            className={tabClass(activeView === 'dev')}
           >
             <span className="inline-block skew-x-[6deg]">Dev Projects</span>
           </button>
-          
+
           <button
             onClick={() => setActiveView('art')}
-            className={`px-3 md:px-8 py-2 md:py-3 font-display text-base md:text-2xl uppercase tracking-widest transition-all ${
-              activeView === 'art' 
-                ? 'bg-p5-white text-p5-black shadow-[2px_2px_0_0_#0F0F0F] md:shadow-[4px_4px_0_0_#0F0F0F]' 
-                : 'text-p5-white hover:bg-p5-black/20'
-            }`}
+            className={tabClass(activeView === 'art')}
           >
             <span className="inline-block skew-x-[6deg]">Digital Art</span>
           </button>
@@ -95,7 +109,7 @@ export const ProjectViews: React.FC<ProjectViewsProps> = ({ devProjects, artProj
             variant={idx % 2 === 0 ? 'red' : 'white'}
             primaryButton={proj.primaryButton}
             secondaryButton={proj.secondaryButton}
-            className={activeView === 'art' ? 'theme-red-context' : ''}
+            className={activeView === 'art' ? 'theme-red-context' : activeView === 'juegos' ? 'theme-blue-context' : ''}
           />
         ))}
       </div>

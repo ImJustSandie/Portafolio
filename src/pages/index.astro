@@ -7,7 +7,7 @@ import { ConfidantBar } from "../components/p5/ConfidantBar";
 import type { ConfidantBarProps } from "../components/p5/ConfidantBar";
 import { TechStackTabs } from "../components/p5/TechStackTabs";
 import { Image } from "astro:assets";
-import profileImage from "../Assets/Images/Sandoval_member.jpeg";
+const profileImage = "/Assets/Photo.jpeg";
 import proyectos from "../data/proyectos.json";
 import confidantSkills from "../data/confidant-skills.json";
 
@@ -19,65 +19,182 @@ const featuredProjects = (proyectos as ProjectData[]).filter((p) => p.featured);
 <Layout title="Portafolio - Alejandro Sandoval">
   <NavBar currentPath="/" />
 
-  <div class="space-y-16 md:space-y-32 pb-32 md:pb-40 px-2 md:px-6 w-full max-w-none mx-auto">
-    <section id="sobre-mi" class="space-y-6 md:space-y-8 relative mt-12 md:mt-16">
-      <div class="border-4 border-adaptive bg-panel shadow-hard-adaptive skew-x-[3deg]">
-        <div class="-skew-x-[3deg] p-4 md:p-8 lg:p-12 xl:p-16 flex flex-col lg:flex-row gap-8 md:gap-16 xl:gap-32 items-center justify-between">
-          <div class="flex flex-col items-center gap-4 md:gap-6 shrink-0 mx-auto md:mx-0">
-            <div class="relative group cursor-pointer w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80">
-              <div class="absolute inset-0 bg-p5-red -skew-x-[6deg] translate-x-4 translate-y-4 group-hover:translate-x-6 group-hover:translate-y-6 transition-transform duration-300 border-4 border-p5-black"></div>
-              <div class="absolute inset-0 border-4 border-p5-black -skew-x-[6deg] overflow-hidden bg-p5-white z-10">
+  <div
+    class="space-y-16 md:space-y-32 pb-32 md:pb-40 px-2 md:px-6 w-full max-w-none mx-auto"
+  >
+    <section
+      id="sobre-mi"
+      class="space-y-6 md:space-y-8 relative mt-12 md:mt-16"
+    >
+      <div
+          class="border-2 sm:border-4 border-adaptive bg-panel shadow-[4px_4px_0_0_var(--shadow-color)] sm:shadow-hard-adaptive skew-x-[3deg]"
+      >
+        <div
+          class="-skew-x-[3deg] p-4 md:p-8 lg:p-12 xl:p-16 flex flex-col lg:flex-row gap-8 md:gap-16 xl:gap-32 items-center justify-between"
+        >
+          <div
+            class="flex flex-col items-center gap-4 md:gap-6 shrink-0 mx-auto md:mx-0"
+          >
+            <div
+              class="relative group cursor-pointer w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80"
+            >
+              <div
+                class="absolute inset-0 bg-p5-red -skew-x-[6deg] translate-x-4 translate-y-4 group-hover:translate-x-6 group-hover:translate-y-6 transition-transform duration-300 border-4 border-p5-black"
+              >
+              </div>
+              <div
+                class="absolute inset-0 border-4 border-p5-black -skew-x-[6deg] overflow-hidden bg-p5-white z-10"
+              >
                 <div class="skew-x-[6deg] w-full h-full relative">
-                  <Image src={profileImage} alt="Alejandro Sandoval" class="w-full h-full object-cover" />
+                  <img
+                    src={profileImage}
+                    alt="Alejandro Sandoval"
+                    class="w-full h-full object-cover"
+                  />
                 </div>
               </div>
-              <div class="absolute -bottom-3 md:-bottom-6 -left-2 md:-left-6 bg-p5-yellow px-2 md:px-4 py-0.5 md:py-1 border-2 md:border-4 border-p5-black -rotate-6 shadow-hard z-20 group-hover:-rotate-3 group-hover:scale-110 transition-transform duration-300">
-                <span class="font-display text-lg md:text-2xl text-p5-black uppercase tracking-widest leading-none">LVL 23</span>
+              <div
+                class="absolute -bottom-2 md:-bottom-6 -left-1 md:-left-6 bg-p5-yellow px-2 md:px-4 py-0.5 md:py-1 border-2 md:border-4 border-p5-black -rotate-6 shadow-[3px_3px_0_0_#E50012] sm:shadow-hard z-20 group-hover:-rotate-3 group-hover:scale-110 transition-transform duration-300"
+              >
+                <span
+                  class="font-display text-lg md:text-2xl text-p5-black uppercase tracking-widest leading-none"
+                  >LVL 23</span
+                >
               </div>
             </div>
-            <div class="font-mono text-[10px] md:text-xs text-[var(--text-color)] opacity-80 bg-panel border-2 border-adaptive px-2 md:px-4 py-1 md:py-2 -skew-x-[6deg] shadow-sm text-center">
+            <div
+              class="font-mono text-xs md:text-xs text-[var(--text-color)] opacity-80 bg-panel border-2 border-adaptive px-2 md:px-4 py-1 md:py-2 -skew-x-[6deg] shadow-sm text-center ml-2 sm:ml-0"
+            >
               <span class="inline-block skew-x-[6deg]">
-                <span class="lang-es">&gt; ESTADO: <span class="text-p5-red font-bold tracking-widest animate-pulse">DISPONIBLE PARA TRABAJAR</span></span>
-                <span class="lang-en">&gt; STATUS: <span class="text-p5-red font-bold tracking-widest animate-pulse">OPEN TO WORK</span></span>
+                <span class="lang-es"
+                  >&gt; ESTADO: <span
+                    class="text-p5-red font-bold tracking-widest animate-pulse"
+                    >DISPONIBLE PARA TRABAJAR</span
+                  ></span
+                >
+                <span class="lang-en"
+                  >&gt; STATUS: <span
+                    class="text-p5-red font-bold tracking-widest animate-pulse"
+                    >OPEN TO WORK</span
+                  ></span
+                >
               </span>
             </div>
           </div>
 
           <div class="flex-1 space-y-4 md:space-y-6">
-            <h3 class="font-display text-3xl md:text-5xl lg:text-7xl uppercase leading-none text-[var(--text-color)] flex flex-wrap items-center gap-2 md:gap-3">
+            <h3
+              class="font-display text-3xl md:text-5xl lg:text-7xl uppercase leading-none text-[var(--text-color)] flex flex-wrap items-center gap-2 md:gap-3"
+            >
               Alejandro
-              <span class="text-p5-red inline-block -skew-x-[6deg] border-2 md:border-4 border-p5-black px-2 md:px-3 pb-0.5 md:pb-1 bg-p5-black shadow-[4px_4px_0_0_#E50012]">
+              <span
+                class="text-p5-red inline-block -skew-x-[6deg] border-2 md:border-4 border-p5-black px-2 md:px-3 pb-0.5 md:pb-1 bg-p5-black shadow-[4px_4px_0_0_#E50012]"
+              >
                 <span class="inline-block skew-x-[6deg]">Sandoval</span>
               </span>
             </h3>
-            <p class="font-body text-[var(--text-color)] opacity-90 text-sm md:text-lg border-l-4 border-p5-red pl-3 md:pl-4 leading-relaxed">
-              <span class="lang-es">Desarrollador de videojuegos y experiencias interactivas. Especializado en Unity y game design. Quiero contar historias a través de mecánicas, personajes y aventuras inolvidables.</span>
-              <span class="lang-en">Game developer focused on interactive experiences. Specialized in Unity and game design. I want to tell stories through mechanics, characters, and unforgettable adventures.</span>
+            <p
+              class="font-body text-[var(--text-color)] opacity-90 text-sm md:text-lg border-l-4 border-p5-red pl-3 md:pl-4 leading-relaxed"
+            >
+              <span class="lang-es"
+                >Desarrollador de videojuegos y experiencias interactivas.
+                Especializado en Unity y game design. Quiero contar historias a
+                través de mecánicas, personajes y aventuras inolvidables.</span
+              >
+              <span class="lang-en"
+                >Game developer focused on interactive experiences. Specialized
+                in Unity and game design. I want to tell stories through
+                mechanics, characters, and unforgettable adventures.</span
+              >
             </p>
 
-            <div class="flex flex-wrap gap-2 md:gap-4 pt-2 safe-area">
-              <a href="https://github.com/ImJustSandie" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 md:gap-2 font-mono text-[11px] md:text-sm px-3 md:px-4 py-2 md:py-2 bg-p5-black text-p5-white border-2 border-p5-white shadow-[4px_4px_0_0_#E50012] hover:shadow-none hover:translate-x-0.5 hover:translate-y-0.5 transition-all -skew-x-[6deg] group active:scale-95">
-                <span class="inline-flex skew-x-[6deg] items-center gap-1 md:gap-2">
-                  <svg class="w-4 h-4 md:w-5 md:h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+            <div class="flex flex-wrap gap-2 md:gap-4 pt-2 safe-area pl-2 pr-1 sm:pl-0 sm:pr-0">
+              <a
+                href="https://github.com/ImJustSandie"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1 md:gap-2 font-mono text-xs md:text-sm px-3 md:px-4 py-2 md:py-2 bg-p5-black text-p5-white border-2 border-p5-white shadow-[4px_4px_0_0_#E50012] hover:shadow-none hover:translate-x-0.5 hover:translate-y-0.5 transition-all -skew-x-[6deg] group active:scale-95"
+              >
+                <span
+                  class="inline-flex skew-x-[6deg] items-center gap-1 md:gap-2"
+                >
+                  <svg
+                    class="w-4 h-4 md:w-5 md:h-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    ><path
+                      d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
+                    ></path></svg
+                  >
                   GitHub
                 </span>
               </a>
-              <a href="https://sketchfab.com/ImJustSandie" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 md:gap-2 font-mono text-[11px] md:text-sm px-3 md:px-4 py-2 md:py-2 bg-p5-black text-p5-white border-2 border-p5-white shadow-[4px_4px_0_0_#E50012] hover:shadow-none hover:translate-x-0.5 hover:translate-y-0.5 transition-all skew-x-[6deg] group active:scale-95">
-                <span class="inline-flex -skew-x-[6deg] items-center gap-1 md:gap-2">
-                  <svg class="w-4 h-4 md:w-5 md:h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm6.857 17.143a.857.857 0 01-.857.857H6a.857.857 0 01-.857-.857V6.857A.857.857 0 016 6h12a.857.857 0 01.857.857v10.286zM15.714 8.4c-1.143 0-2.057.914-2.057 2.057 0 .857.514 1.628 1.286 1.971v3.772c0 .343-.257.6-.6.6h-1.029v-1.886A1.6 1.6 0 0013.2 14.4c-1.143 0-2.057-.914-2.057-2.057s.914-2.057 2.057-2.057c.857 0 1.628.514 1.971 1.286h1.886V8.4zM8.4 10.286a1.886 1.886 0 011.886-1.886H12v3.086a1.886 1.886 0 01-1.886-1.2z"/></svg>
+              <a
+                href="https://sketchfab.com/ImJustSandie"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1 md:gap-2 font-mono text-xs md:text-sm px-3 md:px-4 py-2 md:py-2 bg-p5-black text-p5-white border-2 border-p5-white shadow-[4px_4px_0_0_#E50012] hover:shadow-none hover:translate-x-0.5 hover:translate-y-0.5 transition-all skew-x-[6deg] group active:scale-95"
+              >
+                <span
+                  class="inline-flex -skew-x-[6deg] items-center gap-1 md:gap-2"
+                >
+                  <svg
+                    class="w-4 h-4 md:w-5 md:h-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    ><path
+                      d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm6.857 17.143a.857.857 0 01-.857.857H6a.857.857 0 01-.857-.857V6.857A.857.857 0 016 6h12a.857.857 0 01.857.857v10.286zM15.714 8.4c-1.143 0-2.057.914-2.057 2.057 0 .857.514 1.628 1.286 1.971v3.772c0 .343-.257.6-.6.6h-1.029v-1.886A1.6 1.6 0 0013.2 14.4c-1.143 0-2.057-.914-2.057-2.057s.914-2.057 2.057-2.057c.857 0 1.628.514 1.971 1.286h1.886V8.4zM8.4 10.286a1.886 1.886 0 011.886-1.886H12v3.086a1.886 1.886 0 01-1.886-1.2z"
+                    ></path></svg
+                  >
                   Sketchfab
                 </span>
               </a>
-              <a href="https://www.linkedin.com/in/alejandro-sandoval-8a9209285/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 md:gap-2 font-mono text-[11px] md:text-sm px-3 md:px-4 py-2 md:py-2 bg-p5-black text-p5-white border-2 border-p5-white shadow-[4px_4px_0_0_#E50012] hover:shadow-none hover:translate-x-0.5 hover:translate-y-0.5 transition-all -skew-x-[6deg] group active:scale-95">
-                <span class="inline-flex skew-x-[6deg] items-center gap-1 md:gap-2">
-                  <svg class="w-4 h-4 md:w-5 md:h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <a
+                href="https://www.linkedin.com/in/alejandro-sandoval-8a9209285/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1 md:gap-2 font-mono text-xs md:text-sm px-3 md:px-4 py-2 md:py-2 bg-p5-black text-p5-white border-2 border-p5-white shadow-[4px_4px_0_0_#E50012] hover:shadow-none hover:translate-x-0.5 hover:translate-y-0.5 transition-all -skew-x-[6deg] group active:scale-95"
+              >
+                <span
+                  class="inline-flex skew-x-[6deg] items-center gap-1 md:gap-2"
+                >
+                  <svg
+                    class="w-4 h-4 md:w-5 md:h-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    ><path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                    ></path></svg
+                  >
                   LinkedIn
+                </span>
+              </a>
+              <a
+                href="https://imjustsandie.itch.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1 md:gap-2 font-mono text-xs md:text-sm px-3 md:px-4 py-2 md:py-2 bg-p5-black text-p5-white border-2 border-p5-white shadow-[4px_4px_0_0_#E50012] hover:shadow-none hover:translate-x-0.5 hover:translate-y-0.5 transition-all skew-x-[6deg] group active:scale-95"
+              >
+                <span
+                  class="inline-flex -skew-x-[6deg] items-center gap-1 md:gap-2"
+                >
+                  <svg
+                    class="w-4 h-4 md:w-5 md:h-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    ><path
+                      d="M12 2c-4.5 0-8.4 3.1-8.4 7.2 0 2.5 1.6 4.7 4 5.9v3.2c0 .6.5 1.1 1.1 1.1h6.6c.6 0 1.1-.5 1.1-1.1v-3.1c2.4-1.2 4-3.4 4-5.9C20.4 5.1 16.5 2 12 2zm-2.9 5.1c.7 0 1.2.5 1.2 1.4 0 .8-.6 1.4-1.2 1.4s-1.2-.6-1.2-1.4c0-.9.5-1.4 1.2-1.4zm5.8 0c.7 0 1.2.5 1.2 1.4 0 .8-.5 1.4-1.2 1.4-.7 0-1.2-.6-1.2-1.4 0-.9.6-1.4 1.2-1.4z"
+                    ></path></svg
+                  >
+                  itch.io
                 </span>
               </a>
             </div>
 
             <div class="pt-2 md:pt-4">
-              <h4 class="font-display text-xl md:text-2xl mb-2 md:mb-4 text-[var(--text-color)] uppercase">
+              <h4
+                class="font-display text-xl md:text-2xl mb-2 md:mb-4 text-[var(--text-color)] uppercase"
+              >
                 <span class="lang-es">Stack Tecnológico</span>
                 <span class="lang-en">Tech Stack</span>
               </h4>
@@ -89,14 +206,20 @@ const featuredProjects = (proyectos as ProjectData[]).filter((p) => p.featured);
     </section>
 
     <section class="space-y-6 md:space-y-8">
-      <h3 class="font-display text-2xl md:text-4xl text-p5-red border-b-2 border-p5-red pb-1 md:pb-2 inline-block -skew-x-[6deg]">
+      <h3
+        class="font-display text-2xl md:text-4xl text-p5-red border-b-2 border-p5-red pb-1 md:pb-2 inline-block -skew-x-[6deg] ml-2 sm:ml-0"
+      >
         <span class="inline-block skew-x-[6deg]">
           <span class="lang-es">Barras de Experiencia</span>
           <span class="lang-en">Experience Bars</span>
         </span>
       </h3>
-      <div class="bg-panel border-4 border-adaptive shadow-hard-adaptive skew-x-[3deg] overflow-x-clip">
-        <div class="-skew-x-[3deg] p-4 md:p-8 lg:p-12 grid grid-cols-1 md:grid-cols-2 gap-x-8 lg:gap-x-16 gap-y-6 md:gap-y-8 overflow-x-clip">
+      <div
+          class="bg-panel border-2 sm:border-4 border-adaptive shadow-[4px_4px_0_0_var(--shadow-color)] sm:shadow-hard-adaptive skew-x-[3deg] overflow-x-clip"
+      >
+        <div
+          class="-skew-x-[3deg] p-4 md:p-8 lg:p-12 grid grid-cols-1 md:grid-cols-2 gap-x-8 lg:gap-x-16 gap-y-6 md:gap-y-8 overflow-x-clip"
+        >
           {
             (confidantSkills as ConfidantBarProps[]).map((skill) => (
               <ConfidantBar
@@ -113,8 +236,10 @@ const featuredProjects = (proyectos as ProjectData[]).filter((p) => p.featured);
       </div>
     </section>
 
-    <section id="proyectos" class="flex flex-col gap-8 md:gap-12 mt-8 md:mt-16">
-      <h2 class="font-display text-3xl md:text-5xl lg:text-6xl bg-p5-black text-p5-white inline-block px-4 md:px-8 py-2 md:py-3 -skew-x-[6deg] shadow-hard self-start mb-4 md:mb-8">
+    <section id="proyectos" class="flex flex-col gap-8 md:gap-12 mt-8 md:mt-16 overflow-x-clip">
+      <h2
+        class="font-display text-2xl sm:text-3xl md:text-5xl lg:text-6xl bg-p5-black text-p5-white inline-block px-3 sm:px-4 md:px-8 py-2 sm:py-2 md:py-3 -skew-x-[6deg] shadow-[4px_4px_0_0_#E50012] sm:shadow-[6px_6px_0_0_#E50012] md:shadow-hard self-start mb-4 md:mb-8 ml-2 sm:ml-0"
+      >
         <span class="inline-block skew-x-[6deg]">
           <span class="lang-es">Proyectos Destacados</span>
           <span class="lang-en">Featured Projects</span>
@@ -139,12 +264,22 @@ const featuredProjects = (proyectos as ProjectData[]).filter((p) => p.featured);
       }
 
       <div class="flex justify-center mt-8 md:mt-12">
-        <a href="/proyectos" class="font-display text-2xl md:text-4xl bg-p5-red text-p5-white px-6 md:px-12 py-4 md:py-6 -skew-x-[6deg] shadow-[8px_8px_0_0_#0F0F0F] hover:-translate-y-2 hover:shadow-[12px_12px_0_0_#0F0F0F] transition-all flex items-center gap-3 md:gap-4 group">
+        <a
+          href="/proyectos"
+          class="font-display text-xl sm:text-2xl md:text-4xl bg-p5-red text-p5-white px-4 sm:px-6 md:px-12 py-3 sm:py-4 md:py-6 -skew-x-[6deg] shadow-[4px_4px_0_0_#0F0F0F] sm:shadow-[6px_6px_0_0_#0F0F0F] md:shadow-[8px_8px_0_0_#0F0F0F] md:hover:-translate-y-2 md:hover:shadow-[12px_12px_0_0_#0F0F0F] transition-all flex items-center gap-2 sm:gap-3 md:gap-4 group ml-2 sm:ml-0"
+        >
           <span class="inline-block skew-x-[6deg]">
             <span class="lang-es">VER TODOS LOS PROYECTOS</span>
             <span class="lang-en">VIEW ALL PROJECTS</span>
           </span>
-          <svg class="w-6 h-6 md:w-8 md:h-8 skew-x-[6deg] group-hover:translate-x-2 transition-transform" fill="currentColor" viewBox="0 0 20 20"><path d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"/></svg>
+          <svg
+            class="w-6 h-6 md:w-8 md:h-8 skew-x-[6deg] group-hover:translate-x-2 transition-transform"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            ><path
+              d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+            ></path></svg
+          >
         </a>
       </div>
     </section>

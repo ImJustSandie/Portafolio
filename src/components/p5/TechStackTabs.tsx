@@ -61,7 +61,7 @@ export function TechStackTabs() {
 
   return (
     <div>
-      <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 mb-6">
+      <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 mb-6 pl-1 sm:pl-0">
         {techGroups.map((group) => {
           const isActive = group.id === activeGroup;
           return (
@@ -70,7 +70,7 @@ export function TechStackTabs() {
               onClick={() => setActiveGroup(group.id)}
               className={`
                 font-mono text-xs sm:text-sm tracking-wider px-3 sm:px-4 py-2 sm:py-2
-                -skew-x-[6deg] border-2 transition-all duration-200 w-full sm:w-auto
+                -skew-x-[6deg] border-2 transition-all duration-200 w-full sm:w-auto text-center
                 active:scale-[0.97]
                 ${isActive
                   ? 'bg-p5-black text-p5-white border-p5-white shadow-[4px_4px_0_0_#E50012] hover:shadow-[6px_6px_0_0_#E50012]'
@@ -87,9 +87,11 @@ export function TechStackTabs() {
         })}
       </div>
 
-      <div className="flex flex-wrap gap-3 items-center">
+      <div className="flex flex-wrap gap-2 sm:gap-3 items-center pl-2 pr-2 sm:pl-0 sm:pr-0 skew-x-[6deg]">
         {active.tags.map((tag, i) => (
-          <TechTag key={tag} name={tag} index={i} />
+          <div key={tag} className="-skew-x-[6deg]">
+            <TechTag name={tag} index={i} />
+          </div>
         ))}
       </div>
     </div>
