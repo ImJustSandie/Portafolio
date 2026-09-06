@@ -50,6 +50,7 @@ const TAG_ICON_MAP: Record<string, string> = {
   Illustrator: "Illustrator",
   "Premiere Pro": "Premiere Pro",
   "After Effects": "After Effects",
+  "Godot Engine": "Godot",
 };
 
 interface TechTagProps {

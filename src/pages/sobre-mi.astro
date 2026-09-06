@@ -4,6 +4,9 @@ import { CallingCard } from "../components/p5/CallingCard";
 import NavBar from "../components/p5/NavBar.astro";
 import { P5Button } from "../components/p5/P5Button";
 import { ContactForm } from "../components/p5/ContactForm";
+import { ConfidantBar } from "../components/p5/ConfidantBar";
+import type { ConfidantBarProps } from "../components/p5/ConfidantBar";
+import confidantSkills from "../data/confidant-skills.json";
 
 type LocalizedText = {
   es: string;
@@ -482,13 +485,44 @@ const academicEvents = [
       </div>
     </section>
 
+    <section class="space-y-6 md:space-y-8">
+      <h3
+        class="font-display text-2xl md:text-4xl text-p5-red border-b-2 border-p5-red pb-1 md:pb-2 inline-block -skew-x-[6deg] ml-2 sm:ml-0"
+      >
+        <span class="inline-block skew-x-[6deg]">
+          <span class="lang-es">03. Barras de Experiencia</span>
+          <span class="lang-en">03. Experience Bars</span>
+        </span>
+      </h3>
+      <div
+          class="bg-panel border-2 sm:border-4 border-adaptive shadow-[4px_4px_0_0_var(--shadow-color)] sm:shadow-hard-adaptive skew-x-[3deg] overflow-x-clip"
+      >
+        <div
+          class="-skew-x-[3deg] p-4 md:p-8 lg:p-12 grid grid-cols-1 md:grid-cols-2 gap-x-8 lg:gap-x-16 gap-y-6 md:gap-y-8 overflow-x-clip"
+        >
+          {
+            (confidantSkills as ConfidantBarProps[]).map((skill) => (
+              <ConfidantBar
+                client:load
+                title={skill.title}
+                rank={skill.rank}
+                percentage={skill.percentage}
+                description={skill.description}
+                tags={skill.tags}
+              />
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
     <section class="relative">
       <div
         class="absolute -top-4 md:-top-6 left-0 md:-left-4 bg-p5-black text-p5-white px-3 md:px-6 py-1 md:py-2 font-display text-lg md:text-3xl -skew-x-[6deg] z-10 border-2 border-p5-white shadow-[4px_4px_0_0_#E50012]"
       >
         <span class="inline-block skew-x-[6deg]">
-          <span class="lang-es">03. TIMELINE ACADÉMICA</span>
-          <span class="lang-en">03. ACADEMIC TIMELINE</span>
+          <span class="lang-es">04. TIMELINE ACADÉMICA</span>
+          <span class="lang-en">04. ACADEMIC TIMELINE</span>
         </span>
       </div>
       <div
@@ -591,8 +625,8 @@ const academicEvents = [
         class="absolute -top-4 md:-top-6 left-0 md:-left-4 bg-p5-black text-p5-white px-3 md:px-6 py-1 md:py-2 font-display text-lg md:text-3xl -skew-x-[6deg] z-10 border-2 border-p5-white shadow-[4px_4px_0_0_#E50012]"
       >
         <span class="inline-block skew-x-[6deg]">
-          <span class="lang-es">04. LOGROS Y EVENTOS</span>
-          <span class="lang-en">04. ACHIEVEMENTS & EVENTS</span>
+          <span class="lang-es">05. LOGROS Y EVENTOS</span>
+          <span class="lang-en">05. ACHIEVEMENTS & EVENTS</span>
         </span>
       </div>
 

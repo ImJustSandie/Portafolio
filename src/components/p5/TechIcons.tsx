@@ -49,6 +49,7 @@ const icons: Record<string, string> = {
   "Illustrator": `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.5 14.5l-1.5-4H7.5l-1.5 4H4.5l3.5-9h2l3.5 9h-2.5zM17 14.5c0 .8-.2 1.5-.5 2-.4.5-.9.9-1.5 1.2V18c0 .3-.2.5-.5.5H13v-1.5h1V14c0-.3.2-.5.5-.5h.5c.3 0 .5-.2.5-.5V12c0-.3-.2-.5-.5-.5h-1c-.3 0-.5.2-.5.5v.5h-1.5V12c0-.8.3-1.5.8-2 .5-.5 1.2-.8 2-.8s1.5.3 2 .8c.5.5.8 1.2.8 2v1.5z"/></svg>`,
   "Premiere Pro": `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8 16.5V12h1.5c1.1 0 2 .9 2 2s-.9 2-2 2H8zm6-4c0 .8-.2 1.5-.5 2-.4.5-.9.9-1.5 1.2V18c0 .3-.2.5-.5.5H13v-1.5h1V14c0-.3.2-.5.5-.5h.5c.3 0 .5-.2.5-.5V12c0-.3-.2-.5-.5-.5h-1c-.3 0-.5.2-.5.5v.5h-1.5V12c0-.8.3-1.5.8-2 .5-.5 1.2-.8 2-.8s1.5.3 2 .8c.5.5.8 1.2.8 2v.5z"/></svg>`,
   "After Effects": `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2.5 14.5l-1.5-4H6.5l-1.5 4H3.5l3.5-9h2l3.5 9h-2.5zM18 14c0 .8-.2 1.5-.5 2-.4.5-.9.9-1.5 1.2V18c0 .3-.2.5-.5.5H14v-1.5h1V14c0-.3.2-.5.5-.5h.5c.3 0 .5-.2.5-.5V12c0-.3-.2-.5-.5-.5h-1c-.3 0-.5.2-.5.5v.5h-1.5V12c0-.8.3-1.5.8-2 .5-.5 1.2-.8 2-.8s1.5.3 2 .8c.5.5.8 1.2.8 2v1.5z"/></svg>`,
+  "Godot": `<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2c-.9 0-1.7.6-2 1.5L8.6 8H7c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2v-8c0-1.1-.9-2-2-2h-1.6L14 3.5C13.7 2.6 12.9 2 12 2zm-3 8.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zm6 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3zM8.5 16h7v2h-7v-2z"/></svg>`,
 };
 
 const brandColors: Record<string, string> = {
@@ -73,6 +74,7 @@ const brandColors: Record<string, string> = {
   Illustrator: "#FF9A00",
   "Premiere Pro": "#9999FF",
   "After Effects": "#9999FF",
+  Godot: "#478CBF",
 };
 
 export function TechIcon({ name, className = "" }: TechIconProps) {
@@ -129,6 +131,7 @@ const techEntries = [
   { name: "WebGL", category: "Game Dev" },
   { name: "Gameplay Systems", category: "Game Dev" },
   { name: "Scriptable Objects", category: "Game Dev" },
+  { name: "Godot", category: "Engine" },
 ];
 
 export function TechIconsGrid() {

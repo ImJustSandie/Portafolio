@@ -15,10 +15,9 @@ const techGroups: TechGroup[] = [
       en: 'DEVELOPMENT STACK',
     },
     tags: [
-      'Unity', 'C#', 'Python', 'JavaScript',
-      'HTML5', 'CSS3', 'React', 'Astro',
-      'FastAPI', 'Git', 'Tailwind CSS',
-      'WebGL', 'OpenXR', 'XR Interaction Toolkit',
+      'Unity', 'C#', 'Godot Engine', 'Python',
+      'React', 'Astro', 'Git',
+      'OpenXR', 'Figma'
     ],
   },
   {
@@ -29,8 +28,8 @@ const techGroups: TechGroup[] = [
     },
     tags: [
       'Maya', 'Mudbox', 'Substance Painter',
-      'Figma', 'Photoshop', 'Krita', 'MediBang Paint',
-      'Aseprite', 'LibreSprite', 'Piskel',
+      'Krita', 
+      'LibreSprite', 'Piskel',
     ],
   },
   {
@@ -42,8 +41,8 @@ const techGroups: TechGroup[] = [
     tags: [
       'Game Design', 'Level Design', 'Gameplay Systems',
       'UI/UX 2D/3D', 'VR', 'AR',
-      'Scriptable Objects',
-      'Technical Art', 'Rigging',
+      
+       
       'System Architecture', 'Modular Design',
       'Tool Development', 'Optimization',
       'Agile Methodologies',

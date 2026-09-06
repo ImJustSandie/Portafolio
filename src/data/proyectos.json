@@ -1,5 +1,133 @@
 [
   {
+    "id": "whispers-in-letters",
+    "title": "WHISPERS IN LETTERS",
+    "featured": true,
+    "category": "juegos",
+    "context": {
+      "es": "Desarrollo de Videojuegos",
+      "en": "Game Development"
+    },
+    "description": {
+      "es": "Whispers in Letters es una experiencia narrativa en 3D donde el jugador asume el papel de Sophia, una joven que ayuda a distintas personas a afrontar decisiones complejas mediante la exploración de dilemas filosóficos. A través de conversaciones e interacciones con personajes como Joseph, el juego invita a reflexionar sobre diferentes corrientes de pensamiento y su aplicación en situaciones cotidianas, integrando narrativa, toma de decisiones y filosofía en una experiencia interactiva.",
+      "en": "Whispers in Letters is a 3D narrative experience where the player takes on the role of Sophia, a young woman who helps different people face complex decisions through the exploration of philosophical dilemmas. Through conversations and interactions with characters like Joseph, the game invites reflection on different schools of thought and their application in everyday situations, integrating narrative, decision-making, and philosophy into an interactive experience."
+    },
+    "tags": [
+      "Unity",
+      "C#",
+      "Ink",
+      "Level Design",
+      "Game Design",
+      "Gameplay Systems",
+      "UI/UX 2D/3D",
+      "Scriptable Objects"
+    ],
+    "media": [
+      {
+        "type": "video",
+        "url": "/Assets/Proyectos/Whispers%20In%20Letters/01.mp4",
+        "filename": "DEMO_VIDEO.MP4"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Whispers%20In%20Letters/02.png",
+        "filename": "SCREENSHOT_02.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Whispers%20In%20Letters/03.png",
+        "filename": "SCREENSHOT_03.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Whispers%20In%20Letters/04.png",
+        "filename": "SCREENSHOT_04.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Whispers%20In%20Letters/05.png",
+        "filename": "SCREENSHOT_05.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Whispers%20In%20Letters/06.png",
+        "filename": "SCREENSHOT_06.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Whispers%20In%20Letters/07.png",
+        "filename": "SCREENSHOT_07.PNG"
+      }
+    ],
+    "orientation": "left",
+    "primaryButton": {
+      "text": {
+        "es": "CÓDIGO FUENTE",
+        "en": "SOURCE CODE"
+      },
+      "href": "https://github.com/ImJustSandie/Whispers-In-Letters"
+    },
+    "secondaryButton": {
+      "text": {
+        "es": "PÁGINA WEB",
+        "en": "WEB PAGE"
+      },
+      "href": "https://whispers-in-letters.vercel.app/"
+    },
+    "role": {
+      "es": "Participé como programador principal y arquitecto de software del proyecto. Fui responsable del diseño e implementación de sistemas centrales, la gestión del repositorio y flujo de trabajo en GitHub, así como de la integración continua de las funcionalidades desarrolladas por el equipo. Además, brindé soporte técnico en Unity a otros desarrolladores, colaboré en la resolución de problemas durante el desarrollo y diseñé e implementé la página web oficial del proyecto.",
+      "en": "I participated as lead programmer and software architect of the project. I was responsible for the design and implementation of core systems, repository management and GitHub workflow, as well as the continuous integration of functionalities developed by the team. Additionally, I provided technical support in Unity to other developers, collaborated in problem-solving during development, and designed and implemented the project's official website."
+    }
+  },
+  {
+    "id": "resonador-vr",
+    "title": "RESONADOR VR",
+    "featured": true,
+    "category": "dev",
+    "context": {
+      "es": "Realidad Virtual",
+      "en": "Virtual Reality"
+    },
+    "description": {
+      "es": "Proyecto de realidad virtual desarrollado como una experiencia inmersiva de exploración y aprendizaje enfocada en el funcionamiento de los equipos de resonancia magnética. A través de un entorno interactivo, los usuarios pueden conocer los principios básicos de operación del resonador, los procedimientos generales de mantenimiento, los requisitos de seguridad para pacientes y operadores, los aspectos legales asociados a su uso y las características de diferentes modelos del equipo. La experiencia fue diseñada como una herramienta educativa que facilita la comprensión de conceptos técnicos mediante la interacción en un entorno virtual.",
+      "en": "Virtual reality project developed as an immersive exploration and learning experience focused on the operation of magnetic resonance imaging equipment. Through an interactive environment, users can learn the basic principles of MRI operation, general maintenance procedures, safety requirements for patients and operators, legal aspects associated with its use, and the characteristics of different equipment models. The experience was designed as an educational tool that facilitates understanding of technical concepts through interaction in a virtual environment."
+    },
+    "tags": [
+      "Unity",
+      "C#",
+      "VR"
+    ],
+    "media": [
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Resonador/01.png",
+        "filename": "SCREENSHOT_01.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Resonador/02.png",
+        "filename": "SCREENSHOT_02.PNG"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Resonador/03.png",
+        "filename": "SCREENSHOT_03.PNG"
+      }
+    ],
+    "orientation": "left",
+    "primaryButton": {
+      "text": {
+        "es": "CÓDIGO FUENTE",
+        "en": "SOURCE CODE"
+      },
+      "href": "https://github.com/ImJustSandie/Simulador-de-ResonadorMagnetico"
+    },
+    "role": {
+      "es": "Participé como desarrollador principal en la implementación de la experiencia. Trabajé en estrecha colaboración con estudiantes de Ingeniería Biomédica para traducir los requerimientos académicos y técnicos en funcionalidades interactivas dentro del entorno virtual. Mis responsabilidades incluyeron el diseño e implementación de los sistemas principales de la aplicación, la programación de las mecánicas de interacción en realidad virtual y la integración de los contenidos necesarios para garantizar una experiencia educativa clara y accesible para los usuarios.",
+      "en": "I participated as lead developer in the implementation of the experience. I worked closely with Biomedical Engineering students to translate academic and technical requirements into interactive functionalities within the virtual environment. My responsibilities included the design and implementation of the application's main systems, programming virtual reality interaction mechanics, and integrating the necessary content to ensure a clear and accessible educational experience for users."
+    }
+  },
+  {
     "id": "sveliaty-combat-system",
     "title": "Sveliaty Combat System",
     "featured": true,
@@ -159,86 +287,6 @@
     }
   },
   {
-    "id": "whispers-in-letters",
-    "title": "WHISPERS IN LETTERS",
-    "featured": true,
-    "category": "juegos",
-    "context": {
-      "es": "Desarrollo de Videojuegos",
-      "en": "Game Development"
-    },
-    "description": {
-      "es": "Whispers in Letters es una experiencia narrativa en 3D donde el jugador asume el papel de Sophia, una joven que ayuda a distintas personas a afrontar decisiones complejas mediante la exploración de dilemas filosóficos. A través de conversaciones e interacciones con personajes como Joseph, el juego invita a reflexionar sobre diferentes corrientes de pensamiento y su aplicación en situaciones cotidianas, integrando narrativa, toma de decisiones y filosofía en una experiencia interactiva.",
-      "en": "Whispers in Letters is a 3D narrative experience where the player takes on the role of Sophia, a young woman who helps different people face complex decisions through the exploration of philosophical dilemmas. Through conversations and interactions with characters like Joseph, the game invites reflection on different schools of thought and their application in everyday situations, integrating narrative, decision-making, and philosophy into an interactive experience."
-    },
-    "tags": [
-      "Unity",
-      "C#",
-      "Ink",
-      "Level Design",
-      "Game Design",
-      "Gameplay Systems",
-      "UI/UX 2D/3D",
-      "Scriptable Objects"
-    ],
-    "media": [
-      {
-        "type": "video",
-        "url": "/Assets/Proyectos/Whispers%20In%20Letters/01.mp4",
-        "filename": "DEMO_VIDEO.MP4"
-      },
-      {
-        "type": "image",
-        "url": "/Assets/Proyectos/Whispers%20In%20Letters/02.png",
-        "filename": "SCREENSHOT_02.PNG"
-      },
-      {
-        "type": "image",
-        "url": "/Assets/Proyectos/Whispers%20In%20Letters/03.png",
-        "filename": "SCREENSHOT_03.PNG"
-      },
-      {
-        "type": "image",
-        "url": "/Assets/Proyectos/Whispers%20In%20Letters/04.png",
-        "filename": "SCREENSHOT_04.PNG"
-      },
-      {
-        "type": "image",
-        "url": "/Assets/Proyectos/Whispers%20In%20Letters/05.png",
-        "filename": "SCREENSHOT_05.PNG"
-      },
-      {
-        "type": "image",
-        "url": "/Assets/Proyectos/Whispers%20In%20Letters/06.png",
-        "filename": "SCREENSHOT_06.PNG"
-      },
-      {
-        "type": "image",
-        "url": "/Assets/Proyectos/Whispers%20In%20Letters/07.png",
-        "filename": "SCREENSHOT_07.PNG"
-      }
-    ],
-    "orientation": "left",
-    "primaryButton": {
-      "text": {
-        "es": "CÓDIGO FUENTE",
-        "en": "SOURCE CODE"
-      },
-      "href": "https://github.com/ImJustSandie/Whispers-In-Letters"
-    },
-    "secondaryButton": {
-      "text": {
-        "es": "PÁGINA WEB",
-        "en": "WEB PAGE"
-      },
-      "href": "https://whispers-in-letters.vercel.app/"
-    },
-    "role": {
-      "es": "Participé como programador principal y arquitecto de software del proyecto. Fui responsable del diseño e implementación de sistemas centrales, la gestión del repositorio y flujo de trabajo en GitHub, así como de la integración continua de las funcionalidades desarrolladas por el equipo. Además, brindé soporte técnico en Unity a otros desarrolladores, colaboré en la resolución de problemas durante el desarrollo y diseñé e implementé la página web oficial del proyecto.",
-      "en": "I participated as lead programmer and software architect of the project. I was responsible for the design and implementation of core systems, repository management and GitHub workflow, as well as the continuous integration of functionalities developed by the team. Additionally, I provided technical support in Unity to other developers, collaborated in problem-solving during development, and designed and implemented the project's official website."
-    }
-  },
-  {
     "id": "clanksworth",
     "title": "CLANKSWORTH - STEAMPUNK ROBOT",
     "featured": true,
@@ -255,7 +303,8 @@
       "Maya",
       "Mudbox",
       "Substance Painter",
-      "PBR Texturing"
+      "PBR Texturing",
+      "Game Assets"
     ],
     "media": [
       {
@@ -280,139 +329,6 @@
     "role": {
       "es": "Participé como artista 3D responsable de todo el proceso de producción del personaje. Mis tareas incluyeron el modelado, optimización de la geometría, creación de materiales y texturizado, así como la definición de la dirección visual del proyecto. El trabajo se centró en la construcción de superficies metálicas creíbles y en la utilización de técnicas de texturizado que reforzaran la narrativa visual y la identidad steampunk del personaje.",
       "en": "I participated as a 3D artist responsible for the entire character production process. My tasks included modeling, geometry optimization, material creation and texturing, as well as defining the visual direction of the project. The work focused on building credible metallic surfaces and using texturing techniques that reinforced the visual narrative and steampunk identity of the character."
-    }
-  },
-  {
-    "id": "heather",
-    "title": "HEATHER, THE CLUMSY DEMON",
-    "featured": true,
-    "category": "art",
-    "context": {
-      "es": "Modelado 3D & Personaje",
-      "en": "3D Modeling & Character"
-    },
-    "description": {
-      "es": "Heather es un personaje original diseñado para explorar la creación de personajes estilizados con una fuerte carga expresiva y narrativa. Aunque pertenece al arquetipo clásico de los demonios, su personalidad se aleja de lo intimidante para adoptar un enfoque más desenfadado, impulsivo y carismático. Su diseño busca transmitir cercanía y energía a través de sus proporciones, expresiones y lenguaje visual, reflejando a un personaje que actúa guiado por sus emociones y vive cada momento con espontaneidad. El proyecto se centró en el desarrollo de un personaje capaz de comunicar su personalidad mediante la silueta, las proporciones y los detalles visuales. El modelado fue realizado en Autodesk Maya, complementado con ajustes de proporciones y trabajo de escultura en Mudbox. La exploración inicial del color también se llevó a cabo en Mudbox, mientras que el texturizado final fue desarrollado en Substance 3D Painter para reforzar la identidad visual y el atractivo estético del personaje.",
-      "en": "Heather is an original character designed to explore the creation of stylized characters with strong expressive and narrative weight. Although she belongs to the classic demon archetype, her personality moves away from the intimidating to adopt a more carefree, impulsive, and charismatic approach. Her design seeks to convey warmth and energy through her proportions, expressions, and visual language, reflecting a character who acts guided by her emotions and lives each moment spontaneously. The project focused on developing a character capable of communicating personality through silhouette, proportions, and visual details. Modeling was done in Autodesk Maya, complemented by proportion adjustments and sculpting work in Mudbox. Initial color exploration was also carried out in Mudbox, while final texturing was developed in Substance 3D Painter to reinforce the character's visual identity and aesthetic appeal."
-    },
-    "tags": [
-      "Maya",
-      "Mudbox",
-      "Substance 3D Painter"
-    ],
-    "media": [
-      {
-        "type": "image",
-        "url": "/Assets/Proyectos/Referencia/heather.jpeg",
-        "filename": "HEATHER.JPEG"
-      },
-      {
-        "type": "sketchfab",
-        "url": "https://sketchfab.com/3d-models/heather-the-clumsy-demon-caceria-nocturna-wip-09c29df6634c4f21807416809395bdcc/embed",
-        "filename": "SKETCHFAB_VIEW"
-      }
-    ],
-    "orientation": "left",
-    "primaryButton": {
-      "text": {
-        "es": "VER EN SKETCHFAB",
-        "en": "VIEW ON SKETCHFAB"
-      },
-      "href": "https://sketchfab.com/3d-models/heather-the-clumsy-demon-caceria-nocturna-wip-09c29df6634c4f21807416809395bdcc"
-    },
-    "role": {
-      "es": "Participé como artista 3D responsable de todo el proceso de creación del personaje. Mis tareas incluyeron el diseño conceptual, modelado, ajuste de proporciones, escultura digital, desarrollo de materiales y texturizado. A través de este proyecto profundicé en técnicas de creación de personajes estilizados, buscando transmitir personalidad y narrativa visual mediante decisiones de diseño, formas y tratamiento de superficies.",
-      "en": "I participated as a 3D artist responsible for the entire character creation process. My tasks included concept design, modeling, proportion adjustments, digital sculpting, material development, and texturing. Through this project I deepened my skills in stylized character creation techniques, seeking to convey personality and visual narrative through design decisions, shapes, and surface treatment."
-    }
-  },
-  {
-    "id": "adam",
-    "title": "ADAM, THE CALM HUMAN",
-    "featured": false,
-    "category": "art",
-    "context": {
-      "es": "Modelado 3D & Personaje",
-      "en": "3D Modeling & Character"
-    },
-    "description": {
-      "es": "Adam es un personaje original concebido para explorar la creación de personajes estilizados centrados en la personalidad y la narrativa visual. Su diseño representa a una persona tranquila, reservada y constante, cuya forma de relacionarse con los demás se manifiesta principalmente a través de sus acciones. El objetivo del proyecto fue transmitir una sensación de estabilidad, cercanía y autenticidad mediante decisiones de diseño enfocadas en las proporciones, la postura y los detalles visuales del personaje. El desarrollo se centró en construir una identidad visual coherente capaz de reflejar rasgos de personalidad sin depender exclusivamente de la expresión facial o el contexto narrativo. El modelado fue realizado íntegramente en Autodesk Maya, donde se trabajaron tanto las formas generales como los detalles necesarios para definir la identidad del personaje. El texturizado final fue desarrollado en Substance 3D Painter, permitiendo reforzar su apariencia visual y aportar mayor riqueza a los materiales y acabados de la pieza.",
-      "en": "Adam is an original character conceived to explore the creation of stylized characters focused on personality and visual narrative. His design represents a calm, reserved, and steady person, whose way of relating to others is manifested primarily through his actions. The project aimed to convey a sense of stability, warmth, and authenticity through design decisions focused on proportions, posture, and visual details. Development centered on building a coherent visual identity capable of reflecting personality traits without relying exclusively on facial expression or narrative context. Modeling was done entirely in Autodesk Maya, where both general forms and the details needed to define the character's identity were worked on. Final texturing was developed in Substance 3D Painter, reinforcing the visual appearance and adding greater richness to the materials and finishes of the piece."
-    },
-    "tags": [
-      "Maya",
-      "Substance 3D Painter"
-    ],
-    "media": [
-      {
-        "type": "image",
-        "url": "/Assets/Proyectos/Referencia/adam.jpeg",
-        "filename": "ADAM.JPEG"
-      },
-      {
-        "type": "sketchfab",
-        "url": "https://sketchfab.com/3d-models/adam-the-calm-human-caceria-nocturnawip-091b41eaed8844e28ce8417556f20d77/embed",
-        "filename": "SKETCHFAB_VIEW"
-      }
-    ],
-    "orientation": "right",
-    "primaryButton": {
-      "text": {
-        "es": "VER EN SKETCHFAB",
-        "en": "VIEW ON SKETCHFAB"
-      },
-      "href": "https://sketchfab.com/3d-models/adam-the-calm-human-caceria-nocturnawip-091b41eaed8844e28ce8417556f20d77"
-    },
-    "role": {
-      "es": "Participé como artista 3D responsable de todo el proceso de producción del personaje. Mis responsabilidades incluyeron el diseño conceptual, modelado 3D, refinamiento de proporciones, creación de materiales y texturizado final. A través de este proyecto profundicé en la creación de personajes estilizados, explorando cómo las formas, proporciones y acabados visuales pueden utilizarse para comunicar personalidad y reforzar la narrativa de un personaje mediante recursos puramente visuales.",
-      "en": "I participated as a 3D artist responsible for the entire character production process. My responsibilities included concept design, 3D modeling, proportion refinement, material creation, and final texturing. Through this project I deepened my skills in stylized character creation, exploring how shapes, proportions, and visual finishes can be used to communicate personality and reinforce character narrative through purely visual means."
-    }
-  },
-  {
-    "id": "resonador-vr",
-    "title": "RESONADOR VR",
-    "featured": false,
-    "category": "dev",
-    "context": {
-      "es": "Realidad Virtual",
-      "en": "Virtual Reality"
-    },
-    "description": {
-      "es": "Proyecto de realidad virtual desarrollado como una experiencia inmersiva de exploración y aprendizaje enfocada en el funcionamiento de los equipos de resonancia magnética. A través de un entorno interactivo, los usuarios pueden conocer los principios básicos de operación del resonador, los procedimientos generales de mantenimiento, los requisitos de seguridad para pacientes y operadores, los aspectos legales asociados a su uso y las características de diferentes modelos del equipo. La experiencia fue diseñada como una herramienta educativa que facilita la comprensión de conceptos técnicos mediante la interacción en un entorno virtual.",
-      "en": "Virtual reality project developed as an immersive exploration and learning experience focused on the operation of magnetic resonance imaging equipment. Through an interactive environment, users can learn the basic principles of MRI operation, general maintenance procedures, safety requirements for patients and operators, legal aspects associated with its use, and the characteristics of different equipment models. The experience was designed as an educational tool that facilitates understanding of technical concepts through interaction in a virtual environment."
-    },
-    "tags": [
-      "Unity",
-      "C#",
-      "VR"
-    ],
-    "media": [
-      {
-        "type": "image",
-        "url": "/Assets/Proyectos/Resonador/01.png",
-        "filename": "SCREENSHOT_01.PNG"
-      },
-      {
-        "type": "image",
-        "url": "/Assets/Proyectos/Resonador/02.png",
-        "filename": "SCREENSHOT_02.PNG"
-      },
-      {
-        "type": "image",
-        "url": "/Assets/Proyectos/Resonador/03.png",
-        "filename": "SCREENSHOT_03.PNG"
-      }
-    ],
-    "orientation": "left",
-    "primaryButton": {
-      "text": {
-        "es": "CÓDIGO FUENTE",
-        "en": "SOURCE CODE"
-      },
-      "href": "https://github.com/ImJustSandie/Simulador-de-ResonadorMagnetico"
-    },
-    "role": {
-      "es": "Participé como desarrollador principal en la implementación de la experiencia. Trabajé en estrecha colaboración con estudiantes de Ingeniería Biomédica para traducir los requerimientos académicos y técnicos en funcionalidades interactivas dentro del entorno virtual. Mis responsabilidades incluyeron el diseño e implementación de los sistemas principales de la aplicación, la programación de las mecánicas de interacción en realidad virtual y la integración de los contenidos necesarios para garantizar una experiencia educativa clara y accesible para los usuarios.",
-      "en": "I participated as lead developer in the implementation of the experience. I worked closely with Biomedical Engineering students to translate academic and technical requirements into interactive functionalities within the virtual environment. My responsibilities included the design and implementation of the application's main systems, programming virtual reality interaction mechanics, and integrating the necessary content to ensure a clear and accessible educational experience for users."
     }
   },
   {
@@ -495,7 +411,8 @@
     "tags": [
       "Maya",
       "Substance 3D Painter",
-      "Photoshop"
+      "Photoshop",
+      "Game Assets"
     ],
     "media": [
       {
@@ -566,7 +483,8 @@
     },
     "tags": [
       "Maya",
-      "PBR Texturing"
+      "PBR Texturing",
+      "Game Assets"
     ],
     "media": [
       {
@@ -594,49 +512,6 @@
     }
   },
   {
-    "id": "the-knight-hollow-knight",
-    "title": "THE KNIGHT [HOLLOW KNIGHT]",
-    "featured": false,
-    "category": "art",
-    "context": {
-      "es": "Fan Art 3D",
-      "en": "3D Fan Art"
-    },
-    "description": {
-      "es": "Este proyecto consiste en una reinterpretación tridimensional del icónico protagonista de Hollow Knight, desarrollada como un ejercicio de character art enfocado en la exploración de formas estilizadas y narrativa visual. La pieza toma como referencia el diseño original del personaje, incorporando una dirección artística más oscura y abstracta que busca resaltar el carácter misterioso y melancólico asociado al universo del juego. El objetivo fue trasladar una figura originalmente representada en un estilo bidimensional a un entorno tridimensional, manteniendo su identidad visual mientras se experimentaba con nuevas proporciones, materiales y detalles. El modelo base fue desarrollado en Autodesk Maya, complementado con procesos de escultura digital y pintura manual en Mudbox. El acabado final se realizó en Substance 3D Painter mediante la creación y ajuste de materiales personalizados para reforzar la atmósfera y el lenguaje visual de la pieza.",
-      "en": "This project is a three-dimensional reinterpretation of the iconic protagonist of Hollow Knight, developed as a character art exercise focused on exploring stylized forms and visual narrative. The piece takes the original character design as reference, incorporating a darker and more abstract artistic direction that seeks to highlight the mysterious and melancholic nature associated with the game's universe. The goal was to translate a figure originally represented in a two-dimensional style into a three-dimensional environment, maintaining its visual identity while experimenting with new proportions, materials, and details. The base model was developed in Autodesk Maya, complemented by digital sculpting and hand-painting processes in Mudbox. The final finish was done in Substance 3D Painter through the creation and adjustment of custom materials to reinforce the piece's atmosphere and visual language."
-    },
-    "tags": [
-      "Maya",
-      "Mudbox",
-      "Substance 3D Painter"
-    ],
-    "media": [
-      {
-        "type": "image",
-        "url": "/Assets/Proyectos/Referencia/the-knight.jpeg",
-        "filename": "THE_KNIGHT.JPEG"
-      },
-      {
-        "type": "sketchfab",
-        "url": "https://sketchfab.com/3d-models/the-knight-hollow-knight-2ae191917cd24fca8e0e0e65b1b47c5d/embed",
-        "filename": "SKETCHFAB_VIEW"
-      }
-    ],
-    "orientation": "right",
-    "primaryButton": {
-      "text": {
-        "es": "VER EN SKETCHFAB",
-        "en": "VIEW ON SKETCHFAB"
-      },
-      "href": "https://sketchfab.com/3d-models/the-knight-hollow-knight-2ae191917cd24fca8e0e0e65b1b47c5d"
-    },
-    "role": {
-      "es": "Participé como artista 3D responsable de todo el proceso de producción del personaje. Mis tareas incluyeron el modelado base, la escultura digital, la pintura manual de texturas, el desarrollo de materiales y la presentación final de la pieza. A través de este proyecto profundicé en técnicas de adaptación de personajes bidimensionales a entornos tridimensionales, explorando cómo preservar la identidad visual de una obra mientras se reinterpretan sus formas y acabados desde una perspectiva artística propia.",
-      "en": "I participated as a 3D artist responsible for the entire character production process. My tasks included base modeling, digital sculpting, hand-painting of textures, material development, and final presentation of the piece. Through this project I deepened my skills in adapting two-dimensional characters to three-dimensional environments, exploring how to preserve the visual identity of a work while reinterpreting its forms and finishes from a personal artistic perspective."
-    }
-  },
-  {
     "id": "persona-4-tv",
     "title": "PERSONA 4 GOLDEN TV",
     "featured": false,
@@ -652,7 +527,8 @@
     "tags": [
       "Maya",
       "Substance Painter",
-      "PBR Texturing"
+      "PBR Texturing",
+      "Game Assets"
     ],
     "media": [
       {
@@ -694,7 +570,8 @@
     },
     "tags": [
       "Maya",
-      "PBR Texturing"
+      "PBR Texturing",
+      "Game Assets"
     ],
     "media": [
       {
