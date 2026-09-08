@@ -80,6 +80,51 @@
     }
   },
   {
+    "id": "rikoman-adventures",
+    "title": "RIKOMAN ADVENTURES",
+    "featured": true,
+    "category": "juegos",
+    "context": {
+      "es": "Desarrollo de Videojuegos Móviles",
+      "en": "Mobile Game Development"
+    },
+    "description": {
+      "es": "Chocorico es un videojuego móvil desarrollado en Unity para la electiva de Diseño de Videojuegos Móviles, creado como parte de un equipo de desarrollo. El proyecto aborda el ciclo completo de diseño y producción de un juego para plataformas móviles, desde la concepción de la mecánica central y el diseño de niveles hasta la implementación de sistemas de gameplay y su postproducción. La experiencia se enfoca en ofrecer una jugabilidad accesible y dinámica adaptada a las características de los dispositivos móviles, integrando controles y mecánicas pensados para ese contexto.",
+      "en": "Chocorico is a mobile video game developed in Unity for the Mobile Game Design elective, created as part of a development team. The project covers the complete design and production cycle of a game for mobile platforms, from conceiving the core mechanic and level design to implementing gameplay systems and post-production. The experience focuses on delivering accessible and dynamic gameplay adapted to the characteristics of mobile devices, integrating controls and mechanics designed for that context."
+    },
+    "tags": [
+      "Unity",
+      "C#",
+      "Game Design",
+      "Level Design",
+      "Mobile"
+    ],
+    "media": [
+      {
+        "type": "video",
+        "url": "/Assets/Proyectos/Rikoman/trailerChocoriko.mp4",
+        "filename": "TRAILER_CHOCORIKO.MP4"
+      },
+      {
+        "type": "image",
+        "url": "/Assets/Proyectos/Rikoman/POSTER_03.png",
+        "filename": "POSTER_03.PNG"
+      }
+    ],
+    "orientation": "right",
+    "primaryButton": {
+      "text": {
+        "es": "CÓDIGO FUENTE",
+        "en": "SOURCE CODE"
+      },
+      "href": "https://github.com/ImJustSandie/Rikoman-Adventures"
+    },
+    "role": {
+      "es": "Participé como desarrollador de videojuegos dentro de un equipo multidisciplinario, colaborando en el diseño de mecánicas y niveles, la programación de sistemas de gameplay en Unity y la integración de los elementos que conforman la experiencia móvil completa. El proyecto me permitió trabajar en un entorno de equipo real, aplicar principios de diseño de videojuegos móviles y desarrollar un producto jugable de principio a fin.",
+      "en": "I participated as a game developer within a multidisciplinary team, collaborating on game mechanics and level design, programming gameplay systems in Unity, and integrating the elements that make up the complete mobile experience. The project allowed me to work in a real team environment, apply mobile game design principles, and develop a playable product from start to finish."
+    }
+  },
+  {
     "id": "resonador-vr",
     "title": "RESONADOR VR",
     "featured": true,
@@ -235,11 +280,6 @@
       "Figma"
     ],
     "media": [
-      {
-        "type": "video",
-        "url": "/Assets/Proyectos/Plantagochi/01.mp4",
-        "filename": "DEMO_VIDEO.MP4"
-      },
       {
         "type": "image",
         "url": "/Assets/Proyectos/Plantagochi/02.png",
@@ -596,51 +636,6 @@
     "role": {
       "es": "Participé como artista 3D responsable de todo el proceso de producción del modelo. Mis tareas incluyeron el análisis de referencias, modelado de alta precisión, creación de materiales, texturizado y configuración de la presentación final. A través de este proyecto profundicé en la creación de props inspirados en franquicias reconocidas, explorando técnicas de hard surface modeling y la construcción de materiales orientados a representar superficies metálicas y componentes mecánicos de manera convincente.",
       "en": "I participated as a 3D artist responsible for the entire model production process. My tasks included reference analysis, high-precision modeling, material creation, texturing, and final presentation setup. Through this project I deepened my skills in creating props inspired by well-known franchises, exploring hard surface modeling techniques and building materials aimed at representing metallic surfaces and mechanical components in a convincing way."
-    }
-  },
-  {
-    "id": "rikoman-adventures",
-    "title": "RIKOMAN ADVENTURES",
-    "featured": true,
-    "category": "juegos",
-    "context": {
-      "es": "Desarrollo de Videojuegos Móviles",
-      "en": "Mobile Game Development"
-    },
-    "description": {
-      "es": "Chocorico es un videojuego móvil desarrollado en Unity para la electiva de Diseño de Videojuegos Móviles, creado como parte de un equipo de desarrollo. El proyecto aborda el ciclo completo de diseño y producción de un juego para plataformas móviles, desde la concepción de la mecánica central y el diseño de niveles hasta la implementación de sistemas de gameplay y su postproducción. La experiencia se enfoca en ofrecer una jugabilidad accesible y dinámica adaptada a las características de los dispositivos móviles, integrando controles y mecánicas pensados para ese contexto.",
-      "en": "Chocorico is a mobile video game developed in Unity for the Mobile Game Design elective, created as part of a development team. The project covers the complete design and production cycle of a game for mobile platforms, from conceiving the core mechanic and level design to implementing gameplay systems and post-production. The experience focuses on delivering accessible and dynamic gameplay adapted to the characteristics of mobile devices, integrating controls and mechanics designed for that context."
-    },
-    "tags": [
-      "Unity",
-      "C#",
-      "Game Design",
-      "Level Design",
-      "Mobile"
-    ],
-    "media": [
-      {
-        "type": "video",
-        "url": "/Assets/Proyectos/Rikoman/trailerChocoriko.mp4",
-        "filename": "TRAILER_CHOCORIKO.MP4"
-      },
-      {
-        "type": "image",
-        "url": "/Assets/Proyectos/Rikoman/POSTER_03.png",
-        "filename": "POSTER_03.PNG"
-      }
-    ],
-    "orientation": "right",
-    "primaryButton": {
-      "text": {
-        "es": "CÓDIGO FUENTE",
-        "en": "SOURCE CODE"
-      },
-      "href": "https://github.com/ImJustSandie/Rikoman-Adventures"
-    },
-    "role": {
-      "es": "Participé como desarrollador de videojuegos dentro de un equipo multidisciplinario, colaborando en el diseño de mecánicas y niveles, la programación de sistemas de gameplay en Unity y la integración de los elementos que conforman la experiencia móvil completa. El proyecto me permitió trabajar en un entorno de equipo real, aplicar principios de diseño de videojuegos móviles y desarrollar un producto jugable de principio a fin.",
-      "en": "I participated as a game developer within a multidisciplinary team, collaborating on game mechanics and level design, programming gameplay systems in Unity, and integrating the elements that make up the complete mobile experience. The project allowed me to work in a real team environment, apply mobile game design principles, and develop a playable product from start to finish."
     }
   },
   {
