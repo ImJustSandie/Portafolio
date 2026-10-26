@@ -12,6 +12,7 @@ const {
 } = Astro.props;
 
 import "../styles/global.css";
+import Analytics from '@vercel/analytics/astro';
 
 const schemaJSON = JSON.stringify({
   "@context": "https://schema.org",
@@ -56,6 +57,9 @@ const schemaJSON = JSON.stringify({
 
 		<!-- Datos Estructurados para Google -->
 		<script type="application/ld+json" set:html={schemaJSON}></script>
+
+		<!-- Vercel Web Analytics -->
+		<Analytics />
 
 		<script is:inline>
 			const savedLang = localStorage.getItem('p5-portfolio-lang');
